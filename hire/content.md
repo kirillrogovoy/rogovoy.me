@@ -1,5 +1,4 @@
 # Kirill Rogovoy
-# Looking for a talent, aren't ya?
 
 <div style="text-align: center;">
     <p>[rogovoy.me](/)</p>
@@ -10,13 +9,13 @@
 ## Summary
 Straight to the point, right? I'm a (web) software engineer, who spent the last 4 years architecting complex information systems at scale, developing lots of tools and features, mentoring old colleagues, interviewing new ones and learning tons about [how the internet works](/hire/how-the-internet-works.gif).
 
-Programming is my biggest passion (though not the only one) at the moment and I'm kinda on a mission of getting to the top in software engineering.
+Programming is my biggest passion (though not the only one) at the moment and I'm kind of on a mission of getting to the top in software engineering.
 
-I have decent front-end skills with the vanilla browser stack and React. I feel very confident writing Javascript, Golang, Bash or PHP on the back end, but will be happy to learn whatever fits my team the best. I'm also very DevOps-spirited and love automating internal processes as much as possible. And I'm a [heavy user of containers](/hire/docker-all-the-things.png).
+I have solid front-end skills with the vanilla browser stack and React. I feel very confident writing Javascript, Golang, Bash or PHP on the back end, but will be happy to learn whatever fits my team the best. I'm also very DevOps-spirited and love automating internal processes as much as possible. And I'm a [heavy user of containers](/hire/docker-all-the-things.png).
 
-I'm a technology agnostic and always look for the best tool for the job. Have no emotional bonds to programming languages (though Golang rocks!).
+I'm a technology agnostic and always look for the best tool for the job. Have no emotional bonds to programming languages (except Golang, it rocks).
 
-Oh, and I care a lot about what I do.
+And I care a lot about what I do.
 
 ## Personal highlights
 - Always striving to see the big picture and act in the best interest of the business.
@@ -35,7 +34,17 @@ Oh, and I care a lot about what I do.
 - Got the "treat people how you want to be treated" attitude.
 - Value simplicity the most.
 - Constantly trying to add some organizational and cultural value as well.
-- Not good at composing CVs.
+
+## Technologies and concepts I'm good at
+
+- Languages: Bash, Golang, Javascript (including NodeJS), a bit of Python, PHP, HTML, CSS (and LESS), Markdown
+- Frameworks: Express, React, Symfony
+- Databases: PostgeSQL, MySQL, Mongo, Redis
+- DevOps: CI services, Docker, Docker Swarm, Micro-services
+- Development: Unit testing, TDD, Git, Github, Shell, Profiling
+- Protocols: TCP and TLS, HTTP, SSH, FTP, SMTP, IMAP, Postgres
+
+This list is constantly growing.
 
 ## Work Experience
 Each company I've worked with was an amazing experience and a unique journey. I'm very grateful for every opportunity I had!
