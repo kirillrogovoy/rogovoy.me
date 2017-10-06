@@ -61,7 +61,7 @@ General responsibilities:
 
 Visited VMWorld 2015 in Barcelona.
 
-### Full­Stack Web Developer at LightSoft
+### Full Stack Web Developer at LightSoft
 May 2014 - July 2014
 
 General responsibilities:
