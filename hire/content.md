@@ -42,7 +42,7 @@ And I care a lot about what I do.
 - Databases: PostgeSQL, MySQL, Mongo, Redis
 - DevOps: CI services, Docker, Docker Swarm, Micro-services
 - Development: Unit testing, TDD, Git, Github, Shell, Profiling
-- Protocols: TCP and TLS, HTTP, SSH, FTP, SMTP, IMAP, Postgres
+- Protocols: TCP and TLS, HTTP, SSH, FTP, SMTP, IMAP, Postgres, REST, GraphQL
 
 This list is constantly growing.
 
