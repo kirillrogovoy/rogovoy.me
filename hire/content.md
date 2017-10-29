@@ -3,22 +3,19 @@
 <div style="text-align: center;">
     <p>[rogovoy.me](/)</p>
     <p>[kirill@rogovoy.me](mailto:kirill@rogovoy.me)</p>
-    <p>![Html For Food](/hire/HtmlForFood.png)</p>
 </div>
 
 ## Summary
-Straight to the point, right? I'm a (web) software engineer, who spent the last 4 years architecting complex information systems at scale, developing lots of tools and features, mentoring old colleagues, interviewing new ones and learning tons about [how the internet works](/hire/how-the-internet-works.gif).
+I'm a web software engineer, who spent the last 4 years architecting complex information systems at scale, developing lots of tools and features, mentoring old colleagues, interviewing new, and learning tons about [how the internet works](/hire/how-the-internet-works.gif).
 
 Programming is my biggest passion (though not the only one) at the moment and I'm kind of on a mission of getting to the top in software engineering.
 
-I have solid front-end skills with the vanilla browser stack and React. I feel very confident writing Javascript, Golang, Bash or PHP on the back end, but will be happy to learn whatever fits my team the best. I'm also very DevOps-spirited and love automating internal processes as much as possible. And I'm a [heavy user of containers](/hire/docker-all-the-things.png).
+I feel very confident writing Javascript, Golang, Bash or PHP on the back end and I'm always happy to learn whatever fits my team the best. I'm also very DevOps-spirited and love automating internal processes as much as possible. And I'm a [heavy user of containers](/hire/docker-all-the-things.png). I have solid front-end skills with the vanilla browser stack and React.
 
-I'm a technology agnostic and always look for the best tool for the job. Have no emotional bonds to programming languages (except Golang, it rocks).
-
-And I care a lot about what I do.
+I'm a technology agnostic and always look for the best tool for the job. And I care a lot about what I do.
 
 ## Personal highlights
-- Always striving to see the big picture and act in the best interest of the business.
+- Always strive to see the big picture and act in the best interest of the business.
 - Made a few interesting Open Source projects such as:
 	- [GitHub - kirillrogovoy/promised-pipe](https://github.com/kirillrogovoy/promised-pipe)
 	- [GitHub - kirillrogovoy/pullkee](https://github.com/kirillrogovoy/pullkee)
@@ -28,20 +25,20 @@ And I care a lot about what I do.
 	- [GitHub - less/less.js](https://github.com/less/less.js/)
 	- [GitHub - johntitus/node-horseman](https://github.com/johntitus/node-horseman)
 	- [GitHub - reindexio/youmightnotneedunderscore](https://github.com/reindexio/youmightnotneedunderscore)
-- An active member of the best programming forum on Earth - [Fun Fun Forum](https://www.funfunforum.com/)
-- Very much aware of technical debt and do my best to keep it low.
+- An active member of a professional programming forum - [Fun Fun Forum](https://www.funfunforum.com/)
+- Put eliminating technical debt the top priority.
 - Got stickers on the laptop, so it's clear I know what I do!
 - Got the "treat people how you want to be treated" attitude.
 - Value simplicity the most.
 - Constantly trying to add some organizational and cultural value as well.
 
-## Technologies and concepts I'm good at
+## Technologies and concepts I'm great at
 
 - Languages: Bash, Golang, Javascript (including NodeJS), a bit of Python, PHP, HTML, CSS (and LESS), Markdown
 - Frameworks: Express, React, Symfony
 - Databases: PostgeSQL, MySQL, Mongo, Redis
-- DevOps: CI services, Docker, Docker Swarm, Micro-services
-- Development: Unit testing, TDD, Git, Github, Shell, Profiling
+- DevOps: CI services, Docker, Docker Swarm, Service-oriented architecture
+- Development: Testing, TDD, Git, Github, Shell, Profiling
 - Protocols: TCP and TLS, HTTP, SSH, FTP, SMTP, IMAP, Postgres, REST, GraphQL
 
 This list is constantly growing.
