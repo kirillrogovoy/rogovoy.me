@@ -46,7 +46,7 @@ This list is constantly growing.
 ## Work Experience
 Each company I've worked with was an amazing experience and a unique journey. I'm very grateful for every opportunity I had!
 
-### Senior Software Engineer / Architect at Velvica
+### Software Architect at Velvica
 August 2014 - now
 
 General responsibilities:
