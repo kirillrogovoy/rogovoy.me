@@ -26,6 +26,7 @@ I'm a technology agnostic and always look for the best tool for the job. And I c
 	- [GitHub - johntitus/node-horseman](https://github.com/johntitus/node-horseman)
 	- [GitHub - reindexio/youmightnotneedunderscore](https://github.com/reindexio/youmightnotneedunderscore)
 - An active member of a professional programming forum - [Fun Fun Forum](https://www.funfunforum.com/)
+- Solved quite a few non-trivial "Katas" at [CodeWars](https://www.codewars.com/users/kirillrogovoy)
 - Put eliminating technical debt the top priority.
 - Got stickers on the laptop, so it's clear I know what I do!
 - Got the "treat people how you want to be treated" attitude.
