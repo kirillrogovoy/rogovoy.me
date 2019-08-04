@@ -2,12 +2,11 @@ import Post from './components/post'
 
 const posts = [
   {
-    id: 'rabota-za-kompiuterom-stoya',
-    date: '12.12.2018',
-    title: 'Работать за компьютером стоя: зачем и как',
-    description: 'Почему работать сидя – вредно и что можно сделать',
-    tags: [],
-    fbLink: 'https://www.facebook.com/permalink.php?story_fbid=537623056710013&id=100013869703829',
+    id: 'here-are-some-amazing-advantages-of-go-that-you-dont-hear-much-about',
+    date: '01.02.2018',
+    title: 'Here are some amazing advantages of Go that you don’t hear much about',
+    description: 'I discuss why you should give Go a chance and where to start.',
+    canonical: 'https://www.freecodecamp.org/news/here-are-some-amazing-advantages-of-go-that-you-dont-hear-much-about-1af99de3b23a/',
   },
 ]
 

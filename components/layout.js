@@ -56,9 +56,6 @@ export default (props) => <div style={{maxWidth: '90%', width: '700px', margin: 
     a:hover {
       color: #f08080;
     }
-    a:visited {
-      color: #bbb;
-   }
     @keyframes fadein {
         0% {opacity:0;}
         100% {opacity:1;}

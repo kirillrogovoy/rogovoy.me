@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import GoogleAnalytics from '../components/google-analytics'
 
 export default () => <div>
@@ -25,6 +26,7 @@ export default () => <div>
         body {
             font-weight: 300;
             font-family: 'Open Sans', sans-serif;
+            padding-bottom: 30px;
         }
         .content {
             position: absolute;
@@ -46,17 +48,19 @@ export default () => <div>
             animation        : fadein 0.5s linear;
         }
         .content-head {
-            margin-top: 0;
-            margin-bottom: 0.5em;
+            margin-top: 0.2em;
+            margin-bottom: 0.2em;
+            line-height: 1em;
             font-size: 3.5em;
         }
         .content-image {
-            width: 280px;
+            width: 265px;
             border-radius: 100%;
             margin-bottom: 20px;
         }
         .content-sub-head {
             font-size: 1.5em;
+            margin-top: 0;
             margin-bottom: 31px;
         }
         .content-links {
@@ -69,9 +73,10 @@ export default () => <div>
             display: inline-block;
             margin: 0 1em 1em;
         }
-        .skyeng-link {
+        .link {
             color: rgb(0, 58, 159);
             text-decoration: none;
+            font-weight: 400;
         }
         .hire-link {
             color: #840000;
@@ -87,10 +92,9 @@ export default () => <div>
   <div className="content">
       <img className="content-image" src="/static/kirill-rogovoy.jpg" />
       <p className="content-head">Kirill Rogovoy</p>
-      <p className="content-sub-head">
-          💻🍺  Software engineer, team lead, architect, and everything in between
+      <p className="content-sub-head" style={{ fontSize: '1.6em' }}>
+        💻🍺  I grow teams, carrots, and code complexity.<br/>Engineering manager at <a className="link" href="https://skyeng.ru" target="_blank">Skyeng</a>
       </p>
-      <p className="content-sub-head">Team leader at <a className="skyeng-link" href="https://skyeng.ru" target="_blank"><b>Skyeng</b></a></p>
       <ul className="content-links">
           <li><a href="mailto:kirill@rogovoy.me" title="Email">
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" enableBackground="new 0 0 512 512" xmlSpace="preserve"> <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M128,128h256 c4.569,0,9.002,0.981,13.072,2.831L256,295.415L114.928,130.83C118.998,128.982,123.431,128,128,128z M96,352V160 c0-0.67,0.028-1.336,0.07-2l93.832,109.471L97.103,360.27C96.381,357.602,96,354.827,96,352z M384,384H128 c-2.827,0-5.601-0.381-8.27-1.104l91.059-91.06L256,344.586l45.212-52.747l91.058,91.06C389.6,383.619,386.827,384,384,384z M416,352c0,2.827-0.381,5.6-1.103,8.27l-92.801-92.799L415.93,158c0.042,0.664,0.07,1.33,0.07,2V352z"/> </svg>
@@ -118,6 +122,10 @@ export default () => <div>
 <svg enableBackground="new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"><g id="Style_2_copy_4"><g><g><path d="M16,0C7.163,0,0,7.163,0,16c0,8.836,7.163,16,16,16s16-7.164,16-16C32,7.163,24.837,0,16,0z" fill="#000000"/></g></g><g><path d="M24.959,11.076l-5.76-2.88c-0.026-0.013-0.055-0.019-0.083-0.02c-0.002,0-0.004-0.001-0.006-0.001    c-0.07,0-0.14,0.035-0.177,0.096l-3.55,5.769l3.963,6.44l5.669-9.212C25.056,11.201,25.031,11.112,24.959,11.076z" fill="#FFFFFF"/><polygon fill="#FFFFFF" points="13.505,12.013 13.505,18.23 19.031,20.992   "/><path d="M19.514,21.23l5.074,2.537c0.277,0.138,0.504-0.002,0.504-0.311v-11.29L19.514,21.23z" fill="#FFFFFF"/><path d="M12.895,11.105L7.58,8.448L7.244,8.28C7.196,8.256,7.15,8.244,7.108,8.244    c-0.059,0-0.109,0.023-0.145,0.066C6.929,8.352,6.908,8.412,6.908,8.487v12.13c0,0.206,0.151,0.451,0.336,0.543l5.222,2.611    c0.073,0.036,0.142,0.053,0.204,0.053c0.176,0,0.299-0.136,0.299-0.365V11.226C12.97,11.175,12.941,11.128,12.895,11.105z" fill="#FFFFFF"/></g></g></svg>
           </a></li>
       </ul>
+      <p style={{ marginTop: '-10px' }} className="content-sub-head">
+        And also <Link href="/articles"><a className="link">Articles</a></Link>
+      </p>
+      <br /><br />
   </div>
   <GoogleAnalytics />
 </div>

@@ -4,12 +4,12 @@ export default ({ posts }) => <div style={{margin: '0 auto'}}>
   <ul>
       {posts.map(post => (
         <li key={post.id} style={{marginBottom: '30px', listStyleType: 'square'}}>
-            <Link href={`/${post.id}`}>
+            <Link href={post.canonical ? post.canonical : `/${post.id}`}>
               <a className="postLink">{post.title}</a>
             </Link>
             <span className="postInfo">
               <span> — </span>
-              {post.date}, <a href={post.fbLink}>обсуждение в Facebook</a>
+              {post.date}
             </span>
             <br />
             <span className="description">{post.description}</span>
