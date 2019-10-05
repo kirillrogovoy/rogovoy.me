@@ -6,6 +6,29 @@ import GoogleAnalytics from './google-analytics'
 
 export default (props) => <div style={{maxWidth: '90%', width: '700px', margin: 'auto'}}>
   <Head>
+    <style>{`
+      body {
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
+        font-family: 'Open Sans', sans-serif;
+        animation: fadein 0.5s linear;
+
+        color: #333;
+        font-size: 18px;
+        font-weight: 300;
+      }
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #d07070;
+      }
+      a:hover {
+        color: #f08080;
+      }
+      @keyframes fadein {
+          0% {opacity:0;}
+          100% {opacity:1;}
+      }
+    `}</style>
   </Head>
   <Normalize />
   <header style={{padding: '0', maxWidth: '90%', margin: 'auto'}}>
@@ -25,7 +48,7 @@ export default (props) => <div style={{maxWidth: '90%', width: '700px', margin: 
         display: 'block',
         margin: '0 auto',
         textAlign: 'center',
-        fontSize: '18px',
+        fontSize: '20px',
         fontWeight: '300'
       }}>
         Articles
@@ -38,29 +61,6 @@ export default (props) => <div style={{maxWidth: '90%', width: '700px', margin: 
     {props.children}
   </main>
 
-  <style jsx global>{`
-    body {
-      @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
-      font-family: 'Open Sans', sans-serif;
-      animation        : fadein 0.5s linear;
-
-      color: #333;
-      font-size: 18px;
-      font-weight: 300;
-    }
-    a {
-      text-decoration: none;
-      font-weight: bold;
-      color: #d07070;
-    }
-    a:hover {
-      color: #f08080;
-    }
-    @keyframes fadein {
-        0% {opacity:0;}
-        100% {opacity:1;}
-    }
-  `}</style>
   <GoogleAnalytics />
 </div>
 
