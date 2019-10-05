@@ -82,5 +82,5 @@ export default () =>
           <p>or use the chat window below</p>
         </div>
         <iframe style={{width: '100%', height: '90vh', border: 0}} src="https://gitter.im/code-duet/go/~embed" />
-        <googleanalytics>
-        </googleanalytics></div>
+        <GoogleAnalytics>
+        </GoogleAnalytics></div>
