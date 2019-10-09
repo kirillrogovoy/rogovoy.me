@@ -1,12 +1,20 @@
 import Link from 'next/link'
+import {Article} from '../article';
 
-export default ({ posts }) => <div style={{margin: '0 auto'}}>
+interface Props {
+  articles: Article[]
+}
+
+export default ({ articles }: Props) => <div style={{margin: '0 auto'}}>
   <ul>
-      {posts.map(post => (
-        <li key={post.id} style={{marginBottom: '30px', listStyleType: 'square'}}>
-            <Link href={post.canonical ? post.canonical : `/${post.id}`}>
+      {articles.map(post => (
+        <li key={post.id}>
+          {post.origin
+            ? <a href={post.origin} className="postLink" target="_blank">{`${post.title}, ${new URL(post.origin).hostname}`}</a>
+            : <Link href={`/articles/${post.id}`} >
               <a className="postLink">{post.title}</a>
             </Link>
+          }
             <span className="postInfo">
               <span> — </span>
               {post.date}
@@ -19,6 +27,8 @@ export default ({ posts }) => <div style={{margin: '0 auto'}}>
   <style jsx>{`
     li {
       font-size: 20px;
+      margin-botton: 30px;
+      list-style-type: square;
     }
     .postInfo {
         font-size: 14px;

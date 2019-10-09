@@ -1,22 +1,27 @@
 import Link from 'next/link'
 import Head from 'next/head'
-import Layout from '../components/layout'
-import PostList from '../components/post-list'
+import Layout from '../components/articles-layout'
+import ArticleList from '../components/article-list'
 import Separator from './separator'
-import { getRandomPosts } from '../post'
+import { getRandomArticles, Article } from '../article'
 
-export default function ({ meta, content }) {
+interface Props {
+  article: Article
+  content: string
+}
+
+export default function ({ article, content }: Props) {
   return <Layout>
     <Head>
-      <title>{meta.title}</title>
-      <meta name="og:title" content={meta.title} />
-      <meta name="og:image" content={`/static/${meta.id}.jpg`} />
-      <meta name="description" content={meta.description} />
-      <meta name="og:description" content={meta.description} />
-      <meta name="keywords" content={meta.tags.join(',')} />
+      <title>{article.title}</title>
+      <meta name="og:title" content={article.title} />
+      <meta name="og:image" content={`/static/${article.id}.jpg`} />
+      <meta name="description" content={article.description} />
+      <meta name="og:description" content={article.description} />
+      <meta name="keywords" content={article.tags.join(',')} />
     </Head>
-    <Link href="/">
-      <a style={{color: '#777', textDecoration: 'underline', fontWeight: '300'}}>Назад</a>
+    <Link href="/articles">
+      <a style={{color: '#777', textDecoration: 'underline', fontWeight: 300}}>Back to the list</a>
     </Link>
     <div style={{
       marginBottom: '50px'
@@ -27,10 +32,10 @@ export default function ({ meta, content }) {
         letterSpacing: '-0.63px',
         marginBottom: '10px'
       }}>
-        {meta.title}
+        {article.title}
       </h1>
       <div style={{fontSize: '17px'}}>
-        <span>{meta.date}</span>, <a style={{fontWeight: '300'}} href={meta.fbLink}>обсуждение в Facebook</a>
+        <span>{article.date}</span>
       </div>
     </div>
 
@@ -38,7 +43,7 @@ export default function ({ meta, content }) {
 
     <Separator />
 
-    <OtherPosts currentPostId={meta.id} />
+    <OtherPosts currentArticleId={article.id} />
 
     <style jsx global>{`
       .markdown {
@@ -72,13 +77,13 @@ export default function ({ meta, content }) {
   </Layout>
 }
 
-function OtherPosts(props) {
-  const posts = getRandomPosts(3).filter(post => post.id !== props.currentPostId)
-  if (posts.length === 0) {
+function OtherPosts({ currentArticleId }: { currentArticleId: string }) {
+  const articles = getRandomArticles(3).filter(post => post.id !== currentArticleId)
+  if (articles.length === 0) {
     return null
   }
   return <div>
-    <h3>Другие статьи:</h3>
-    <PostList posts={posts} />
+    <h3>Other articles:</h3>
+    <ArticleList articles={articles} />
   </div>
 }

@@ -18,7 +18,7 @@ export default () =>
         <style dangerouslySetInnerHTML={{__html: "\n    li {\n        margin: 10px 0;\n        list-style-type: katakana-iroha;\n    }\n    blockquote {\n        background: #eee;\n        border-left: 5px #888 solid;\n        margin: 0;\n        padding: 1px 20px 1px 30px;\n    }\n    a {\n        text-decoration: none;\n        font-weight: bold;\n        color: #f08080;\n    }\n    `}" }} />
       </Head>
         <a style={{position: 'fixed', top: 0, left: '80%', width: '50px'}} target="_blank" href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Frogovoy.me%2Fcodeduet&ref_src=twsrc%5Etfw&text=I+pair-program+side+projects+on+Code+Duet%21+Via+%40krogovoy+%23code&tw_p=tweetbutton&url=http%3A%2F%2Frogovoy.me%2Fcodeduet">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.731 455.731" style={{enableBackground: 'new 0 0 455.731 455.731'}} xmlSpace="preserve"> <g> <rect x={0} y={0} style={{fill: '#333'}} width="455.731" height="455.731" /> <path style={{fill: '#FFFFFF'}} d="M60.377,337.822c30.33,19.236,66.308,30.368,104.875,30.368c108.349,0,196.18-87.841,196.18-196.18
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.731 455.731" xmlSpace="preserve"> <g> <rect x={0} y={0} style={{fill: '#333'}} width="455.731" height="455.731" /> <path style={{fill: '#FFFFFF'}} d="M60.377,337.822c30.33,19.236,66.308,30.368,104.875,30.368c108.349,0,196.18-87.841,196.18-196.18
               c0-2.705-0.057-5.39-0.161-8.067c3.919-3.084,28.157-22.511,34.098-35c0,0-19.683,8.18-38.947,10.107
               c-0.038,0-0.085,0.009-0.123,0.009c0,0,0.038-0.019,0.104-0.066c1.775-1.186,26.591-18.079,29.951-38.207
               c0,0-13.922,7.431-33.415,13.932c-3.227,1.072-6.605,2.126-10.088,3.103c-12.565-13.41-30.425-21.78-50.25-21.78
@@ -82,5 +82,5 @@ export default () =>
           <p>or use the chat window below</p>
         </div>
         <iframe style={{width: '100%', height: '90vh', border: 0}} src="https://gitter.im/code-duet/go/~embed" />
-        <GoogleAnalytics>
-        </GoogleAnalytics></div>
+        <GoogleAnalytics/>
+        </div>

@@ -3,12 +3,13 @@ import Head from 'next/head'
 import Normalize from './normalize'
 import Separator from './separator'
 import GoogleAnalytics from './google-analytics'
+import {PropsWithChildren} from 'react'
 
-export default (props) => <div style={{maxWidth: '90%', width: '700px', margin: 'auto'}}>
+export default (props: PropsWithChildren<{}>) => <div style={{maxWidth: '90%', width: '700px', margin: 'auto'}}>
   <Head>
     <style>{`
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
       body {
-        @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
         font-family: 'Open Sans', sans-serif;
         animation: fadein 0.5s linear;
 
@@ -39,7 +40,7 @@ export default (props) => <div style={{maxWidth: '90%', width: '700px', margin: 
           margin: '50px 0 5px',
           cursor: 'pointer',
           fontSize: '50px',
-          fontWeight: '300',
+          fontWeight: 300,
         }}>
             Kirill Rogovoy
         </span>
@@ -49,7 +50,7 @@ export default (props) => <div style={{maxWidth: '90%', width: '700px', margin: 
         margin: '0 auto',
         textAlign: 'center',
         fontSize: '20px',
-        fontWeight: '300'
+        fontWeight: 300
       }}>
         Articles
       </span>

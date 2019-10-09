@@ -5,6 +5,5 @@ export default function() {
     borderTop: '1px solid #ddd',
     margin: '30px auto 40px auto',
     width: '70%',
-    // marginLeft: '-10%',
   }} />
 }
