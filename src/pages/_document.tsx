@@ -5,7 +5,7 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <link rel="icon" type="image/x-icon" href="/static/favicon.png" />
+          <link rel="icon" type="image/x-icon" href="/favicon.png" />
         </Head>
         <body>
           <Main />

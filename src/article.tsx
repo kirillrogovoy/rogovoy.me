@@ -1,6 +1,6 @@
-import Article from './components/article'
+import { ArticleComponent } from './components/article'
 
-export interface Article {
+export interface ArticleMeta {
   id: string
   date: string
   title: string
@@ -9,8 +9,9 @@ export interface Article {
 
   origin?: string
   hidden?: boolean
+  tweetId?: string
 }
-const articles: Article[] = [
+const articles: ArticleMeta[] = [
   {
     id: 'here-are-some-amazing-advantages-of-go-that-you-dont-hear-much-about',
     date: '01.02.2018',
@@ -25,21 +26,22 @@ const articles: Article[] = [
     title: 'test title',
     description: 'test description',
     tags: ['test'],
-    hidden: true,
+    hidden: false,
+    tweetId: '1162459837910978561',
   },
 ]
 
 export function renderArticle(id: string, content: string) {
   const articleMeta = articles.find(a => a.id === id)!
-  return <Article article={articleMeta} content={content} />
+  return <ArticleComponent article={articleMeta} content={content} />
 }
 
 export function getAllArticles() {
   return articles.filter(post => !post.hidden)
 }
 
-export function getRandomArticles(number: number) {
-  return shuffle(getAllArticles()).slice(0, number)
+export function getRandomArticles(number: number, exceptArticleId: string) {
+  return shuffle(getAllArticles().filter(a => a.id !== exceptArticleId)).slice(0, number)
 }
 
 function shuffle<T>(b: T[]): T[] {

@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "next",
     "publish": "next build && next export && touch out/.nojekyll && echo 'rogovoy.me' > out/CNAME && git add out && git commit -m 'Publish' && git push && git subtree push --prefix out origin gh-pages && git push",
-    "analyze": "BUNDLE_ANALYZE=browser next build"
+    "analyze": "NODE_ENV=production BUNDLE_ANALYZE=browser next build",
+    "lint": "eslint src/**/*.{ts,tsx} --fix"
   },
   "repository": {
     "type": "git",
@@ -23,14 +25,27 @@
     "eslint-config-standard": "12.0.0",
     "html-loader": "0.5.5",
     "markdown-loader": "^5.1.0",
-    "next": "^9.0.7",
+    "next": "^9.1.7",
     "next-images": "1.0.3",
-    "react": "^16.10.2",
+    "react": "^16.12.0",
     "react-dom": "^16.10.2"
   },
   "devDependencies": {
     "@types/node": "^12.7.12",
     "@types/react": "^16.9.5",
+    "@typescript-eslint/eslint-plugin": "^2.15.0",
+    "@typescript-eslint/parser": "^2.15.0",
+    "@zeit/next-css": "^1.0.1",
+    "autoprefixer": "^9.7.4",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.17.0",
+    "postcss-easy-import": "^3.0.0",
+    "prettier": "^1.19.1",
+    "tailwindcss": "^1.1.4",
     "typescript": "^3.6.3"
   }
 }
