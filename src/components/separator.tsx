@@ -1,13 +1,3 @@
 export function Separator() {
-  return (
-    <hr
-      style={{
-        height: '1px',
-        border: '0px',
-        borderTop: '1px solid #ddd',
-        margin: '30px auto 40px auto',
-        width: '70%',
-      }}
-    />
-  )
+  return <hr className="mx-auto w-3/4 h-1px border-t-1 border-faded mt-4 mb-10" />
 }

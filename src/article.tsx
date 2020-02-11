@@ -23,7 +23,7 @@ const articles: ArticleMeta[] = [
   {
     id: 'test',
     date: '01.02.2018',
-    title: 'test title',
+    title: 'Here are some amazing advantages of go that you dont hear much about',
     description: 'test description',
     tags: ['test'],
     hidden: false,

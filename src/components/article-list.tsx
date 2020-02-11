@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { Link } from './link'
 import { ArticleMeta } from '../article'
 
 interface Props {
@@ -6,44 +6,26 @@ interface Props {
 }
 
 export const ArticleList = ({ articles }: Props) => (
-  <div style={{ margin: '0 auto' }}>
+  <div className="mx-auto">
     <ul>
       {articles.map(article => (
-        <li key={article.id}>
+        <li key={article.id} className="text-xl mb-8 list-square">
           {article.origin ? (
-            <a href={article.origin} target="_blank" rel="noreferrer noopener">{`${
-              article.title
-            }, ${new URL(article.origin).hostname}`}</a>
+            <Link style={2} href={article.origin} newTab>{`${article.title}, ${
+              new URL(article.origin).hostname
+            }`}</Link>
           ) : (
-            <Link href={`/blog/${article.id}`}>
-              <a>{article.title}</a>
+            <Link style={2} href={`/blog/${article.id}`}>
+              {article.title}
             </Link>
           )}
-          <span className="articleInfo">
+          <span className="text-sm">
             <span> — </span>
             {article.date}
           </span>
-          <br />
-          <span className="description">{article.description}</span>
+          <span className="block text-sm">{article.description}</span>
         </li>
       ))}
     </ul>
-    <style jsx>{`
-      li {
-        font-size: 20px;
-        margin-bottom: 30px;
-        list-style-type: square;
-      }
-      .articleInfo {
-        font-size: 14px;
-      }
-      .articleInfo a {
-        font-weight: normal;
-      }
-      .description {
-        margin-top: 5px;
-        font-size: 14px;
-      }
-    `}</style>
   </div>
 )

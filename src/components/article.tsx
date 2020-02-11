@@ -1,10 +1,10 @@
-import Link from 'next/link'
 import Head from 'next/head'
 import { ArticleLayout } from '../components/articles-layout'
 import { ArticleList } from '../components/article-list'
 import { Separator } from './separator'
 import { getRandomArticles, ArticleMeta } from '../article'
 import { EmailForm } from './email-form'
+import { Link } from './link'
 
 interface Props {
   article: ArticleMeta
@@ -22,36 +22,13 @@ export function ArticleComponent({ article, content }: Props) {
         <meta name="og:description" content={article.description} />
         <meta name="keywords" content={article.tags.join(',')} />
       </Head>
-      { article.tweetId && <TwitterRetweetButton tweetId={article.tweetId} /> }
-      <Link href="/blog">
-        <a
-          style={{
-            color: '#777',
-            textDecoration: 'underline',
-            fontWeight: 300,
-          }}
-        >
-          Back to the list
-        </a>
+      {article.tweetId && <TwitterRetweetButton tweetId={article.tweetId} />}
+      <Link style={1} href="/blog">
+        {'<-'} Back to the list
       </Link>
-      <div
-        style={{
-          marginBottom: '50px',
-        }}
-      >
-        <h1
-          style={{
-            color: '#d07070',
-            fontSize: '42px',
-            letterSpacing: '-0.63px',
-            marginBottom: '10px',
-          }}
-        >
-          {article.title}
-        </h1>
-        <div style={{ fontSize: '17px' }}>
-          <span>{article.date}</span>
-        </div>
+      <div className="mb-12">
+        <h1 className="text-link2 text-5xl leading-tight">{article.title}</h1>
+        <div className="italic">Published {article.date}</div>
       </div>
 
       <div className="markdown" dangerouslySetInnerHTML={{ __html: content }}></div>
@@ -59,11 +36,25 @@ export function ArticleComponent({ article, content }: Props) {
       <Separator />
 
       <div>
-        <div style={{marginBottom: '5px', textAlign: 'center'}}>
+        <div className="text-center mb-2">
           {article.tweetId ? (
-            <>Discuss on <a href={`https://twitter.com/krogovoy/status/${article.tweetId}`}>Twitter</a></>
-          ): (
-          <>Follow me on <a href="https://twitter.com/krogovoy">Twitter</a> or check out my <a href="https://github.com/kirillrogovoy">Github</a></>
+            <>
+              Discuss on{' '}
+              <Link style={2} href={`https://twitter.com/krogovoy/status/${article.tweetId}`}>
+                Twitter
+              </Link>
+            </>
+          ) : (
+            <>
+              Follow me on{' '}
+              <Link style={2} href="https://twitter.com/krogovoy">
+                Twitter
+              </Link>{' '}
+              or check out my{' '}
+              <Link style={2} href="https://github.com/kirillrogovoy">
+                Github
+              </Link>
+            </>
           )}
         </div>
         <EmailForm />
@@ -112,7 +103,7 @@ function OtherArticles({ currentArticleId }: { currentArticleId: string }) {
   }
   return (
     <div>
-      <h3 style={{fontWeight: 'normal'}}>Other articles:</h3>
+      <h3 className="text-xl">Other articles:</h3>
       <ArticleList articles={articles} />
     </div>
   )

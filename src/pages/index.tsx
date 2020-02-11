@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Link from 'next/link'
+import { Link } from '../components/link'
 import { GoogleAnalytics } from '../components/google-analytics'
 
 export default function Index() {
@@ -23,97 +23,13 @@ export default function Index() {
           content="Kirill Rogovoy — software engineer, team lead, architect, and everything in between"
         ></meta>
         <title>Kirill Rogovoy</title>
-        <style>{`html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}`}</style>
-        <style>
-          {`
-        @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
-        @-webkit-keyframes fadein {
-            0% {opacity:0;}
-            100% {opacity:1;}
-        }
-        @keyframes fadein {
-            0% {opacity:0;}
-            100% {opacity:1;}
-        }
-        body {
-            font-weight: 300;
-            font-family: 'Open Sans', sans-serif;
-            padding-bottom: 30px;
-        }
-        .content {
-            position: absolute;
-            margin: auto;
-            width: 60%;
-            min-width: 320px;
-            height: 80%;
-            min-height: 300px;
-
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-
-            text-align: center;
-
-            -moz-animation   : fadein 0.5s linear;
-            -webkit-animation: fadein 0.5s linear;
-            animation        : fadein 0.5s linear;
-        }
-        .content-head {
-            margin-top: 0.2em;
-            margin-bottom: 0.2em;
-            line-height: 1em;
-            font-size: 3.5em;
-        }
-        .content-image {
-            width: 265px;
-            border-radius: 100%;
-            margin-bottom: 20px;
-        }
-        .content-sub-head {
-            font-size: 1.5em;
-            margin-top: 0;
-            margin-bottom: 31px;
-        }
-        .content-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            margin-top: 40px;
-        }
-        .content-links li {
-            display: inline-block;
-            margin: 0 1em 1em;
-        }
-        .link {
-            color: rgb(0, 58, 159);
-            text-decoration: none;
-            font-weight: 400;
-        }
-        .hire-link {
-            color: #840000;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .content-links svg {
-            width: 3.2em;
-        }
-      `}
-        </style>
       </Head>
-      <div className="content">
-        <img className="content-image" src="/kirill-rogovoy.jpg" />
-        <p className="content-head">Kirill Rogovoy</p>
-        <p className="content-sub-head" style={{ fontSize: '1.6em' }}>
-          💻🍺 I grow teams, carrots, and code complexity.
-          <br />
-          Engineering manager at{' '}
-          <a className="link" href="https://skyeng.ru" target="_blank" rel="noreferrer noopener">
-            Skyeng
-          </a>
-        </p>
-        <ul className="content-links">
-          <li>
+      <div className="fade-in font-serif absolute m-auto inset-0 text-center h-4/5">
+        <img className="mx-auto h-64 w-64 rounded-full mb-5" src="/kirill-rogovoy.jpg" />
+        <h1 className="my-3 text-6xl">Kirill Rogovoy</h1>
+        <p className="mb-8 text-2xl">Code · Design · Workout · Travel · Beer</p>
+        <ul className="list-none mb-2">
+          <li className="inline-block w-12 mx-2">
             <a href="mailto:kirill@rogovoy.me" title="Email">
               <svg
                 version="1.1"
@@ -130,24 +46,26 @@ export default function Index() {
               </svg>
             </a>
           </li>
-          <li>
-            <a href="skype:fla5h_skype" title="Skype">
-              <svg
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="9 9 31 31"
-                enableBackground="new 0 0 50 50"
-                xmlSpace="preserve"
-              >
-                {' '}
-                <path d="M39.354,27.496c-0.102-0.174-0.123-0.335-0.097-0.525c0.343-2.484,0.06-4.898-0.86-7.23 c-2.446-6.219-8.758-9.88-15.454-8.982c-0.123,0.016-0.271-0.023-0.381-0.083c-2.959-1.604-5.933-1.633-8.838,0.068 c-4.115,2.409-5.451,7.701-3.062,11.835c0.064,0.113,0.089,0.269,0.08,0.402c-0.047,0.676-0.114,1.351-0.172,2.026 c0.037,1.204,0.179,2.388,0.474,3.552c1.794,7.091,8.667,11.718,15.917,10.713c0.189-0.025,0.352-0.002,0.525,0.099 c1.735,0.99,3.601,1.35,5.578,1.065C39.134,39.565,42.419,32.806,39.354,27.496z M31.504,31.993 c-0.883,0.971-1.983,1.562-3.219,1.934c-1.077,0.323-2.185,0.424-3.306,0.434c-1.455-0.019-2.887-0.178-4.233-0.778 c-1.501-0.669-2.604-1.745-3.239-3.275c-0.191-0.459-0.3-0.945-0.247-1.442c0.073-0.693,0.466-1.166,1.114-1.396 c0.677-0.24,1.342-0.191,1.863,0.348c0.264,0.272,0.447,0.627,0.639,0.961c0.197,0.343,0.345,0.712,0.54,1.056 c0.53,0.933,1.345,1.465,2.396,1.635c1.06,0.172,2.109,0.13,3.127-0.253c0.467-0.175,0.883-0.437,1.229-0.797 c0.874-0.912,0.771-2.271-0.228-3.039c-0.465-0.356-0.994-0.575-1.554-0.715c-1.189-0.299-2.39-0.562-3.572-0.885 c-0.713-0.193-1.422-0.436-2.104-0.726c-0.492-0.21-0.962-0.497-1.396-0.814c-2.278-1.664-2.174-5.049-0.271-6.753 c0.836-0.747,1.813-1.209,2.89-1.458c2.146-0.5,4.29-0.538,6.408,0.158c0.974,0.321,1.834,0.837,2.538,1.593 c0.578,0.62,0.964,1.334,1.02,2.195c0.049,0.693-0.248,1.231-0.81,1.607c-0.565,0.382-1.188,0.385-1.801,0.117 c-0.163-0.071-0.313-0.208-0.427-0.35c-0.213-0.271-0.438-0.548-0.586-0.857c-0.772-1.601-2.069-2.223-3.792-2.106 c-0.608,0.042-1.219,0.09-1.766,0.375c-0.33,0.173-0.66,0.386-0.922,0.651c-0.617,0.629-0.562,1.538,0.096,2.128 c0.448,0.403,0.987,0.65,1.56,0.802c1.099,0.294,2.217,0.523,3.31,0.833c0.991,0.281,1.965,0.633,2.943,0.958 c0.105,0.035,0.203,0.097,0.307,0.146C33.587,25.935,33.231,30.093,31.504,31.993z" />{' '}
-              </svg>
-            </a>
-          </li>
-          <li>
+          {/*
+           * <li className="inline-block w-12 mx-2">
+           *   <a href="skype:fla5h_skype" title="Skype">
+           *     <svg
+           *       version="1.1"
+           *       xmlns="http://www.w3.org/2000/svg"
+           *       xmlnsXlink="http://www.w3.org/1999/xlink"
+           *       x="0px"
+           *       y="0px"
+           *       viewBox="9 9 31 31"
+           *       enableBackground="new 0 0 50 50"
+           *       xmlSpace="preserve"
+           *     >
+           *       {' '}
+           *       <path d="M39.354,27.496c-0.102-0.174-0.123-0.335-0.097-0.525c0.343-2.484,0.06-4.898-0.86-7.23 c-2.446-6.219-8.758-9.88-15.454-8.982c-0.123,0.016-0.271-0.023-0.381-0.083c-2.959-1.604-5.933-1.633-8.838,0.068 c-4.115,2.409-5.451,7.701-3.062,11.835c0.064,0.113,0.089,0.269,0.08,0.402c-0.047,0.676-0.114,1.351-0.172,2.026 c0.037,1.204,0.179,2.388,0.474,3.552c1.794,7.091,8.667,11.718,15.917,10.713c0.189-0.025,0.352-0.002,0.525,0.099 c1.735,0.99,3.601,1.35,5.578,1.065C39.134,39.565,42.419,32.806,39.354,27.496z M31.504,31.993 c-0.883,0.971-1.983,1.562-3.219,1.934c-1.077,0.323-2.185,0.424-3.306,0.434c-1.455-0.019-2.887-0.178-4.233-0.778 c-1.501-0.669-2.604-1.745-3.239-3.275c-0.191-0.459-0.3-0.945-0.247-1.442c0.073-0.693,0.466-1.166,1.114-1.396 c0.677-0.24,1.342-0.191,1.863,0.348c0.264,0.272,0.447,0.627,0.639,0.961c0.197,0.343,0.345,0.712,0.54,1.056 c0.53,0.933,1.345,1.465,2.396,1.635c1.06,0.172,2.109,0.13,3.127-0.253c0.467-0.175,0.883-0.437,1.229-0.797 c0.874-0.912,0.771-2.271-0.228-3.039c-0.465-0.356-0.994-0.575-1.554-0.715c-1.189-0.299-2.39-0.562-3.572-0.885 c-0.713-0.193-1.422-0.436-2.104-0.726c-0.492-0.21-0.962-0.497-1.396-0.814c-2.278-1.664-2.174-5.049-0.271-6.753 c0.836-0.747,1.813-1.209,2.89-1.458c2.146-0.5,4.29-0.538,6.408,0.158c0.974,0.321,1.834,0.837,2.538,1.593 c0.578,0.62,0.964,1.334,1.02,2.195c0.049,0.693-0.248,1.231-0.81,1.607c-0.565,0.382-1.188,0.385-1.801,0.117 c-0.163-0.071-0.313-0.208-0.427-0.35c-0.213-0.271-0.438-0.548-0.586-0.857c-0.772-1.601-2.069-2.223-3.792-2.106 c-0.608,0.042-1.219,0.09-1.766,0.375c-0.33,0.173-0.66,0.386-0.922,0.651c-0.617,0.629-0.562,1.538,0.096,2.128 c0.448,0.403,0.987,0.65,1.56,0.802c1.099,0.294,2.217,0.523,3.31,0.833c0.991,0.281,1.965,0.633,2.943,0.958 c0.105,0.035,0.203,0.097,0.307,0.146C33.587,25.935,33.231,30.093,31.504,31.993z" />{' '}
+           *     </svg>
+           *   </a>
+           * </li>
+           */}
+          <li className="inline-block w-12 mx-2">
             <a href="https://twitter.com/krogovoy" title="Twitter">
               <svg
                 version="1.1"
@@ -171,7 +89,7 @@ export default function Index() {
               </svg>
             </a>
           </li>
-          <li>
+          <li className="inline-block w-12 mx-2">
             <a href="https://ua.linkedin.com/in/kirillrogovoy" title="LinkedIn">
               <svg
                 version="1.1"
@@ -212,7 +130,7 @@ export default function Index() {
               </svg>
             </a>
           </li>
-          <li>
+          <li className="inline-block w-12 mx-2">
             <a href="https://github.com/kirillrogovoy" title="GitHub">
               <svg
                 version="1.1"
@@ -229,12 +147,11 @@ export default function Index() {
               </svg>
             </a>
           </li>
-          <li>
+          <li className="inline-block w-12 mx-2">
             <a href="https://stackoverflow.com/users/4429540/kirill-rogovoy" title="StackOverflow">
               <svg
                 version="1.1"
                 viewBox="0 0 60 60"
-                width="60px"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               >
@@ -255,31 +172,33 @@ export default function Index() {
               </svg>
             </a>
           </li>
-          <li>
-            <a href="https://www.quora.com/profile/Kirill-Rogovoy" title="Quora">
-              <svg
-                version="1.1"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-              >
-                <title />
-                <desc />
-                <defs />
-                <g fill="none" fillRule="evenodd" id="miu" stroke="none" strokeWidth="1">
-                  <g id="Artboard-1" transform="translate(-683.000000, -659.000000)">
-                    <g id="slice" transform="translate(215.000000, 119.000000)" />
-                    <path
-                      d="M695,682 C701.075133,682 706,677.075133 706,671 C706,664.924867 701.075133,660 695,660 C688.924867,660 684,664.924867 684,671 C684,677.075133 688.924867,682 695,682 Z M700.05295,673.542371 C701.732112,669.461278 698.397307,666.159102 694.768667,666 C694.061723,666.080693 693.383797,666.10414 692.821785,666.415189 C691.464558,666.974408 690.237143,668.303865 689.762488,669.736701 C688.488035,673.58287 692.04963,677.652239 696.228828,676.863883 C697.031069,678.126806 699.22154,678.178571 699.22154,678.178571 L699.218485,677.348194 C699.218485,677.348194 698.019934,676.992687 697.827965,676.241175 C698.661055,675.376084 699.551416,674.761598 700.05295,673.542371 Z M697.208774,674.511145 C697.162499,674.534135 697.116225,674.557277 697.069798,674.580267 C696.337809,673.313081 694.462859,673.294963 694.462859,673.294963 L694.462859,674.402133 C694.462859,674.402133 695.404075,674.78809 695.540302,675.486771 C695.586576,675.532903 695.633003,675.579035 695.679278,675.625167 C691.897001,676.7873 690.483572,668.936925 694.080141,667.401015 C694.650094,667.027695 695.494944,667.212376 696.02687,667.47029 C698.58448,668.953216 698.586008,672.078476 697.208774,674.511145 Z"
-                      fill="#000000"
-                      id="circle-social-quora-glyph"
-                    />
-                  </g>
-                </g>
-              </svg>
-            </a>
-          </li>
-          <li>
+          {/*
+           * <li className="inline-block w-12 mx-2">
+           *   <a href="https://www.quora.com/profile/Kirill-Rogovoy" title="Quora">
+           *     <svg
+           *       version="1.1"
+           *       viewBox="0 0 24 24"
+           *       xmlns="http://www.w3.org/2000/svg"
+           *       xmlnsXlink="http://www.w3.org/1999/xlink"
+           *     >
+           *       <title />
+           *       <desc />
+           *       <defs />
+           *       <g fill="none" fillRule="evenodd" id="miu" stroke="none" strokeWidth="1">
+           *         <g id="Artboard-1" transform="translate(-683.000000, -659.000000)">
+           *           <g id="slice" transform="translate(215.000000, 119.000000)" />
+           *           <path
+           *             d="M695,682 C701.075133,682 706,677.075133 706,671 C706,664.924867 701.075133,660 695,660 C688.924867,660 684,664.924867 684,671 C684,677.075133 688.924867,682 695,682 Z M700.05295,673.542371 C701.732112,669.461278 698.397307,666.159102 694.768667,666 C694.061723,666.080693 693.383797,666.10414 692.821785,666.415189 C691.464558,666.974408 690.237143,668.303865 689.762488,669.736701 C688.488035,673.58287 692.04963,677.652239 696.228828,676.863883 C697.031069,678.126806 699.22154,678.178571 699.22154,678.178571 L699.218485,677.348194 C699.218485,677.348194 698.019934,676.992687 697.827965,676.241175 C698.661055,675.376084 699.551416,674.761598 700.05295,673.542371 Z M697.208774,674.511145 C697.162499,674.534135 697.116225,674.557277 697.069798,674.580267 C696.337809,673.313081 694.462859,673.294963 694.462859,673.294963 L694.462859,674.402133 C694.462859,674.402133 695.404075,674.78809 695.540302,675.486771 C695.586576,675.532903 695.633003,675.579035 695.679278,675.625167 C691.897001,676.7873 690.483572,668.936925 694.080141,667.401015 C694.650094,667.027695 695.494944,667.212376 696.02687,667.47029 C698.58448,668.953216 698.586008,672.078476 697.208774,674.511145 Z"
+           *             fill="#000000"
+           *             id="circle-social-quora-glyph"
+           *           />
+           *         </g>
+           *       </g>
+           *     </svg>
+           *   </a>
+           * </li>
+           */}
+          <li className="inline-block w-12 mx-2">
             <a href="https://medium.com/@kirillrogovoy" title="Medium" className="links-medium">
               <svg
                 enableBackground="new 0 0 32 32"
@@ -318,10 +237,10 @@ export default function Index() {
             </a>
           </li>
         </ul>
-        <p style={{ marginTop: '-10px' }} className="content-sub-head">
+        <p className="mt-1 mb-8 text-2xl">
           And also{' '}
-          <Link href="/blog">
-            <a className="link">Blog</a>
+          <Link href="/blog" style={2}>
+            Blog
           </Link>
         </p>
         <br />
