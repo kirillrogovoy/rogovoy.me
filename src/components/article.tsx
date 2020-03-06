@@ -5,13 +5,13 @@ import { Separator } from './separator'
 import { getRandomArticles, ArticleMeta } from '../article'
 import { EmailForm } from './email-form'
 import { Link } from './link'
+import { PropsWithChildren } from 'react'
 
-interface Props {
+type Props = PropsWithChildren<{
   article: ArticleMeta
-  content: string
-}
+}>
 
-export function ArticleComponent({ article, content }: Props) {
+export function ArticleComponent({ article, children }: Props) {
   return (
     <ArticleLayout>
       <Head>
@@ -31,7 +31,7 @@ export function ArticleComponent({ article, content }: Props) {
         <div className="italic">Published {article.date}</div>
       </div>
 
-      <div className="markdown" dangerouslySetInnerHTML={{ __html: content }}></div>
+      <div className="markdown mb-10">{children}</div>
 
       <Separator />
 

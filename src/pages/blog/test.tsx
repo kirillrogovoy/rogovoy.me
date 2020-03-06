@@ -1,7 +1,7 @@
 import { renderArticle } from '../../article'
-import text from '../../../articles/test.md'
+import Article from '../../../articles/test.mdx'
 
 const id = 'test'
 export default function() {
-  return renderArticle(id, text)
+  return renderArticle(id, Article)
 }

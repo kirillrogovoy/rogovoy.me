@@ -1,22 +1,11 @@
 const withBundleAnalyzer = require("@zeit/next-bundle-analyzer");
 const withImages = require('next-images')
 const withCSS = require("@zeit/next-css");
+const withMdx = require("@next/mdx")();
 
-module.exports = withCSS(withImages(withBundleAnalyzer({
+module.exports = withMdx(withCSS(withImages(withBundleAnalyzer({
   webpack(config) {
     config.optimization.usedExports = true
-    config.module.rules.push({
-      test: /\.md$/,
-        use: [
-            {
-                loader: "html-loader"
-            },
-            {
-                loader: "markdown-loader",
-            }
-        ]
-    })
-
     return config
   },
   analyzeServer: ["server", "both"].includes(process.env.BUNDLE_ANALYZE),
@@ -31,4 +20,4 @@ module.exports = withCSS(withImages(withBundleAnalyzer({
       reportFilename: '../bundles/client.html'
     }
   }
-})))
+}))))

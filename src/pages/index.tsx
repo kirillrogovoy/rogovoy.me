@@ -25,10 +25,10 @@ export default function Index() {
         <title>Kirill Rogovoy</title>
       </Head>
       <div className="fade-in font-serif absolute m-auto inset-0 text-center h-4/5">
-        <img className="mx-auto h-64 w-64 rounded-full mb-5" src="/kirill-rogovoy.jpg" />
-        <h1 className="my-3 text-6xl">Kirill Rogovoy</h1>
+        <img className="mx-auto h-64 w-64 rounded-full" src="/kirill-rogovoy.jpg" />
+        <h1 className="mt-6 text-6xl leading-tight">Kirill Rogovoy</h1>
         <p className="mb-8 text-2xl">Code · Design · Workout · Travel · Beer</p>
-        <ul className="list-none mb-2">
+        <ul className="list-none my-3 leading-none">
           <li className="inline-block w-12 mx-2">
             <a href="mailto:kirill@rogovoy.me" title="Email">
               <svg
@@ -43,6 +43,18 @@ export default function Index() {
               >
                 {' '}
                 <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M128,128h256 c4.569,0,9.002,0.981,13.072,2.831L256,295.415L114.928,130.83C118.998,128.982,123.431,128,128,128z M96,352V160 c0-0.67,0.028-1.336,0.07-2l93.832,109.471L97.103,360.27C96.381,357.602,96,354.827,96,352z M384,384H128 c-2.827,0-5.601-0.381-8.27-1.104l91.059-91.06L256,344.586l45.212-52.747l91.058,91.06C389.6,383.619,386.827,384,384,384z M416,352c0,2.827-0.381,5.6-1.103,8.27l-92.801-92.799L415.93,158c0.042,0.664,0.07,1.33,0.07,2V352z" />{' '}
+              </svg>
+            </a>
+          </li>
+          <li className="inline-block w-12 mx-2">
+            <a href="https://telegram.me/kirillrogovoy" title="Telegram">
+              <svg
+                id="Bold"
+                enableBackground="new 0 0 24 24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="m12 24c6.629 0 12-5.371 12-12s-5.371-12-12-12-12 5.371-12 12 5.371 12 12 12zm-6.509-12.26 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z" />
               </svg>
             </a>
           </li>
@@ -237,7 +249,7 @@ export default function Index() {
             </a>
           </li>
         </ul>
-        <p className="mt-1 mb-8 text-2xl">
+        <p className="text-2xl">
           And also{' '}
           <Link href="/blog" style={2}>
             Blog

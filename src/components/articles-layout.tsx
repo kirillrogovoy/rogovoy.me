@@ -10,18 +10,16 @@ export const ArticleLayout = (props: PropsWithChildren<{}>) => (
       <Link href="/">
         <h1 className="text-center block mt-12 mb-1 text-5xl">Kirill Rogovoy</h1>
       </Link>
-      <div className="mx-auto text-lg text-center">
-        Code · Design · Workout · Travel · Beer
-      </div>
+      <div className="mx-auto text-lg text-center">Code · Design · Workout · Travel · Beer</div>
       <div className="text-center">
         <Link style={1} href="/">
           About
         </Link>
-          {' · '}
-        <Link style={1} href="https://twitter.com">
+        {' · '}
+        <Link style={1} href="https://twitter.com/krogovoy">
           Twitter
         </Link>
-          {' · '}
+        {' · '}
         <Link style={1} href="/blog">
           Blog
         </Link>

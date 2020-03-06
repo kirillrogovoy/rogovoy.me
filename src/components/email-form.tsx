@@ -24,7 +24,7 @@ export function EmailForm() {
   }
 
   return (
-    <form onSubmit={submit} className="h-20 w-88 mx-auto mb-10 text-center">
+    <form onSubmit={submit} className="h-20 w-88 mx-auto mb-8 text-center">
       <span className="block text-lg mb-2">Get latest posts and extra content</span>
       <div className="h-8 flex">
         <input

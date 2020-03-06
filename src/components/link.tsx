@@ -20,7 +20,9 @@ export function Link(props: LinkProps) {
       break
   }
 
-  const targetProps: {[key: string]: string} = props.newTab ? { target: '_blank', rel: 'noreferrer noopener' } : {}
+  const targetProps: { [key: string]: string } = props.newTab
+    ? { target: '_blank', rel: 'noreferrer noopener' }
+    : {}
 
   const passProps = { ...props }
   delete passProps.newTab
@@ -28,7 +30,8 @@ export function Link(props: LinkProps) {
 
   const isExternalLink = props.href.toString().startsWith('http')
 
-  const Wrapper = ({ children }: PropsWithChildren<{}>) => isExternalLink ? <>{children}</> : <NextLink {...passProps}>{children}</NextLink>
+  const Wrapper = ({ children }: PropsWithChildren<{}>) =>
+    isExternalLink ? <>{children}</> : <NextLink {...passProps}>{children}</NextLink>
 
   if (isExternalLink) {
     delete passProps.href

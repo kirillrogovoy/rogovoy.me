@@ -1,4 +1,7 @@
 import { ArticleComponent } from './components/article'
+import {ReactElement, JSXElementConstructor, PropsWithChildren, AnchorHTMLAttributes} from 'react'
+import {Link} from './components/link'
+import {MDXProvider, Components} from '@mdx-js/react'
 
 export interface ArticleMeta {
   id: string
@@ -31,9 +34,16 @@ const articles: ArticleMeta[] = [
   },
 ]
 
-export function renderArticle(id: string, content: string) {
+export function renderArticle(id: string, Content: JSXElementConstructor<any>) {
   const articleMeta = articles.find(a => a.id === id)!
-  return <ArticleComponent article={articleMeta} content={content} />
+  const components: Components = {
+    a: (props: PropsWithChildren<AnchorHTMLAttributes<HTMLAnchorElement>>) => <Link href={props.href!} style={2}>{props.children}</Link>
+  }
+  return <ArticleComponent article={articleMeta}>
+    <MDXProvider components={components} >
+      <Content/>
+    </MDXProvider>
+  </ArticleComponent>
 }
 
 export function getAllArticles() {
