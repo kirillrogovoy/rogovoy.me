@@ -1,85 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/blog/test.js"],{
-
-/***/ "./articles/test.mdx":
-/*!***************************!*\
-  !*** ./articles/test.mdx ***!
-  \***************************/
-/*! exports provided: default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MDXContent; });
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mdx-js/react */ "./node_modules/@mdx-js/react/dist/esm.js");
-
-
-var _jsxFileName = "/Users/kirillrogovoy/Projects/rogovoy.me/articles/test.mdx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
-
-
-/* @jsx mdx */
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
-    return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__[/* mdx */ "b"])("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])({}, props, {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 10,
-        columnNumber: 10
-      }
-    }));
-  };
-};
-
-var layoutProps = {};
-var MDXLayout = "wrapper";
-function MDXContent(_ref) {
-  var components = _ref.components,
-      props = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_ref, ["components"]);
-
-  return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__[/* mdx */ "b"])(MDXLayout, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])({}, layoutProps, props, {
-    components: components,
-    mdxType: "MDXLayout",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 10
-    }
-  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__[/* mdx */ "b"])("h1", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 5
-    }
-  }, "This is a test article"), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__[/* mdx */ "b"])("p", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 5
-    }
-  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_3__[/* mdx */ "b"])("strong", {
-    parentName: "p",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 8
-    }
-  }, "Hi"), " there!"));
-}
-;
-MDXContent.isMDXComponent = true;
-
-/***/ }),
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/blog.js"],{
 
 /***/ "./node_modules/@babel/runtime/helpers/arrayWithHoles.js":
 /*!***************************************************************!*\
@@ -336,66 +255,6 @@ function _iterableToArray(iter) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _nonIterableSpread; });
 function _nonIterableSpread() {
   throw new TypeError("Invalid attempt to spread non-iterable instance");
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js ***!
-  \****************************************************************************/
-/*! exports provided: default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _objectWithoutProperties; });
-/* harmony import */ var _objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-
-function _objectWithoutProperties(source, excluded) {
-  if (source == null) return {};
-  var target = Object(_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(source, excluded);
-  var key, i;
-
-  if (Object.getOwnPropertySymbols) {
-    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-
-    for (i = 0; i < sourceSymbolKeys.length; i++) {
-      key = sourceSymbolKeys[i];
-      if (excluded.indexOf(key) >= 0) continue;
-      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-      target[key] = source[key];
-    }
-  }
-
-  return target;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js":
-/*!*********************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
-  \*********************************************************************************/
-/*! exports provided: default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _objectWithoutPropertiesLoose; });
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
 }
 
 /***/ }),
@@ -1132,22 +991,22 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2Ftest&absolutePagePath=%2FUsers%2Fkirillrogovoy%2FProjects%2Frogovoy.me%2Fsrc%2Fpages%2Fblog%2Ftest.tsx!./":
-/*!********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2Ftest&absolutePagePath=%2FUsers%2Fkirillrogovoy%2FProjects%2Frogovoy.me%2Fsrc%2Fpages%2Fblog%2Ftest.tsx ***!
-  \********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2FUsers%2Fkirillrogovoy%2FProjects%2Frogovoy.me%2Fsrc%2Fpages%2Fblog.tsx!./":
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2FUsers%2Fkirillrogovoy%2FProjects%2Frogovoy.me%2Fsrc%2Fpages%2Fblog.tsx ***!
+  \******************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/blog/test", function() {
-      var mod = __webpack_require__(/*! ./src/pages/blog/test.tsx */ "./src/pages/blog/test.tsx")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/blog", function() {
+      var mod = __webpack_require__(/*! ./src/pages/blog.tsx */ "./src/pages/blog.tsx")
       if(true) {
-        module.hot.accept(/*! ./src/pages/blog/test.tsx */ "./src/pages/blog/test.tsx", function() {
-          if(!next.router.components["/blog/test"]) return
-          var updatedPage = __webpack_require__(/*! ./src/pages/blog/test.tsx */ "./src/pages/blog/test.tsx")
-          next.router.update("/blog/test", updatedPage)
+        module.hot.accept(/*! ./src/pages/blog.tsx */ "./src/pages/blog.tsx", function() {
+          if(!next.router.components["/blog"]) return
+          var updatedPage = __webpack_require__(/*! ./src/pages/blog.tsx */ "./src/pages/blog.tsx")
+          next.router.update("/blog", updatedPage)
         })
       }
       return mod
@@ -7240,36 +7099,82 @@ function Separator() {
 
 /***/ }),
 
-/***/ "./src/pages/blog/test.tsx":
-/*!*********************************!*\
-  !*** ./src/pages/blog/test.tsx ***!
-  \*********************************/
+/***/ "./src/pages/blog.tsx":
+/*!****************************!*\
+  !*** ./src/pages/blog.tsx ***!
+  \****************************/
 /*! exports provided: default */
 /*! all exports used */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _article__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../article */ "./src/article.tsx");
-/* harmony import */ var _articles_test_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../articles/test.mdx */ "./articles/test.mdx");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Blog; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_articles_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/articles-layout */ "./src/components/articles-layout.tsx");
+/* harmony import */ var _components_article_list__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/article-list */ "./src/components/article-list.tsx");
+/* harmony import */ var _article__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../article */ "./src/article.tsx");
+var _jsxFileName = "/Users/kirillrogovoy/Projects/rogovoy.me/src/pages/blog.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-var id = 'test';
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  return Object(_article__WEBPACK_IMPORTED_MODULE_0__[/* renderArticle */ "c"])(id, _articles_test_mdx__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"]);
-});
+
+
+function Blog() {
+  return __jsx("div", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 5
+    }
+  }, __jsx(_components_articles_layout__WEBPACK_IMPORTED_MODULE_2__[/* ArticleLayout */ "a"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 7
+    }
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 9
+    }
+  }, __jsx("title", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 11
+    }
+  }, "Kirill Rogovoy \u2014 Blog")), __jsx(_components_article_list__WEBPACK_IMPORTED_MODULE_3__[/* ArticleList */ "a"], {
+    articles: Object(_article__WEBPACK_IMPORTED_MODULE_4__[/* getAllArticles */ "a"])(),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 9
+    }
+  })));
+}
 
 /***/ }),
 
-/***/ 2:
-/*!************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fblog%2Ftest&absolutePagePath=%2FUsers%2Fkirillrogovoy%2FProjects%2Frogovoy.me%2Fsrc%2Fpages%2Fblog%2Ftest.tsx ***!
-  \************************************************************************************************************************************************************/
+/***/ 3:
+/*!**********************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Fkirillrogovoy%2FProjects%2Frogovoy.me%2Fsrc%2Fpages%2Fblog.tsx ***!
+  \**********************************************************************************************************************************************/
 /*! no static exports found */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog%2Ftest&absolutePagePath=%2FUsers%2Fkirillrogovoy%2FProjects%2Frogovoy.me%2Fsrc%2Fpages%2Fblog%2Ftest.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog%2Ftest&absolutePagePath=%2FUsers%2Fkirillrogovoy%2FProjects%2Frogovoy.me%2Fsrc%2Fpages%2Fblog%2Ftest.tsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Fkirillrogovoy%2FProjects%2Frogovoy.me%2Fsrc%2Fpages%2Fblog.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2FUsers%2Fkirillrogovoy%2FProjects%2Frogovoy.me%2Fsrc%2Fpages%2Fblog.tsx!./");
 
 
 /***/ }),
@@ -7286,5 +7191,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=test.js.map
+},[[3,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=blog.js.map
