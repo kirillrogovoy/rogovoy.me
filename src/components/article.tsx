@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import { ArticleLayout } from '../components/articles-layout'
 import { ArticleList } from '../components/article-list'
 import { Separator } from './separator'
@@ -12,6 +13,7 @@ type Props = PropsWithChildren<{
 }>
 
 export function ArticleComponent({ article, children }: Props) {
+  const router = useRouter()
   return (
     <ArticleLayout>
       <Head>
@@ -20,9 +22,9 @@ export function ArticleComponent({ article, children }: Props) {
         <meta name="og:image" content={`/${article.id}.jpg`} />
         <meta name="description" content={article.description} />
         <meta name="og:description" content={article.description} />
-        <meta name="keywords" content={article.tags.join(',')} />
+        <meta name="keywords" content={article.keywords.join(',')} />
       </Head>
-      {article.tweetId && <TwitterRetweetButton tweetId={article.tweetId} />}
+      {article.tweetId && <TwitterTweetButton text={article.title} path={router.asPath} />}
       <Link style={1} href="/blog">
         {'<-'} Back to the list
       </Link>
@@ -39,10 +41,14 @@ export function ArticleComponent({ article, children }: Props) {
         <div className="text-center mb-2">
           {article.tweetId ? (
             <>
-              Discuss on{' '}
               <Link style={2} href={`https://twitter.com/krogovoy/status/${article.tweetId}`}>
-                Twitter
-              </Link>
+                Discuss
+              </Link>{' '}
+              or{' '}
+              <Link style={2} href={makeTwitterUrl(article.title, router.asPath)} newTab={true}>
+                Share
+              </Link>{' '}
+              on Twitter
             </>
           ) : (
             <>
@@ -65,8 +71,8 @@ export function ArticleComponent({ article, children }: Props) {
       <style jsx global>{`
         .markdown {
           font-size: 21px;
-          letter-spacing: 0.2px;
-          line-height: 30px;
+          letter-spacing: 0px;
+          line-height: 32px;
           text-align: start;
         }
         .markdown img {
@@ -109,9 +115,25 @@ function OtherArticles({ currentArticleId }: { currentArticleId: string }) {
   )
 }
 
-function TwitterRetweetButton({ tweetId }: { tweetId: string }) {
-  const twitterUrl = new URL('https://twitter.com/intent/retweet')
-  twitterUrl.searchParams.append('tweet_id', tweetId)
+function makeTwitterUrl(text: string, path: string) {
+  const siteUrl = new URL('https://rogovoy.me')
+  // eslint-disable-next-line immutable/no-mutation
+  siteUrl.pathname = path
+
+  const twitterUrl = new URL('https://twitter.com/intent/tweet')
+  twitterUrl.searchParams.append('text', text)
+  twitterUrl.searchParams.append('url', siteUrl.toString())
+  twitterUrl.searchParams.append('via', 'krogovoy')
+
+  return twitterUrl.toString()
+}
+
+type TwitterTweetButtonProps = {
+  text: string
+  path: string
+}
+function TwitterTweetButton(props: TwitterTweetButtonProps) {
+  const twitterUrl = makeTwitterUrl(props.text, props.path)
 
   return (
     <a

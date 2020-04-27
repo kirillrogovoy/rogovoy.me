@@ -1,7 +1,7 @@
 import { Link } from './link'
 import { ArticleMeta } from '../article'
 
-interface Props {
+type Props = {
   articles: ArticleMeta[]
 }
 

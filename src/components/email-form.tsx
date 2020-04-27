@@ -13,7 +13,6 @@ export function EmailForm() {
 
   const submit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    console.log('email', email)
 
     fetch(mailchimpSubscribeUrl, {
       method: 'post',

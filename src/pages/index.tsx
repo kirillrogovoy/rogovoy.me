@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { Link } from '../components/link'
-import { GoogleAnalytics } from '../components/google-analytics'
 
 export default function Index() {
   return (
@@ -258,7 +257,6 @@ export default function Index() {
         <br />
         <br />
       </div>
-      <GoogleAnalytics />
     </div>
   )
 }

@@ -1,5 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
 import Head from 'next/head'
-import { GoogleAnalytics } from '../components/google-analytics'
 
 export default function Blog() {
   return (
@@ -195,7 +195,6 @@ export default function Blog() {
         style={{ width: '100%', height: '90vh', border: 0 }}
         src="https://gitter.im/code-duet/go/~embed"
       />
-      <GoogleAnalytics />
     </div>
   )
 }

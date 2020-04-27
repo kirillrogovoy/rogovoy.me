@@ -7,18 +7,16 @@ export type LinkProps = PropsWithChildren<
   }
 >
 export function Link(props: LinkProps) {
-  let className = ''
-  switch (props.style) {
-    case 1:
-      className = 'text-link1 hover:text-link1hover underline hover:no-underline'
-      break
-    case 2:
-      className = 'text-link2 hover:text-link2hover font-semibold'
-      break
-    case undefined:
-      className = ''
-      break
-  }
+  const className = (() => {
+    switch (props.style) {
+      case 1:
+        return 'text-link1 hover:text-link1hover underline hover:no-underline'
+      case 2:
+        return 'text-link2 hover:text-link2hover font-semibold'
+      case undefined:
+        return ''
+    }
+  })()
 
   const targetProps: { [key: string]: string } = props.newTab
     ? { target: '_blank', rel: 'noreferrer noopener' }
@@ -35,6 +33,7 @@ export function Link(props: LinkProps) {
 
   if (isExternalLink) {
     delete passProps.href
+    // eslint-disable-next-line immutable/no-mutation
     targetProps.href = props.href.toString()
   }
 

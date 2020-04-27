@@ -8,7 +8,7 @@ export interface ArticleMeta {
   date: string
   title: string
   description: string
-  tags: string[]
+  keywords: string[]
 
   origin?: string
   hidden?: boolean
@@ -20,7 +20,7 @@ const articles: ArticleMeta[] = [
     date: '01.02.2018',
     title: 'Here are some amazing advantages of Go that you don’t hear much about',
     description: 'I discuss why you should give Go a chance and where to start.',
-    tags: ['golang'],
+    keywords: ['golang'],
     origin: 'https://freecodecamp.org/news/here-are-some-amazing-advantages-of-go-that-you-dont-hear-much-about-1af99de3b23a/',
   },
   {
@@ -28,8 +28,8 @@ const articles: ArticleMeta[] = [
     date: '01.02.2018',
     title: 'Here are some amazing advantages of go that you dont hear much about',
     description: 'test description',
-    tags: ['test'],
-    hidden: true,
+    keywords: ['test'],
+    hidden: false,
     tweetId: '1162459837910978561',
   },
 ]

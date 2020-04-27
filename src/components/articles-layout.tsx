@@ -1,6 +1,5 @@
 import { Link } from './link'
 import { Separator } from './separator'
-import { GoogleAnalytics } from './google-analytics'
 import { PropsWithChildren } from 'react'
 import { EmailForm } from './email-form'
 
@@ -31,7 +30,5 @@ export const ArticleLayout = (props: PropsWithChildren<{}>) => (
     <EmailForm />
 
     <main>{props.children}</main>
-
-    <GoogleAnalytics />
   </div>
 )
