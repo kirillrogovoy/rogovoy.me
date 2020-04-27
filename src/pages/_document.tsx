@@ -6,12 +6,12 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
+          <GoogleAnalytics />
           <link rel="icon" type="image/x-icon" href="/favicon.png" />
         </Head>
         <body className="text-primary">
           <Main />
           <NextScript />
-          <GoogleAnalytics />
         </body>
       </html>
     )

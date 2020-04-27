@@ -23,7 +23,9 @@ export function EmailForm() {
   }
 
   return (
-    <form onSubmit={submit} className="h-20 w-88 mx-auto mb-8 text-center">
+    <form onSubmit={submit} className="h-20 w-88 mx-auto mb-8 text-center" style={{
+      maxWidth: '90%'
+    }}>
       <span className="block text-lg mb-2">Get latest posts and extra content</span>
       <div className="h-8 flex">
         <input
@@ -31,12 +33,15 @@ export function EmailForm() {
           value={email}
           placeholder="Email"
           onChange={e => setEmail(e.target.value)}
-          className="w-3/4 px-2 border border-primary mr-2 outline-none"
+          className="w-3/4 px-2 border border-primary mr-2 outline-none rounded-none"
         />
         <input
           type="submit"
           value="Subscribe"
-          className="w-1/4 bg-primary text-back border border-primary cursor-pointer placeholder-faded hover:text-primary hover:bg-back"
+          className="w-1/4 flex-shrink-none bg-primary text-back border border-primary cursor-pointer placeholder-faded hover:text-primary hover:bg-back rounded-none"
+          style={{
+            minWidth: '80px',
+          }}
         />
       </div>
     </form>
