@@ -29,7 +29,7 @@ const articles: ArticleMeta[] = [
     title: 'Here are some amazing advantages of go that you dont hear much about',
     description: 'test description',
     keywords: ['test'],
-    hidden: false,
+    hidden: true,
     tweetId: '1162459837910978561',
   },
 ]
