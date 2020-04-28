@@ -6110,7 +6110,7 @@ var articles = [{
   title: 'Here are some amazing advantages of go that you dont hear much about',
   description: 'test description',
   keywords: ['test'],
-  hidden: false,
+  hidden: true,
   tweetId: '1162459837910978561'
 }];
 function renderArticle(id, Content) {
@@ -7166,7 +7166,7 @@ function Blog() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 1:
 /*!**********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Fkirillrogovoy%2FProjects%2Frogovoy.me%2Fsrc%2Fpages%2Fblog.tsx ***!
   \**********************************************************************************************************************************************/
@@ -7191,5 +7191,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=blog.js.map
