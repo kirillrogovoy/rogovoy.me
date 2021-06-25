@@ -26,7 +26,10 @@ export default function Index() {
       <div className="fade-in font-serif absolute m-auto inset-0 text-center h-4/5">
         <img className="mx-auto h-64 w-64 rounded-full" src="/kirill-rogovoy.jpg" />
         <h1 className="mt-6 text-6xl leading-tight">Kirill Rogovoy</h1>
-        <p className="mb-8 text-2xl">Code · Design · Workout · Travel · Beer</p>
+        <p className="mb-1 text-2xl">Code · Design · BJJ · Travel · Beer</p>
+        <p className="mb-8 text-2xl">
+          <Link href="https://foodba.com" newTab style={2}>Foodba</Link> CTO
+        </p>
         <ul className="list-none my-3 leading-none">
           <li className="inline-block w-12 mx-2">
             <a href="mailto:kirill@rogovoy.me" title="Email">
