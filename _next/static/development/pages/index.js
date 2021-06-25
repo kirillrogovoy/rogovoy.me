@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/blog.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
 
 /***/ "./node_modules/@babel/runtime/helpers/arrayWithHoles.js":
 /*!***************************************************************!*\
@@ -148,28 +148,6 @@ module.exports = _createClass;
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js ***!
-  \**********************************************************************/
-/*! exports provided: default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _arrayWithoutHoles; });
-function _arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) {
-    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {
-      arr2[i] = arr[i];
-    }
-
-    return arr2;
-  }
-}
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/defineProperty.js ***!
@@ -223,60 +201,6 @@ function _extends() {
   };
 
   return _extends.apply(this, arguments);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/iterableToArray.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/iterableToArray.js ***!
-  \********************************************************************/
-/*! exports provided: default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _iterableToArray; });
-function _iterableToArray(iter) {
-  if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js ***!
-  \**********************************************************************/
-/*! exports provided: default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _nonIterableSpread; });
-function _nonIterableSpread() {
-  throw new TypeError("Invalid attempt to spread non-iterable instance");
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js ***!
-  \**********************************************************************/
-/*! exports provided: default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _toConsumableArray; });
-/* harmony import */ var _arrayWithoutHoles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayWithoutHoles */ "./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js");
-/* harmony import */ var _iterableToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./iterableToArray */ "./node_modules/@babel/runtime/helpers/esm/iterableToArray.js");
-/* harmony import */ var _nonIterableSpread__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nonIterableSpread */ "./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js");
-
-
-
-function _toConsumableArray(arr) {
-  return Object(_arrayWithoutHoles__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(arr) || Object(_iterableToArray__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(arr) || Object(_nonIterableSpread__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])();
 }
 
 /***/ }),
@@ -633,224 +557,6 @@ module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/
 
 /***/ }),
 
-/***/ "./node_modules/@mdx-js/react/dist/esm.js":
-/*!************************************************!*\
-  !*** ./node_modules/@mdx-js/react/dist/esm.js ***!
-  \************************************************/
-/*! exports provided: MDXContext, MDXProvider, mdx, useMDXComponents, withMDXComponents */
-/*! exports used: MDXProvider, mdx */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export MDXContext */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MDXProvider; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return createElement; });
-/* unused harmony export useMDXComponents */
-/* unused harmony export withMDXComponents */
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-function _extends() {
-  _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
-
-function ownKeys(object, enumerableOnly) {
-  var keys = Object.keys(object);
-
-  if (Object.getOwnPropertySymbols) {
-    var symbols = Object.getOwnPropertySymbols(object);
-    if (enumerableOnly) symbols = symbols.filter(function (sym) {
-      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-    });
-    keys.push.apply(keys, symbols);
-  }
-
-  return keys;
-}
-
-function _objectSpread2(target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i] != null ? arguments[i] : {};
-
-    if (i % 2) {
-      ownKeys(Object(source), true).forEach(function (key) {
-        _defineProperty(target, key, source[key]);
-      });
-    } else if (Object.getOwnPropertyDescriptors) {
-      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
-    } else {
-      ownKeys(Object(source)).forEach(function (key) {
-        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
-      });
-    }
-  }
-
-  return target;
-}
-
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-
-function _objectWithoutProperties(source, excluded) {
-  if (source == null) return {};
-
-  var target = _objectWithoutPropertiesLoose(source, excluded);
-
-  var key, i;
-
-  if (Object.getOwnPropertySymbols) {
-    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-
-    for (i = 0; i < sourceSymbolKeys.length; i++) {
-      key = sourceSymbolKeys[i];
-      if (excluded.indexOf(key) >= 0) continue;
-      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-      target[key] = source[key];
-    }
-  }
-
-  return target;
-}
-
-var isFunction = function isFunction(obj) {
-  return typeof obj === 'function';
-};
-
-var MDXContext = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext({});
-var withMDXComponents = function withMDXComponents(Component) {
-  return function (props) {
-    var allComponents = useMDXComponents(props.components);
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, _extends({}, props, {
-      components: allComponents
-    }));
-  };
-};
-var useMDXComponents = function useMDXComponents(components) {
-  var contextComponents = react__WEBPACK_IMPORTED_MODULE_0___default.a.useContext(MDXContext);
-  var allComponents = contextComponents;
-
-  if (components) {
-    allComponents = isFunction(components) ? components(contextComponents) : _objectSpread2({}, contextComponents, {}, components);
-  }
-
-  return allComponents;
-};
-var MDXProvider = function MDXProvider(props) {
-  var allComponents = useMDXComponents(props.components);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MDXContext.Provider, {
-    value: allComponents
-  }, props.children);
-};
-
-var TYPE_PROP_NAME = 'mdxType';
-var DEFAULTS = {
-  inlineCode: 'code',
-  wrapper: function wrapper(_ref) {
-    var children = _ref.children;
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {}, children);
-  }
-};
-var MDXCreateElement = Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(function (props, ref) {
-  var propComponents = props.components,
-      mdxType = props.mdxType,
-      originalType = props.originalType,
-      parentName = props.parentName,
-      etc = _objectWithoutProperties(props, ["components", "mdxType", "originalType", "parentName"]);
-
-  var components = useMDXComponents(propComponents);
-  var type = mdxType;
-  var Component = components["".concat(parentName, ".").concat(type)] || components[type] || DEFAULTS[type] || originalType;
-
-  if (propComponents) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, _objectSpread2({
-      ref: ref
-    }, etc, {
-      components: propComponents
-    }));
-  }
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, _objectSpread2({
-    ref: ref
-  }, etc));
-});
-MDXCreateElement.displayName = 'MDXCreateElement';
-function createElement (type, props) {
-  var args = arguments;
-  var mdxType = props && props.mdxType;
-
-  if (typeof type === 'string' || mdxType) {
-    var argsLength = args.length;
-    var createElementArgArray = new Array(argsLength);
-    createElementArgArray[0] = MDXCreateElement;
-    var newProps = {};
-
-    for (var key in props) {
-      if (hasOwnProperty.call(props, key)) {
-        newProps[key] = props[key];
-      }
-    }
-
-    newProps.originalType = type;
-    newProps[TYPE_PROP_NAME] = typeof type === 'string' ? type : mdxType;
-    createElementArgArray[1] = newProps;
-
-    for (var i = 2; i < argsLength; i++) {
-      createElementArgArray[i] = args[i];
-    }
-
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement.apply(null, createElementArgArray);
-  }
-
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement.apply(null, args);
-}
-
-
-
-
-/***/ }),
-
 /***/ "./node_modules/function-bind/implementation.js":
 /*!******************************************************!*\
   !*** ./node_modules/function-bind/implementation.js ***!
@@ -991,22 +697,22 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2FUsers%2Fkirillrogovoy%2FProjects%2Frogovoy.me%2Fsrc%2Fpages%2Fblog.tsx!./":
-/*!******************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2FUsers%2Fkirillrogovoy%2FProjects%2Frogovoy.me%2Fsrc%2Fpages%2Fblog.tsx ***!
-  \******************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkirillrogovoy%2Fp%2Fold-projects%2Frogovoy.me%2Fsrc%2Fpages%2Findex.tsx!./":
+/*!***********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkirillrogovoy%2Fp%2Fold-projects%2Frogovoy.me%2Fsrc%2Fpages%2Findex.tsx ***!
+  \***********************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/blog", function() {
-      var mod = __webpack_require__(/*! ./src/pages/blog.tsx */ "./src/pages/blog.tsx")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
+      var mod = __webpack_require__(/*! ./src/pages/index.tsx */ "./src/pages/index.tsx")
       if(true) {
-        module.hot.accept(/*! ./src/pages/blog.tsx */ "./src/pages/blog.tsx", function() {
-          if(!next.router.components["/blog"]) return
-          var updatedPage = __webpack_require__(/*! ./src/pages/blog.tsx */ "./src/pages/blog.tsx")
-          next.router.update("/blog", updatedPage)
+        module.hot.accept(/*! ./src/pages/index.tsx */ "./src/pages/index.tsx", function() {
+          if(!next.router.components["/"]) return
+          var updatedPage = __webpack_require__(/*! ./src/pages/index.tsx */ "./src/pages/index.tsx")
+          next.router.update("/", updatedPage)
         })
       }
       return mod
@@ -3209,202 +2915,6 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./node_modules/process/browser.js":
-/*!*****************************************!*\
-  !*** ./node_modules/process/browser.js ***!
-  \*****************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports) {
-
-// shim for using process in browser
-var process = module.exports = {};
-
-// cached from whatever global is present so that test runners that stub it
-// don't break things.  But we need to wrap it in a try catch in case it is
-// wrapped in strict mode code which doesn't define any globals.  It's inside a
-// function because try/catches deoptimize in certain engines.
-
-var cachedSetTimeout;
-var cachedClearTimeout;
-
-function defaultSetTimout() {
-    throw new Error('setTimeout has not been defined');
-}
-function defaultClearTimeout () {
-    throw new Error('clearTimeout has not been defined');
-}
-(function () {
-    try {
-        if (typeof setTimeout === 'function') {
-            cachedSetTimeout = setTimeout;
-        } else {
-            cachedSetTimeout = defaultSetTimout;
-        }
-    } catch (e) {
-        cachedSetTimeout = defaultSetTimout;
-    }
-    try {
-        if (typeof clearTimeout === 'function') {
-            cachedClearTimeout = clearTimeout;
-        } else {
-            cachedClearTimeout = defaultClearTimeout;
-        }
-    } catch (e) {
-        cachedClearTimeout = defaultClearTimeout;
-    }
-} ())
-function runTimeout(fun) {
-    if (cachedSetTimeout === setTimeout) {
-        //normal enviroments in sane situations
-        return setTimeout(fun, 0);
-    }
-    // if setTimeout wasn't available but was latter defined
-    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
-        cachedSetTimeout = setTimeout;
-        return setTimeout(fun, 0);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedSetTimeout(fun, 0);
-    } catch(e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
-            return cachedSetTimeout.call(null, fun, 0);
-        } catch(e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
-            return cachedSetTimeout.call(this, fun, 0);
-        }
-    }
-
-
-}
-function runClearTimeout(marker) {
-    if (cachedClearTimeout === clearTimeout) {
-        //normal enviroments in sane situations
-        return clearTimeout(marker);
-    }
-    // if clearTimeout wasn't available but was latter defined
-    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
-        cachedClearTimeout = clearTimeout;
-        return clearTimeout(marker);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedClearTimeout(marker);
-    } catch (e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
-            return cachedClearTimeout.call(null, marker);
-        } catch (e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
-            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
-            return cachedClearTimeout.call(this, marker);
-        }
-    }
-
-
-
-}
-var queue = [];
-var draining = false;
-var currentQueue;
-var queueIndex = -1;
-
-function cleanUpNextTick() {
-    if (!draining || !currentQueue) {
-        return;
-    }
-    draining = false;
-    if (currentQueue.length) {
-        queue = currentQueue.concat(queue);
-    } else {
-        queueIndex = -1;
-    }
-    if (queue.length) {
-        drainQueue();
-    }
-}
-
-function drainQueue() {
-    if (draining) {
-        return;
-    }
-    var timeout = runTimeout(cleanUpNextTick);
-    draining = true;
-
-    var len = queue.length;
-    while(len) {
-        currentQueue = queue;
-        queue = [];
-        while (++queueIndex < len) {
-            if (currentQueue) {
-                currentQueue[queueIndex].run();
-            }
-        }
-        queueIndex = -1;
-        len = queue.length;
-    }
-    currentQueue = null;
-    draining = false;
-    runClearTimeout(timeout);
-}
-
-process.nextTick = function (fun) {
-    var args = new Array(arguments.length - 1);
-    if (arguments.length > 1) {
-        for (var i = 1; i < arguments.length; i++) {
-            args[i - 1] = arguments[i];
-        }
-    }
-    queue.push(new Item(fun, args));
-    if (queue.length === 1 && !draining) {
-        runTimeout(drainQueue);
-    }
-};
-
-// v8 likes predictible objects
-function Item(fun, array) {
-    this.fun = fun;
-    this.array = array;
-}
-Item.prototype.run = function () {
-    this.fun.apply(null, this.array);
-};
-process.title = 'browser';
-process.browser = true;
-process.env = {};
-process.argv = [];
-process.version = ''; // empty string to avoid regexp issues
-process.versions = {};
-
-function noop() {}
-
-process.on = noop;
-process.addListener = noop;
-process.once = noop;
-process.off = noop;
-process.removeListener = noop;
-process.removeAllListeners = noop;
-process.emit = noop;
-process.prependListener = noop;
-process.prependOnceListener = noop;
-
-process.listeners = function (name) { return [] }
-
-process.binding = function (name) {
-    throw new Error('process.binding is not supported');
-};
-
-process.cwd = function () { return '/' };
-process.chdir = function (dir) {
-    throw new Error('process.chdir is not supported');
-};
-process.umask = function() { return 0; };
-
-
-/***/ }),
-
 /***/ "./node_modules/prop-types-exact/build/helpers/isPlainObject.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/prop-types-exact/build/helpers/isPlainObject.js ***!
@@ -5374,1609 +4884,6 @@ try {
 
 /***/ }),
 
-/***/ "./node_modules/string-hash/index.js":
-/*!*******************************************!*\
-  !*** ./node_modules/string-hash/index.js ***!
-  \*******************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function hash(str) {
-  var hash = 5381,
-      i    = str.length;
-
-  while(i) {
-    hash = (hash * 33) ^ str.charCodeAt(--i);
-  }
-
-  /* JavaScript does bitwise operations (like XOR, above) on 32-bit signed
-   * integers. Since we want the results to be always positive, convert the
-   * signed int to an unsigned by doing an unsigned bitshift. */
-  return hash >>> 0;
-}
-
-module.exports = hash;
-
-
-/***/ }),
-
-/***/ "./node_modules/styled-jsx/dist/lib/stylesheet.js":
-/*!********************************************************!*\
-  !*** ./node_modules/styled-jsx/dist/lib/stylesheet.js ***!
-  \********************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-exports.__esModule = true;
-exports["default"] = void 0;
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-/*
-Based on Glamor's sheet
-https://github.com/threepointone/glamor/blob/667b480d31b3721a905021b26e1290ce92ca2879/src/sheet.js
-*/
-var isProd = typeof process !== 'undefined' && process.env && "development" === 'production';
-
-var isString = function isString(o) {
-  return Object.prototype.toString.call(o) === '[object String]';
-};
-
-var StyleSheet =
-/*#__PURE__*/
-function () {
-  function StyleSheet(_temp) {
-    var _ref = _temp === void 0 ? {} : _temp,
-        _ref$name = _ref.name,
-        name = _ref$name === void 0 ? 'stylesheet' : _ref$name,
-        _ref$optimizeForSpeed = _ref.optimizeForSpeed,
-        optimizeForSpeed = _ref$optimizeForSpeed === void 0 ? isProd : _ref$optimizeForSpeed,
-        _ref$isBrowser = _ref.isBrowser,
-        isBrowser = _ref$isBrowser === void 0 ? typeof window !== 'undefined' : _ref$isBrowser;
-
-    invariant(isString(name), '`name` must be a string');
-    this._name = name;
-    this._deletedRulePlaceholder = "#" + name + "-deleted-rule____{}";
-    invariant(typeof optimizeForSpeed === 'boolean', '`optimizeForSpeed` must be a boolean');
-    this._optimizeForSpeed = optimizeForSpeed;
-    this._isBrowser = isBrowser;
-    this._serverSheet = undefined;
-    this._tags = [];
-    this._injected = false;
-    this._rulesCount = 0;
-    var node = this._isBrowser && document.querySelector('meta[property="csp-nonce"]');
-    this._nonce = node ? node.getAttribute('content') : null;
-  }
-
-  var _proto = StyleSheet.prototype;
-
-  _proto.setOptimizeForSpeed = function setOptimizeForSpeed(bool) {
-    invariant(typeof bool === 'boolean', '`setOptimizeForSpeed` accepts a boolean');
-    invariant(this._rulesCount === 0, 'optimizeForSpeed cannot be when rules have already been inserted');
-    this.flush();
-    this._optimizeForSpeed = bool;
-    this.inject();
-  };
-
-  _proto.isOptimizeForSpeed = function isOptimizeForSpeed() {
-    return this._optimizeForSpeed;
-  };
-
-  _proto.inject = function inject() {
-    var _this = this;
-
-    invariant(!this._injected, 'sheet already injected');
-    this._injected = true;
-
-    if (this._isBrowser && this._optimizeForSpeed) {
-      this._tags[0] = this.makeStyleTag(this._name);
-      this._optimizeForSpeed = 'insertRule' in this.getSheet();
-
-      if (!this._optimizeForSpeed) {
-        if (!isProd) {
-          console.warn('StyleSheet: optimizeForSpeed mode not supported falling back to standard mode.');
-        }
-
-        this.flush();
-        this._injected = true;
-      }
-
-      return;
-    }
-
-    this._serverSheet = {
-      cssRules: [],
-      insertRule: function insertRule(rule, index) {
-        if (typeof index === 'number') {
-          _this._serverSheet.cssRules[index] = {
-            cssText: rule
-          };
-        } else {
-          _this._serverSheet.cssRules.push({
-            cssText: rule
-          });
-        }
-
-        return index;
-      },
-      deleteRule: function deleteRule(index) {
-        _this._serverSheet.cssRules[index] = null;
-      }
-    };
-  };
-
-  _proto.getSheetForTag = function getSheetForTag(tag) {
-    if (tag.sheet) {
-      return tag.sheet;
-    } // this weirdness brought to you by firefox
-
-
-    for (var i = 0; i < document.styleSheets.length; i++) {
-      if (document.styleSheets[i].ownerNode === tag) {
-        return document.styleSheets[i];
-      }
-    }
-  };
-
-  _proto.getSheet = function getSheet() {
-    return this.getSheetForTag(this._tags[this._tags.length - 1]);
-  };
-
-  _proto.insertRule = function insertRule(rule, index) {
-    invariant(isString(rule), '`insertRule` accepts only strings');
-
-    if (!this._isBrowser) {
-      if (typeof index !== 'number') {
-        index = this._serverSheet.cssRules.length;
-      }
-
-      this._serverSheet.insertRule(rule, index);
-
-      return this._rulesCount++;
-    }
-
-    if (this._optimizeForSpeed) {
-      var sheet = this.getSheet();
-
-      if (typeof index !== 'number') {
-        index = sheet.cssRules.length;
-      } // this weirdness for perf, and chrome's weird bug
-      // https://stackoverflow.com/questions/20007992/chrome-suddenly-stopped-accepting-insertrule
-
-
-      try {
-        sheet.insertRule(rule, index);
-      } catch (error) {
-        if (!isProd) {
-          console.warn("StyleSheet: illegal rule: \n\n" + rule + "\n\nSee https://stackoverflow.com/q/20007992 for more info");
-        }
-
-        return -1;
-      }
-    } else {
-      var insertionPoint = this._tags[index];
-
-      this._tags.push(this.makeStyleTag(this._name, rule, insertionPoint));
-    }
-
-    return this._rulesCount++;
-  };
-
-  _proto.replaceRule = function replaceRule(index, rule) {
-    if (this._optimizeForSpeed || !this._isBrowser) {
-      var sheet = this._isBrowser ? this.getSheet() : this._serverSheet;
-
-      if (!rule.trim()) {
-        rule = this._deletedRulePlaceholder;
-      }
-
-      if (!sheet.cssRules[index]) {
-        // @TBD Should we throw an error?
-        return index;
-      }
-
-      sheet.deleteRule(index);
-
-      try {
-        sheet.insertRule(rule, index);
-      } catch (error) {
-        if (!isProd) {
-          console.warn("StyleSheet: illegal rule: \n\n" + rule + "\n\nSee https://stackoverflow.com/q/20007992 for more info");
-        } // In order to preserve the indices we insert a deleteRulePlaceholder
-
-
-        sheet.insertRule(this._deletedRulePlaceholder, index);
-      }
-    } else {
-      var tag = this._tags[index];
-      invariant(tag, "old rule at index `" + index + "` not found");
-      tag.textContent = rule;
-    }
-
-    return index;
-  };
-
-  _proto.deleteRule = function deleteRule(index) {
-    if (!this._isBrowser) {
-      this._serverSheet.deleteRule(index);
-
-      return;
-    }
-
-    if (this._optimizeForSpeed) {
-      this.replaceRule(index, '');
-    } else {
-      var tag = this._tags[index];
-      invariant(tag, "rule at index `" + index + "` not found");
-      tag.parentNode.removeChild(tag);
-      this._tags[index] = null;
-    }
-  };
-
-  _proto.flush = function flush() {
-    this._injected = false;
-    this._rulesCount = 0;
-
-    if (this._isBrowser) {
-      this._tags.forEach(function (tag) {
-        return tag && tag.parentNode.removeChild(tag);
-      });
-
-      this._tags = [];
-    } else {
-      // simpler on server
-      this._serverSheet.cssRules = [];
-    }
-  };
-
-  _proto.cssRules = function cssRules() {
-    var _this2 = this;
-
-    if (!this._isBrowser) {
-      return this._serverSheet.cssRules;
-    }
-
-    return this._tags.reduce(function (rules, tag) {
-      if (tag) {
-        rules = rules.concat(Array.prototype.map.call(_this2.getSheetForTag(tag).cssRules, function (rule) {
-          return rule.cssText === _this2._deletedRulePlaceholder ? null : rule;
-        }));
-      } else {
-        rules.push(null);
-      }
-
-      return rules;
-    }, []);
-  };
-
-  _proto.makeStyleTag = function makeStyleTag(name, cssString, relativeToTag) {
-    if (cssString) {
-      invariant(isString(cssString), 'makeStyleTag acceps only strings as second parameter');
-    }
-
-    var tag = document.createElement('style');
-    if (this._nonce) tag.setAttribute('nonce', this._nonce);
-    tag.type = 'text/css';
-    tag.setAttribute("data-" + name, '');
-
-    if (cssString) {
-      tag.appendChild(document.createTextNode(cssString));
-    }
-
-    var head = document.head || document.getElementsByTagName('head')[0];
-
-    if (relativeToTag) {
-      head.insertBefore(tag, relativeToTag);
-    } else {
-      head.appendChild(tag);
-    }
-
-    return tag;
-  };
-
-  _createClass(StyleSheet, [{
-    key: "length",
-    get: function get() {
-      return this._rulesCount;
-    }
-  }]);
-
-  return StyleSheet;
-}();
-
-exports["default"] = StyleSheet;
-
-function invariant(condition, message) {
-  if (!condition) {
-    throw new Error("StyleSheet: " + message + ".");
-  }
-}
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../process/browser.js */ "./node_modules/process/browser.js")))
-
-/***/ }),
-
-/***/ "./node_modules/styled-jsx/dist/style.js":
-/*!***********************************************!*\
-  !*** ./node_modules/styled-jsx/dist/style.js ***!
-  \***********************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports.flush = flush;
-exports["default"] = void 0;
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _stylesheetRegistry = _interopRequireDefault(__webpack_require__(/*! ./stylesheet-registry */ "./node_modules/styled-jsx/dist/stylesheet-registry.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
-
-var styleSheetRegistry = new _stylesheetRegistry["default"]();
-
-var JSXStyle =
-/*#__PURE__*/
-function (_Component) {
-  _inheritsLoose(JSXStyle, _Component);
-
-  function JSXStyle(props) {
-    var _this;
-
-    _this = _Component.call(this, props) || this;
-    _this.prevProps = {};
-    return _this;
-  }
-
-  JSXStyle.dynamic = function dynamic(info) {
-    return info.map(function (tagInfo) {
-      var baseId = tagInfo[0];
-      var props = tagInfo[1];
-      return styleSheetRegistry.computeId(baseId, props);
-    }).join(' ');
-  } // probably faster than PureComponent (shallowEqual)
-  ;
-
-  var _proto = JSXStyle.prototype;
-
-  _proto.shouldComponentUpdate = function shouldComponentUpdate(otherProps) {
-    return this.props.id !== otherProps.id || // We do this check because `dynamic` is an array of strings or undefined.
-    // These are the computed values for dynamic styles.
-    String(this.props.dynamic) !== String(otherProps.dynamic);
-  };
-
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    styleSheetRegistry.remove(this.props);
-  };
-
-  _proto.render = function render() {
-    // This is a workaround to make the side effect async safe in the "render" phase.
-    // See https://github.com/zeit/styled-jsx/pull/484
-    if (this.shouldComponentUpdate(this.prevProps)) {
-      // Updates
-      if (this.prevProps.id) {
-        styleSheetRegistry.remove(this.prevProps);
-      }
-
-      styleSheetRegistry.add(this.props);
-      this.prevProps = this.props;
-    }
-
-    return null;
-  };
-
-  return JSXStyle;
-}(_react.Component);
-
-exports["default"] = JSXStyle;
-
-function flush() {
-  var cssRules = styleSheetRegistry.cssRules();
-  styleSheetRegistry.flush();
-  return cssRules;
-}
-
-/***/ }),
-
-/***/ "./node_modules/styled-jsx/dist/stylesheet-registry.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/styled-jsx/dist/stylesheet-registry.js ***!
-  \*************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports["default"] = void 0;
-
-var _stringHash = _interopRequireDefault(__webpack_require__(/*! string-hash */ "./node_modules/string-hash/index.js"));
-
-var _stylesheet = _interopRequireDefault(__webpack_require__(/*! ./lib/stylesheet */ "./node_modules/styled-jsx/dist/lib/stylesheet.js"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var sanitize = function sanitize(rule) {
-  return rule.replace(/\/style/gi, '\\/style');
-};
-
-var StyleSheetRegistry =
-/*#__PURE__*/
-function () {
-  function StyleSheetRegistry(_temp) {
-    var _ref = _temp === void 0 ? {} : _temp,
-        _ref$styleSheet = _ref.styleSheet,
-        styleSheet = _ref$styleSheet === void 0 ? null : _ref$styleSheet,
-        _ref$optimizeForSpeed = _ref.optimizeForSpeed,
-        optimizeForSpeed = _ref$optimizeForSpeed === void 0 ? false : _ref$optimizeForSpeed,
-        _ref$isBrowser = _ref.isBrowser,
-        isBrowser = _ref$isBrowser === void 0 ? typeof window !== 'undefined' : _ref$isBrowser;
-
-    this._sheet = styleSheet || new _stylesheet["default"]({
-      name: 'styled-jsx',
-      optimizeForSpeed: optimizeForSpeed
-    });
-
-    this._sheet.inject();
-
-    if (styleSheet && typeof optimizeForSpeed === 'boolean') {
-      this._sheet.setOptimizeForSpeed(optimizeForSpeed);
-
-      this._optimizeForSpeed = this._sheet.isOptimizeForSpeed();
-    }
-
-    this._isBrowser = isBrowser;
-    this._fromServer = undefined;
-    this._indices = {};
-    this._instancesCounts = {};
-    this.computeId = this.createComputeId();
-    this.computeSelector = this.createComputeSelector();
-  }
-
-  var _proto = StyleSheetRegistry.prototype;
-
-  _proto.add = function add(props) {
-    var _this = this;
-
-    if (undefined === this._optimizeForSpeed) {
-      this._optimizeForSpeed = Array.isArray(props.children);
-
-      this._sheet.setOptimizeForSpeed(this._optimizeForSpeed);
-
-      this._optimizeForSpeed = this._sheet.isOptimizeForSpeed();
-    }
-
-    if (this._isBrowser && !this._fromServer) {
-      this._fromServer = this.selectFromServer();
-      this._instancesCounts = Object.keys(this._fromServer).reduce(function (acc, tagName) {
-        acc[tagName] = 0;
-        return acc;
-      }, {});
-    }
-
-    var _this$getIdAndRules = this.getIdAndRules(props),
-        styleId = _this$getIdAndRules.styleId,
-        rules = _this$getIdAndRules.rules; // Deduping: just increase the instances count.
-
-
-    if (styleId in this._instancesCounts) {
-      this._instancesCounts[styleId] += 1;
-      return;
-    }
-
-    var indices = rules.map(function (rule) {
-      return _this._sheet.insertRule(rule);
-    }) // Filter out invalid rules
-    .filter(function (index) {
-      return index !== -1;
-    });
-    this._indices[styleId] = indices;
-    this._instancesCounts[styleId] = 1;
-  };
-
-  _proto.remove = function remove(props) {
-    var _this2 = this;
-
-    var _this$getIdAndRules2 = this.getIdAndRules(props),
-        styleId = _this$getIdAndRules2.styleId;
-
-    invariant(styleId in this._instancesCounts, "styleId: `" + styleId + "` not found");
-    this._instancesCounts[styleId] -= 1;
-
-    if (this._instancesCounts[styleId] < 1) {
-      var tagFromServer = this._fromServer && this._fromServer[styleId];
-
-      if (tagFromServer) {
-        tagFromServer.parentNode.removeChild(tagFromServer);
-        delete this._fromServer[styleId];
-      } else {
-        this._indices[styleId].forEach(function (index) {
-          return _this2._sheet.deleteRule(index);
-        });
-
-        delete this._indices[styleId];
-      }
-
-      delete this._instancesCounts[styleId];
-    }
-  };
-
-  _proto.update = function update(props, nextProps) {
-    this.add(nextProps);
-    this.remove(props);
-  };
-
-  _proto.flush = function flush() {
-    this._sheet.flush();
-
-    this._sheet.inject();
-
-    this._fromServer = undefined;
-    this._indices = {};
-    this._instancesCounts = {};
-    this.computeId = this.createComputeId();
-    this.computeSelector = this.createComputeSelector();
-  };
-
-  _proto.cssRules = function cssRules() {
-    var _this3 = this;
-
-    var fromServer = this._fromServer ? Object.keys(this._fromServer).map(function (styleId) {
-      return [styleId, _this3._fromServer[styleId]];
-    }) : [];
-
-    var cssRules = this._sheet.cssRules();
-
-    return fromServer.concat(Object.keys(this._indices).map(function (styleId) {
-      return [styleId, _this3._indices[styleId].map(function (index) {
-        return cssRules[index].cssText;
-      }).join(_this3._optimizeForSpeed ? '' : '\n')];
-    }) // filter out empty rules
-    .filter(function (rule) {
-      return Boolean(rule[1]);
-    }));
-  }
-  /**
-   * createComputeId
-   *
-   * Creates a function to compute and memoize a jsx id from a basedId and optionally props.
-   */
-  ;
-
-  _proto.createComputeId = function createComputeId() {
-    var cache = {};
-    return function (baseId, props) {
-      if (!props) {
-        return "jsx-" + baseId;
-      }
-
-      var propsToString = String(props);
-      var key = baseId + propsToString; // return `jsx-${hashString(`${baseId}-${propsToString}`)}`
-
-      if (!cache[key]) {
-        cache[key] = "jsx-" + (0, _stringHash["default"])(baseId + "-" + propsToString);
-      }
-
-      return cache[key];
-    };
-  }
-  /**
-   * createComputeSelector
-   *
-   * Creates a function to compute and memoize dynamic selectors.
-   */
-  ;
-
-  _proto.createComputeSelector = function createComputeSelector(selectoPlaceholderRegexp) {
-    if (selectoPlaceholderRegexp === void 0) {
-      selectoPlaceholderRegexp = /__jsx-style-dynamic-selector/g;
-    }
-
-    var cache = {};
-    return function (id, css) {
-      // Sanitize SSR-ed CSS.
-      // Client side code doesn't need to be sanitized since we use
-      // document.createTextNode (dev) and the CSSOM api sheet.insertRule (prod).
-      if (!this._isBrowser) {
-        css = sanitize(css);
-      }
-
-      var idcss = id + css;
-
-      if (!cache[idcss]) {
-        cache[idcss] = css.replace(selectoPlaceholderRegexp, id);
-      }
-
-      return cache[idcss];
-    };
-  };
-
-  _proto.getIdAndRules = function getIdAndRules(props) {
-    var _this4 = this;
-
-    var css = props.children,
-        dynamic = props.dynamic,
-        id = props.id;
-
-    if (dynamic) {
-      var styleId = this.computeId(id, dynamic);
-      return {
-        styleId: styleId,
-        rules: Array.isArray(css) ? css.map(function (rule) {
-          return _this4.computeSelector(styleId, rule);
-        }) : [this.computeSelector(styleId, css)]
-      };
-    }
-
-    return {
-      styleId: this.computeId(id),
-      rules: Array.isArray(css) ? css : [css]
-    };
-  }
-  /**
-   * selectFromServer
-   *
-   * Collects style tags from the document with id __jsx-XXX
-   */
-  ;
-
-  _proto.selectFromServer = function selectFromServer() {
-    var elements = Array.prototype.slice.call(document.querySelectorAll('[id^="__jsx-"]'));
-    return elements.reduce(function (acc, element) {
-      var id = element.id.slice(2);
-      acc[id] = element;
-      return acc;
-    }, {});
-  };
-
-  return StyleSheetRegistry;
-}();
-
-exports["default"] = StyleSheetRegistry;
-
-function invariant(condition, message) {
-  if (!condition) {
-    throw new Error("StyleSheetRegistry: " + message + ".");
-  }
-}
-
-/***/ }),
-
-/***/ "./node_modules/styled-jsx/style.js":
-/*!******************************************!*\
-  !*** ./node_modules/styled-jsx/style.js ***!
-  \******************************************/
-/*! no static exports found */
-/*! exports used: default */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! ./dist/style */ "./node_modules/styled-jsx/dist/style.js")
-
-
-/***/ }),
-
-/***/ "./src/article.tsx":
-/*!*************************!*\
-  !*** ./src/article.tsx ***!
-  \*************************/
-/*! exports provided: renderArticle, getAllArticles, getRandomArticles */
-/*! exports used: getAllArticles, getRandomArticles, renderArticle */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return renderArticle; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getAllArticles; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getRandomArticles; });
-/* harmony import */ var _babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_article__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/article */ "./src/components/article.tsx");
-/* harmony import */ var _components_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/link */ "./src/components/link.tsx");
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mdx-js/react */ "./node_modules/@mdx-js/react/dist/esm.js");
-
-var _jsxFileName = "/Users/kirillrogovoy/Projects/rogovoy.me/src/article.tsx";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-
-
-var articles = [{
-  id: 'here-are-some-amazing-advantages-of-go-that-you-dont-hear-much-about',
-  date: '01.02.2018',
-  title: 'Here are some amazing advantages of Go that you don’t hear much about',
-  description: 'I discuss why you should give Go a chance and where to start.',
-  keywords: ['golang'],
-  origin: 'https://freecodecamp.org/news/here-are-some-amazing-advantages-of-go-that-you-dont-hear-much-about-1af99de3b23a/'
-}, {
-  id: 'test',
-  date: '01.02.2018',
-  title: 'Here are some amazing advantages of go that you dont hear much about',
-  description: 'test description',
-  keywords: ['test'],
-  hidden: true,
-  tweetId: '1162459837910978561'
-}];
-function renderArticle(id, Content) {
-  var _this = this;
-
-  var articleMeta = articles.find(function (a) {
-    return a.id === id;
-  });
-  var components = {
-    a: function a(props) {
-      return __jsx(_components_link__WEBPACK_IMPORTED_MODULE_3__[/* Link */ "a"], {
-        href: props.href,
-        style: 2,
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40,
-          columnNumber: 79
-        }
-      }, props.children);
-    }
-  };
-  return __jsx(_components_article__WEBPACK_IMPORTED_MODULE_2__[/* ArticleComponent */ "a"], {
-    article: articleMeta,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42,
-      columnNumber: 10
-    }
-  }, __jsx(_mdx_js_react__WEBPACK_IMPORTED_MODULE_4__[/* MDXProvider */ "a"], {
-    components: components,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43,
-      columnNumber: 5
-    }
-  }, __jsx(Content, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 7
-    }
-  })));
-}
-function getAllArticles() {
-  return articles.filter(function (post) {
-    return !post.hidden;
-  });
-}
-function getRandomArticles(number, exceptArticleId) {
-  return shuffle(getAllArticles().filter(function (a) {
-    return a.id !== exceptArticleId;
-  })).slice(0, number);
-}
-
-function shuffle(b) {
-  var a = Object(_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(b);
-
-  for (var i = a.length - 1; i > 0; i--) {
-    var j = Math.floor(Math.random() * (i + 1));
-    var _ref = [a[j], a[i]];
-    a[i] = _ref[0];
-    a[j] = _ref[1];
-  }
-
-  return a;
-}
-
-/***/ }),
-
-/***/ "./src/components/article-list.tsx":
-/*!*****************************************!*\
-  !*** ./src/components/article-list.tsx ***!
-  \*****************************************/
-/*! exports provided: ArticleList */
-/*! exports used: ArticleList */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ArticleList; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./link */ "./src/components/link.tsx");
-var _this = undefined,
-    _jsxFileName = "/Users/kirillrogovoy/Projects/rogovoy.me/src/components/article-list.tsx";
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-var ArticleList = function ArticleList(_ref) {
-  var articles = _ref.articles;
-  return __jsx("div", {
-    className: "mx-auto",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 3
-    }
-  }, __jsx("ul", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 5
-    }
-  }, articles.map(function (article) {
-    return __jsx("li", {
-      key: article.id,
-      className: "text-xl mb-8 list-square",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12,
-        columnNumber: 9
-      }
-    }, article.origin ? __jsx(_link__WEBPACK_IMPORTED_MODULE_1__[/* Link */ "a"], {
-      style: 2,
-      href: article.origin,
-      newTab: true,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14,
-        columnNumber: 13
-      }
-    }, "".concat(article.title, ", ").concat(new URL(article.origin).hostname)) : __jsx(_link__WEBPACK_IMPORTED_MODULE_1__[/* Link */ "a"], {
-      style: 2,
-      href: "/blog/".concat(article.id),
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18,
-        columnNumber: 13
-      }
-    }, article.title), __jsx("span", {
-      className: "text-sm",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22,
-        columnNumber: 11
-      }
-    }, __jsx("span", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23,
-        columnNumber: 13
-      }
-    }, " \u2014 "), article.date), __jsx("span", {
-      className: "block text-sm",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 26,
-        columnNumber: 11
-      }
-    }, article.description));
-  })));
-};
-
-/***/ }),
-
-/***/ "./src/components/article.tsx":
-/*!************************************!*\
-  !*** ./src/components/article.tsx ***!
-  \************************************/
-/*! exports provided: ArticleComponent */
-/*! exports used: ArticleComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ArticleComponent; });
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_articles_layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/articles-layout */ "./src/components/articles-layout.tsx");
-/* harmony import */ var _components_article_list__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/article-list */ "./src/components/article-list.tsx");
-/* harmony import */ var _separator__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./separator */ "./src/components/separator.tsx");
-/* harmony import */ var _article__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../article */ "./src/article.tsx");
-/* harmony import */ var _email_form__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./email-form */ "./src/components/email-form.tsx");
-/* harmony import */ var _link__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./link */ "./src/components/link.tsx");
-var _jsxFileName = "/Users/kirillrogovoy/Projects/rogovoy.me/src/components/article.tsx";
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-
-
-
-
-
-
-
-function ArticleComponent(_ref) {
-  var article = _ref.article,
-      children = _ref.children;
-  var router = Object(next_router__WEBPACK_IMPORTED_MODULE_3__["useRouter"])();
-  return __jsx(_components_articles_layout__WEBPACK_IMPORTED_MODULE_4__[/* ArticleLayout */ "a"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 5
-    }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 7
-    }
-  }, __jsx("title", {
-    className: "jsx-1081535726",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 9
-    }
-  }, article.title + ' — Kirill Rogovoy'), __jsx("meta", {
-    name: "og:title",
-    content: article.title,
-    className: "jsx-1081535726",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 9
-    }
-  }), __jsx("meta", {
-    name: "og:image",
-    content: "/".concat(article.id, ".jpg"),
-    className: "jsx-1081535726",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 9
-    }
-  }), __jsx("meta", {
-    name: "description",
-    content: article.description,
-    className: "jsx-1081535726",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 9
-    }
-  }), __jsx("meta", {
-    name: "og:description",
-    content: article.description,
-    className: "jsx-1081535726",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 9
-    }
-  }), __jsx("meta", {
-    name: "keywords",
-    content: article.keywords.join(','),
-    className: "jsx-1081535726",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 9
-    }
-  })), article.tweetId && __jsx(TwitterTweetButton, {
-    text: article.title,
-    path: router.asPath,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 27
-    }
-  }), __jsx(_link__WEBPACK_IMPORTED_MODULE_9__[/* Link */ "a"], {
-    style: 1,
-    href: "/blog",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 7
-    }
-  }, '<-', " Back to the list"), __jsx("div", {
-    className: "jsx-1081535726" + " " + "mb-12",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 7
-    }
-  }, __jsx("h1", {
-    className: "jsx-1081535726" + " " + "text-link2 text-5xl leading-tight",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 9
-    }
-  }, article.title), __jsx("div", {
-    className: "jsx-1081535726" + " " + "italic",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 9
-    }
-  }, "Published ", article.date)), __jsx("div", {
-    className: "jsx-1081535726" + " " + "markdown mb-10",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36,
-      columnNumber: 7
-    }
-  }, children), __jsx(_separator__WEBPACK_IMPORTED_MODULE_6__[/* Separator */ "a"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38,
-      columnNumber: 7
-    }
-  }), __jsx("div", {
-    className: "jsx-1081535726",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 7
-    }
-  }, __jsx("div", {
-    className: "jsx-1081535726" + " " + "text-center mb-2",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 9
-    }
-  }, article.tweetId ? __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(_link__WEBPACK_IMPORTED_MODULE_9__[/* Link */ "a"], {
-    style: 2,
-    href: "https://twitter.com/krogovoy/status/".concat(article.tweetId),
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 15
-    }
-  }, "Discuss"), ' ', "or", ' ', __jsx(_link__WEBPACK_IMPORTED_MODULE_9__[/* Link */ "a"], {
-    style: 2,
-    href: makeTwitterUrl(article.title, router.asPath),
-    newTab: true,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48,
-      columnNumber: 15
-    }
-  }, "Share"), ' ', "on Twitter") : __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, "Follow me on", ' ', __jsx(_link__WEBPACK_IMPORTED_MODULE_9__[/* Link */ "a"], {
-    style: 2,
-    href: "https://twitter.com/krogovoy",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 56,
-      columnNumber: 15
-    }
-  }, "Twitter"), ' ', "or check out my", ' ', __jsx(_link__WEBPACK_IMPORTED_MODULE_9__[/* Link */ "a"], {
-    style: 2,
-    href: "https://github.com/kirillrogovoy",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 15
-    }
-  }, "Github"))), __jsx(_email_form__WEBPACK_IMPORTED_MODULE_8__[/* EmailForm */ "a"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 9
-    }
-  })), __jsx(OtherArticles, {
-    currentArticleId: article.id,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 7
-    }
-  }), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "1081535726",
-    __self: this
-  }, ".markdown{font-size:21px;-webkit-letter-spacing:0px;-moz-letter-spacing:0px;-ms-letter-spacing:0px;letter-spacing:0px;line-height:32px;text-align:start;}.markdown img{width:100%;margin-top:15px;}.markdown h2{font-size:34px;line-height:39px;margin:56px 0 0 0;}.markdown h2+p{margin-top:13px;}.markdown p{margin:29px 0 0 0;}.markdown ul,.markdown ol{margin-top:5px;}.markdown li{list-style-type:square;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9raXJpbGxyb2dvdm95L1Byb2plY3RzL3JvZ292b3kubWUvc3JjL2NvbXBvbmVudHMvYXJ0aWNsZS50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBc0V5QixBQUcwQixBQU1KLEFBSUksQUFLQyxBQUdFLEFBSUgsQUFHUSxXQWxCUCxJQU5HLEFBVUYsQUFZbkIsQ0FQQSxFQUdBLEtBT0EsSUFsQkEsS0FJb0Isa0JBQ3BCLDBEQVhtQixpQkFDQSxpQkFDbkIiLCJmaWxlIjoiL1VzZXJzL2tpcmlsbHJvZ292b3kvUHJvamVjdHMvcm9nb3ZveS5tZS9zcmMvY29tcG9uZW50cy9hcnRpY2xlLnRzeCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCdcbmltcG9ydCB7IHVzZVJvdXRlciB9IGZyb20gJ25leHQvcm91dGVyJ1xuaW1wb3J0IHsgQXJ0aWNsZUxheW91dCB9IGZyb20gJy4uL2NvbXBvbmVudHMvYXJ0aWNsZXMtbGF5b3V0J1xuaW1wb3J0IHsgQXJ0aWNsZUxpc3QgfSBmcm9tICcuLi9jb21wb25lbnRzL2FydGljbGUtbGlzdCdcbmltcG9ydCB7IFNlcGFyYXRvciB9IGZyb20gJy4vc2VwYXJhdG9yJ1xuaW1wb3J0IHsgZ2V0UmFuZG9tQXJ0aWNsZXMsIEFydGljbGVNZXRhIH0gZnJvbSAnLi4vYXJ0aWNsZSdcbmltcG9ydCB7IEVtYWlsRm9ybSB9IGZyb20gJy4vZW1haWwtZm9ybSdcbmltcG9ydCB7IExpbmsgfSBmcm9tICcuL2xpbmsnXG5pbXBvcnQgeyBQcm9wc1dpdGhDaGlsZHJlbiB9IGZyb20gJ3JlYWN0J1xuXG50eXBlIFByb3BzID0gUHJvcHNXaXRoQ2hpbGRyZW48e1xuICBhcnRpY2xlOiBBcnRpY2xlTWV0YVxufT5cblxuZXhwb3J0IGZ1bmN0aW9uIEFydGljbGVDb21wb25lbnQoeyBhcnRpY2xlLCBjaGlsZHJlbiB9OiBQcm9wcykge1xuICBjb25zdCByb3V0ZXIgPSB1c2VSb3V0ZXIoKVxuICByZXR1cm4gKFxuICAgIDxBcnRpY2xlTGF5b3V0PlxuICAgICAgPEhlYWQ+XG4gICAgICAgIDx0aXRsZT57YXJ0aWNsZS50aXRsZSArICcg4oCUIEtpcmlsbCBSb2dvdm95J308L3RpdGxlPlxuICAgICAgICA8bWV0YSBuYW1lPVwib2c6dGl0bGVcIiBjb250ZW50PXthcnRpY2xlLnRpdGxlfSAvPlxuICAgICAgICA8bWV0YSBuYW1lPVwib2c6aW1hZ2VcIiBjb250ZW50PXtgLyR7YXJ0aWNsZS5pZH0uanBnYH0gLz5cbiAgICAgICAgPG1ldGEgbmFtZT1cImRlc2NyaXB0aW9uXCIgY29udGVudD17YXJ0aWNsZS5kZXNjcmlwdGlvbn0gLz5cbiAgICAgICAgPG1ldGEgbmFtZT1cIm9nOmRlc2NyaXB0aW9uXCIgY29udGVudD17YXJ0aWNsZS5kZXNjcmlwdGlvbn0gLz5cbiAgICAgICAgPG1ldGEgbmFtZT1cImtleXdvcmRzXCIgY29udGVudD17YXJ0aWNsZS5rZXl3b3Jkcy5qb2luKCcsJyl9IC8+XG4gICAgICA8L0hlYWQ+XG4gICAgICB7YXJ0aWNsZS50d2VldElkICYmIDxUd2l0dGVyVHdlZXRCdXR0b24gdGV4dD17YXJ0aWNsZS50aXRsZX0gcGF0aD17cm91dGVyLmFzUGF0aH0gLz59XG4gICAgICA8TGluayBzdHlsZT17MX0gaHJlZj1cIi9ibG9nXCI+XG4gICAgICAgIHsnPC0nfSBCYWNrIHRvIHRoZSBsaXN0XG4gICAgICA8L0xpbms+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1iLTEyXCI+XG4gICAgICAgIDxoMSBjbGFzc05hbWU9XCJ0ZXh0LWxpbmsyIHRleHQtNXhsIGxlYWRpbmctdGlnaHRcIj57YXJ0aWNsZS50aXRsZX08L2gxPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIml0YWxpY1wiPlB1Ymxpc2hlZCB7YXJ0aWNsZS5kYXRlfTwvZGl2PlxuICAgICAgPC9kaXY+XG5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWFya2Rvd24gbWItMTBcIj57Y2hpbGRyZW59PC9kaXY+XG5cbiAgICAgIDxTZXBhcmF0b3IgLz5cblxuICAgICAgPGRpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJ0ZXh0LWNlbnRlciBtYi0yXCI+XG4gICAgICAgICAge2FydGljbGUudHdlZXRJZCA/IChcbiAgICAgICAgICAgIDw+XG4gICAgICAgICAgICAgIDxMaW5rIHN0eWxlPXsyfSBocmVmPXtgaHR0cHM6Ly90d2l0dGVyLmNvbS9rcm9nb3ZveS9zdGF0dXMvJHthcnRpY2xlLnR3ZWV0SWR9YH0+XG4gICAgICAgICAgICAgICAgRGlzY3Vzc1xuICAgICAgICAgICAgICA8L0xpbms+eycgJ31cbiAgICAgICAgICAgICAgb3J7JyAnfVxuICAgICAgICAgICAgICA8TGluayBzdHlsZT17Mn0gaHJlZj17bWFrZVR3aXR0ZXJVcmwoYXJ0aWNsZS50aXRsZSwgcm91dGVyLmFzUGF0aCl9IG5ld1RhYj17dHJ1ZX0+XG4gICAgICAgICAgICAgICAgU2hhcmVcbiAgICAgICAgICAgICAgPC9MaW5rPnsnICd9XG4gICAgICAgICAgICAgIG9uIFR3aXR0ZXJcbiAgICAgICAgICAgIDwvPlxuICAgICAgICAgICkgOiAoXG4gICAgICAgICAgICA8PlxuICAgICAgICAgICAgICBGb2xsb3cgbWUgb257JyAnfVxuICAgICAgICAgICAgICA8TGluayBzdHlsZT17Mn0gaHJlZj1cImh0dHBzOi8vdHdpdHRlci5jb20va3JvZ292b3lcIj5cbiAgICAgICAgICAgICAgICBUd2l0dGVyXG4gICAgICAgICAgICAgIDwvTGluaz57JyAnfVxuICAgICAgICAgICAgICBvciBjaGVjayBvdXQgbXl7JyAnfVxuICAgICAgICAgICAgICA8TGluayBzdHlsZT17Mn0gaHJlZj1cImh0dHBzOi8vZ2l0aHViLmNvbS9raXJpbGxyb2dvdm95XCI+XG4gICAgICAgICAgICAgICAgR2l0aHViXG4gICAgICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgICAgIDwvPlxuICAgICAgICAgICl9XG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8RW1haWxGb3JtIC8+XG4gICAgICA8L2Rpdj5cblxuICAgICAgPE90aGVyQXJ0aWNsZXMgY3VycmVudEFydGljbGVJZD17YXJ0aWNsZS5pZH0gLz5cblxuICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgLm1hcmtkb3duIHtcbiAgICAgICAgICBmb250LXNpemU6IDIxcHg7XG4gICAgICAgICAgbGV0dGVyLXNwYWNpbmc6IDBweDtcbiAgICAgICAgICBsaW5lLWhlaWdodDogMzJweDtcbiAgICAgICAgICB0ZXh0LWFsaWduOiBzdGFydDtcbiAgICAgICAgfVxuICAgICAgICAubWFya2Rvd24gaW1nIHtcbiAgICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgICBtYXJnaW4tdG9wOiAxNXB4O1xuICAgICAgICB9XG4gICAgICAgIC5tYXJrZG93biBoMiB7XG4gICAgICAgICAgZm9udC1zaXplOiAzNHB4O1xuICAgICAgICAgIGxpbmUtaGVpZ2h0OiAzOXB4O1xuICAgICAgICAgIG1hcmdpbjogNTZweCAwIDAgMDtcbiAgICAgICAgfVxuICAgICAgICAubWFya2Rvd24gaDIgKyBwIHtcbiAgICAgICAgICBtYXJnaW4tdG9wOiAxM3B4O1xuICAgICAgICB9XG4gICAgICAgIC5tYXJrZG93biBwIHtcbiAgICAgICAgICBtYXJnaW46IDI5cHggMCAwIDA7XG4gICAgICAgIH1cbiAgICAgICAgLm1hcmtkb3duIHVsLFxuICAgICAgICAubWFya2Rvd24gb2wge1xuICAgICAgICAgIG1hcmdpbi10b3A6IDVweDtcbiAgICAgICAgfVxuICAgICAgICAubWFya2Rvd24gbGkge1xuICAgICAgICAgIGxpc3Qtc3R5bGUtdHlwZTogc3F1YXJlO1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC9BcnRpY2xlTGF5b3V0PlxuICApXG59XG5cbmZ1bmN0aW9uIE90aGVyQXJ0aWNsZXMoeyBjdXJyZW50QXJ0aWNsZUlkIH06IHsgY3VycmVudEFydGljbGVJZDogc3RyaW5nIH0pIHtcbiAgY29uc3QgYXJ0aWNsZXMgPSBnZXRSYW5kb21BcnRpY2xlcygzLCBjdXJyZW50QXJ0aWNsZUlkKVxuICBpZiAoYXJ0aWNsZXMubGVuZ3RoID09PSAwKSB7XG4gICAgcmV0dXJuIG51bGxcbiAgfVxuICByZXR1cm4gKFxuICAgIDxkaXY+XG4gICAgICA8aDMgY2xhc3NOYW1lPVwidGV4dC14bFwiPk90aGVyIGFydGljbGVzOjwvaDM+XG4gICAgICA8QXJ0aWNsZUxpc3QgYXJ0aWNsZXM9e2FydGljbGVzfSAvPlxuICAgIDwvZGl2PlxuICApXG59XG5cbmZ1bmN0aW9uIG1ha2VUd2l0dGVyVXJsKHRleHQ6IHN0cmluZywgcGF0aDogc3RyaW5nKSB7XG4gIGNvbnN0IHNpdGVVcmwgPSBuZXcgVVJMKCdodHRwczovL3JvZ292b3kubWUnKVxuICAvLyBlc2xpbnQtZGlzYWJsZS1uZXh0LWxpbmUgaW1tdXRhYmxlL25vLW11dGF0aW9uXG4gIHNpdGVVcmwucGF0aG5hbWUgPSBwYXRoXG5cbiAgY29uc3QgdHdpdHRlclVybCA9IG5ldyBVUkwoJ2h0dHBzOi8vdHdpdHRlci5jb20vaW50ZW50L3R3ZWV0JylcbiAgdHdpdHRlclVybC5zZWFyY2hQYXJhbXMuYXBwZW5kKCd0ZXh0JywgdGV4dClcbiAgdHdpdHRlclVybC5zZWFyY2hQYXJhbXMuYXBwZW5kKCd1cmwnLCBzaXRlVXJsLnRvU3RyaW5nKCkpXG4gIHR3aXR0ZXJVcmwuc2VhcmNoUGFyYW1zLmFwcGVuZCgndmlhJywgJ2tyb2dvdm95JylcblxuICByZXR1cm4gdHdpdHRlclVybC50b1N0cmluZygpXG59XG5cbnR5cGUgVHdpdHRlclR3ZWV0QnV0dG9uUHJvcHMgPSB7XG4gIHRleHQ6IHN0cmluZ1xuICBwYXRoOiBzdHJpbmdcbn1cbmZ1bmN0aW9uIFR3aXR0ZXJUd2VldEJ1dHRvbihwcm9wczogVHdpdHRlclR3ZWV0QnV0dG9uUHJvcHMpIHtcbiAgY29uc3QgdHdpdHRlclVybCA9IG1ha2VUd2l0dGVyVXJsKHByb3BzLnRleHQsIHByb3BzLnBhdGgpXG5cbiAgcmV0dXJuIChcbiAgICA8YVxuICAgICAgc3R5bGU9e3sgcG9zaXRpb246ICdmaXhlZCcsIHRvcDogMCwgbGVmdDogJzgwJScsIHdpZHRoOiAnNTBweCcgfX1cbiAgICAgIHRhcmdldD1cIl9ibGFua1wiXG4gICAgICByZWw9XCJub3JlZmVycmVyIG5vb3BlbmVyXCJcbiAgICAgIGhyZWY9e3R3aXR0ZXJVcmwudG9TdHJpbmcoKX1cbiAgICA+XG4gICAgICA8c3ZnXG4gICAgICAgIHZlcnNpb249XCIxLjFcIlxuICAgICAgICB4bWxucz1cImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnXCJcbiAgICAgICAgeG1sbnNYbGluaz1cImh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmtcIlxuICAgICAgICB4PVwiMHB4XCJcbiAgICAgICAgeT1cIjBweFwiXG4gICAgICAgIHZpZXdCb3g9XCIwIDAgNDU1LjczMSA0NTUuNzMxXCJcbiAgICAgICAgeG1sU3BhY2U9XCJwcmVzZXJ2ZVwiXG4gICAgICA+XG4gICAgICAgIHsnICd9XG4gICAgICAgIDxnPlxuICAgICAgICAgIHsnICd9XG4gICAgICAgICAgPHJlY3QgeD17MH0geT17MH0gc3R5bGU9e3sgZmlsbDogJyMzMzMnIH19IHdpZHRoPVwiNDU1LjczMVwiIGhlaWdodD1cIjQ1NS43MzFcIiAvPnsnICd9XG4gICAgICAgICAgPHBhdGhcbiAgICAgICAgICAgIHN0eWxlPXt7IGZpbGw6ICcjRkZGRkZGJyB9fVxuICAgICAgICAgICAgZD1cIk02MC4zNzcsMzM3LjgyMmMzMC4zMywxOS4yMzYsNjYuMzA4LDMwLjM2OCwxMDQuODc1LDMwLjM2OGMxMDguMzQ5LDAsMTk2LjE4LTg3Ljg0MSwxOTYuMTgtMTk2LjE4XG4gICAgICAgICAgICAgIGMwLTIuNzA1LTAuMDU3LTUuMzktMC4xNjEtOC4wNjdjMy45MTktMy4wODQsMjguMTU3LTIyLjUxMSwzNC4wOTgtMzVjMCwwLTE5LjY4Myw4LjE4LTM4Ljk0NywxMC4xMDdcbiAgICAgICAgICAgICAgYy0wLjAzOCwwLTAuMDg1LDAuMDA5LTAuMTIzLDAuMDA5YzAsMCwwLjAzOC0wLjAxOSwwLjEwNC0wLjA2NmMxLjc3NS0xLjE4NiwyNi41OTEtMTguMDc5LDI5Ljk1MS0zOC4yMDdcbiAgICAgICAgICAgICAgYzAsMC0xMy45MjIsNy40MzEtMzMuNDE1LDEzLjkzMmMtMy4yMjcsMS4wNzItNi42MDUsMi4xMjYtMTAuMDg4LDMuMTAzYy0xMi41NjUtMTMuNDEtMzAuNDI1LTIxLjc4LTUwLjI1LTIxLjc4XG4gICAgICAgICAgICAgIGMtMzguMDI3LDAtNjguODQxLDMwLjgwNS02OC44NDEsNjguODAzYzAsNS4zNjIsMC42MTcsMTAuNTgxLDEuNzg0LDE1LjU5MmMtNS4zMTQtMC4yMTgtODYuMjM3LTQuNzU1LTE0MS4yODktNzEuNDIzXG4gICAgICAgICAgICAgIGMwLDAtMzIuOTAyLDQ0LjkxNywxOS42MDcsOTEuMTA1YzAsMC0xNS45NjItMC42MzYtMjkuNzMzLTguODY0YzAsMC01LjA1OCw1NC40MTYsNTQuNDA3LDY4LjMyOWMwLDAtMTEuNzAxLDQuNDMyLTMwLjM2OCwxLjI3MlxuICAgICAgICAgICAgICBjMCwwLDEwLjQzOSw0My45NjgsNjMuMjcxLDQ4LjA3N2MwLDAtNDEuNzc3LDM3Ljc0LTEwMS4wODEsMjguODg1TDYwLjM3NywzMzcuODIyelwiXG4gICAgICAgICAgLz57JyAnfVxuICAgICAgICA8L2c+eycgJ31cbiAgICAgICAgPGc+IDwvZz4gPGc+IDwvZz4gPGc+IDwvZz4gPGc+IDwvZz4gPGc+IDwvZz4gPGc+IDwvZz4gPGc+IDwvZz4gPGc+IDwvZz4gPGc+IDwvZz4gPGc+IDwvZz57JyAnfVxuICAgICAgICA8Zz4gPC9nPiA8Zz4gPC9nPiA8Zz4gPC9nPiA8Zz4gPC9nPiA8Zz4gPC9nPnsnICd9XG4gICAgICA8L3N2Zz5cbiAgICA8L2E+XG4gIClcbn1cbiJdfQ== */\n/*@ sourceURL=/Users/kirillrogovoy/Projects/rogovoy.me/src/components/article.tsx */"));
-}
-
-function OtherArticles(_ref2) {
-  var currentArticleId = _ref2.currentArticleId;
-  var articles = Object(_article__WEBPACK_IMPORTED_MODULE_7__[/* getRandomArticles */ "b"])(3, currentArticleId);
-
-  if (articles.length === 0) {
-    return null;
-  }
-
-  return __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 111,
-      columnNumber: 5
-    }
-  }, __jsx("h3", {
-    className: "text-xl",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 112,
-      columnNumber: 7
-    }
-  }, "Other articles:"), __jsx(_components_article_list__WEBPACK_IMPORTED_MODULE_5__[/* ArticleList */ "a"], {
-    articles: articles,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 113,
-      columnNumber: 7
-    }
-  }));
-}
-
-function makeTwitterUrl(text, path) {
-  var siteUrl = new URL('https://rogovoy.me'); // eslint-disable-next-line immutable/no-mutation
-
-  siteUrl.pathname = path;
-  var twitterUrl = new URL('https://twitter.com/intent/tweet');
-  twitterUrl.searchParams.append('text', text);
-  twitterUrl.searchParams.append('url', siteUrl.toString());
-  twitterUrl.searchParams.append('via', 'krogovoy');
-  return twitterUrl.toString();
-}
-
-function TwitterTweetButton(props) {
-  var twitterUrl = makeTwitterUrl(props.text, props.path);
-  return __jsx("a", {
-    style: {
-      position: 'fixed',
-      top: 0,
-      left: '80%',
-      width: '50px'
-    },
-    target: "_blank",
-    rel: "noreferrer noopener",
-    href: twitterUrl.toString(),
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 139,
-      columnNumber: 5
-    }
-  }, __jsx("svg", {
-    version: "1.1",
-    xmlns: "http://www.w3.org/2000/svg",
-    xmlnsXlink: "http://www.w3.org/1999/xlink",
-    x: "0px",
-    y: "0px",
-    viewBox: "0 0 455.731 455.731",
-    xmlSpace: "preserve",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 145,
-      columnNumber: 7
-    }
-  }, ' ', __jsx("g", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 155,
-      columnNumber: 9
-    }
-  }, ' ', __jsx("rect", {
-    x: 0,
-    y: 0,
-    style: {
-      fill: '#333'
-    },
-    width: "455.731",
-    height: "455.731",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 157,
-      columnNumber: 11
-    }
-  }), ' ', __jsx("path", {
-    style: {
-      fill: '#FFFFFF'
-    },
-    d: "M60.377,337.822c30.33,19.236,66.308,30.368,104.875,30.368c108.349,0,196.18-87.841,196.18-196.18 c0-2.705-0.057-5.39-0.161-8.067c3.919-3.084,28.157-22.511,34.098-35c0,0-19.683,8.18-38.947,10.107 c-0.038,0-0.085,0.009-0.123,0.009c0,0,0.038-0.019,0.104-0.066c1.775-1.186,26.591-18.079,29.951-38.207 c0,0-13.922,7.431-33.415,13.932c-3.227,1.072-6.605,2.126-10.088,3.103c-12.565-13.41-30.425-21.78-50.25-21.78 c-38.027,0-68.841,30.805-68.841,68.803c0,5.362,0.617,10.581,1.784,15.592c-5.314-0.218-86.237-4.755-141.289-71.423 c0,0-32.902,44.917,19.607,91.105c0,0-15.962-0.636-29.733-8.864c0,0-5.058,54.416,54.407,68.329c0,0-11.701,4.432-30.368,1.272 c0,0,10.439,43.968,63.271,48.077c0,0-41.777,37.74-101.081,28.885L60.377,337.822z",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 158,
-      columnNumber: 11
-    }
-  }), ' '), ' ', __jsx("g", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 169,
-      columnNumber: 9
-    }
-  }, " "), " ", __jsx("g", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 169,
-      columnNumber: 18
-    }
-  }, " "), " ", __jsx("g", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 169,
-      columnNumber: 27
-    }
-  }, " "), " ", __jsx("g", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 169,
-      columnNumber: 36
-    }
-  }, " "), " ", __jsx("g", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 169,
-      columnNumber: 45
-    }
-  }, " "), " ", __jsx("g", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 169,
-      columnNumber: 54
-    }
-  }, " "), " ", __jsx("g", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 169,
-      columnNumber: 63
-    }
-  }, " "), " ", __jsx("g", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 169,
-      columnNumber: 72
-    }
-  }, " "), " ", __jsx("g", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 169,
-      columnNumber: 81
-    }
-  }, " "), " ", __jsx("g", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 169,
-      columnNumber: 90
-    }
-  }, " "), ' ', __jsx("g", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 170,
-      columnNumber: 9
-    }
-  }, " "), " ", __jsx("g", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 170,
-      columnNumber: 18
-    }
-  }, " "), " ", __jsx("g", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 170,
-      columnNumber: 27
-    }
-  }, " "), " ", __jsx("g", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 170,
-      columnNumber: 36
-    }
-  }, " "), " ", __jsx("g", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 170,
-      columnNumber: 45
-    }
-  }, " "), ' '));
-}
-
-/***/ }),
-
-/***/ "./src/components/articles-layout.tsx":
-/*!********************************************!*\
-  !*** ./src/components/articles-layout.tsx ***!
-  \********************************************/
-/*! exports provided: ArticleLayout */
-/*! exports used: ArticleLayout */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ArticleLayout; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./link */ "./src/components/link.tsx");
-/* harmony import */ var _separator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./separator */ "./src/components/separator.tsx");
-/* harmony import */ var _email_form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./email-form */ "./src/components/email-form.tsx");
-var _this = undefined,
-    _jsxFileName = "/Users/kirillrogovoy/Projects/rogovoy.me/src/components/articles-layout.tsx";
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-var ArticleLayout = function ArticleLayout(props) {
-  return __jsx("div", {
-    className: "fade-in font-serif mx-auto",
-    style: {
-      maxWidth: '90%',
-      width: '44rem'
-    },
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 3
-    }
-  }, __jsx("header", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8,
-      columnNumber: 5
-    }
-  }, __jsx(_link__WEBPACK_IMPORTED_MODULE_1__[/* Link */ "a"], {
-    href: "/",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 7
-    }
-  }, __jsx("h1", {
-    className: "text-center block mt-12 mb-1 text-5xl",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 9
-    }
-  }, "Kirill Rogovoy")), __jsx("div", {
-    className: "mx-auto text-lg text-center",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 7
-    }
-  }, "Code \xB7 Design \xB7 Workout \xB7 Travel \xB7 Beer"), __jsx("div", {
-    className: "text-center",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 7
-    }
-  }, __jsx(_link__WEBPACK_IMPORTED_MODULE_1__[/* Link */ "a"], {
-    style: 1,
-    href: "/",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 9
-    }
-  }, "About"), ' · ', __jsx(_link__WEBPACK_IMPORTED_MODULE_1__[/* Link */ "a"], {
-    style: 1,
-    href: "https://twitter.com/krogovoy",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 9
-    }
-  }, "Twitter"), ' · ', __jsx(_link__WEBPACK_IMPORTED_MODULE_1__[/* Link */ "a"], {
-    style: 1,
-    href: "/blog",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 9
-    }
-  }, "Blog"))), __jsx(_separator__WEBPACK_IMPORTED_MODULE_2__[/* Separator */ "a"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 5
-    }
-  }), __jsx(_email_form__WEBPACK_IMPORTED_MODULE_3__[/* EmailForm */ "a"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 5
-    }
-  }), __jsx("main", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 5
-    }
-  }, props.children));
-};
-
-/***/ }),
-
-/***/ "./src/components/email-form.tsx":
-/*!***************************************!*\
-  !*** ./src/components/email-form.tsx ***!
-  \***************************************/
-/*! exports provided: EmailForm */
-/*! exports used: EmailForm */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EmailForm; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/kirillrogovoy/Projects/rogovoy.me/src/components/email-form.tsx";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-var mailchimpSubscribeUrl = 'https://iobnm1te67.execute-api.eu-central-1.amazonaws.com/default/mailchimp-subscribe';
-function EmailForm() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(''),
-      email = _useState[0],
-      setEmail = _useState[1];
-
-  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      isSubscribed = _useState2[0],
-      setIsSubscribed = _useState2[1];
-
-  if (isSubscribed) {
-    return __jsx("div", {
-      className: "h-20 mb-10 text-center",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11,
-        columnNumber: 12
-      }
-    }, "Done! Thank you.");
-  }
-
-  var submit = function submit(e) {
-    e.preventDefault();
-    fetch(mailchimpSubscribeUrl, {
-      method: 'post',
-      body: JSON.stringify({
-        email: email
-      })
-    });
-    setIsSubscribed(true);
-  };
-
-  return __jsx("form", {
-    onSubmit: submit,
-    className: "h-20 w-88 mx-auto mb-8 text-center",
-    style: {
-      maxWidth: '90%'
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 5
-    }
-  }, __jsx("span", {
-    className: "block text-lg mb-2",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29,
-      columnNumber: 7
-    }
-  }, "Get latest posts and extra content"), __jsx("div", {
-    className: "h-8 flex",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 7
-    }
-  }, __jsx("input", {
-    type: "email",
-    value: email,
-    placeholder: "Email",
-    onChange: function onChange(e) {
-      return setEmail(e.target.value);
-    },
-    className: "w-3/4 px-2 border border-primary mr-2 outline-none rounded-none",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 9
-    }
-  }), __jsx("input", {
-    type: "submit",
-    value: "Subscribe",
-    className: "w-1/4 flex-shrink-none bg-primary text-back border border-primary cursor-pointer placeholder-faded hover:text-primary hover:bg-back rounded-none",
-    style: {
-      minWidth: '80px'
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38,
-      columnNumber: 9
-    }
-  })));
-}
-
-/***/ }),
-
 /***/ "./src/components/link.tsx":
 /*!*********************************!*\
   !*** ./src/components/link.tsx ***!
@@ -6995,7 +4902,7 @@ function EmailForm() {
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
 
 
-var _jsxFileName = "/Users/kirillrogovoy/Projects/rogovoy.me/src/components/link.tsx";
+var _jsxFileName = "/Users/kirillrogovoy/p/old-projects/rogovoy.me/src/components/link.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
@@ -7070,95 +4977,928 @@ function Link(props) {
 
 /***/ }),
 
-/***/ "./src/components/separator.tsx":
-/*!**************************************!*\
-  !*** ./src/components/separator.tsx ***!
-  \**************************************/
-/*! exports provided: Separator */
-/*! exports used: Separator */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Separator; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/kirillrogovoy/Projects/rogovoy.me/src/components/separator.tsx";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-function Separator() {
-  return __jsx("hr", {
-    className: "mx-auto w-3/4 h-1px border-t-1 border-faded mt-4 mb-10",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 2,
-      columnNumber: 10
-    }
-  });
-}
-
-/***/ }),
-
-/***/ "./src/pages/blog.tsx":
-/*!****************************!*\
-  !*** ./src/pages/blog.tsx ***!
-  \****************************/
+/***/ "./src/pages/index.tsx":
+/*!*****************************!*\
+  !*** ./src/pages/index.tsx ***!
+  \*****************************/
 /*! exports provided: default */
 /*! all exports used */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Blog; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Index; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_articles_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/articles-layout */ "./src/components/articles-layout.tsx");
-/* harmony import */ var _components_article_list__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/article-list */ "./src/components/article-list.tsx");
-/* harmony import */ var _article__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../article */ "./src/article.tsx");
-var _jsxFileName = "/Users/kirillrogovoy/Projects/rogovoy.me/src/pages/blog.tsx";
+/* harmony import */ var _components_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/link */ "./src/components/link.tsx");
+var _jsxFileName = "/Users/kirillrogovoy/p/old-projects/rogovoy.me/src/pages/index.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-
-
-function Blog() {
+function Index() {
   return __jsx("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 6,
       columnNumber: 5
     }
-  }, __jsx(_components_articles_layout__WEBPACK_IMPORTED_MODULE_2__[/* ArticleLayout */ "a"], {
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 7
+    }
+  }, __jsx("meta", {
+    charSet: "utf-8",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 9
+    }
+  }), __jsx("meta", {
+    name: "viewport",
+    content: "width=device-width, initial-scale=1",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9,
-      columnNumber: 7
+      columnNumber: 9
     }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }), __jsx("meta", {
+    name: "keywords",
+    content: "kirill rogovoy, rogovoy, developer, software engineer, team lead, software architect",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10,
       columnNumber: 9
     }
+  }), __jsx("meta", {
+    name: "og:title",
+    content: "Kirill Rogovoy \u2014 that software guy",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 9
+    }
+  }), __jsx("meta", {
+    name: "og:image",
+    content: "/kirill-rogovoy.jpg",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 9
+    }
+  }), __jsx("meta", {
+    name: "og:description",
+    content: "Kirill Rogovoy \u2014 software engineer, team lead, architect, and everything in between",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 9
+    }
+  }), __jsx("meta", {
+    name: "description",
+    content: "Kirill Rogovoy \u2014 software engineer, team lead, architect, and everything in between",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 9
+    }
+  }), __jsx("title", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 9
+    }
+  }, "Kirill Rogovoy")), __jsx("div", {
+    className: "fade-in font-serif absolute m-auto inset-0 text-center h-4/5",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 7
+    }
+  }, __jsx("img", {
+    className: "mx-auto h-64 w-64 rounded-full",
+    src: "/kirill-rogovoy.jpg",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 9
+    }
+  }), __jsx("h1", {
+    className: "mt-6 text-6xl leading-tight",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 9
+    }
+  }, "Kirill Rogovoy"), __jsx("p", {
+    className: "mb-1 text-2xl",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 9
+    }
+  }, "Code \xB7 Design \xB7 BJJ \xB7 Travel \xB7 Beer"), __jsx("p", {
+    className: "mb-8 text-2xl",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 9
+    }
+  }, __jsx(_components_link__WEBPACK_IMPORTED_MODULE_2__[/* Link */ "a"], {
+    href: "https://foodba.com",
+    newTab: true,
+    style: 2,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 11
+    }
+  }, "Foodba"), " CTO"), __jsx("ul", {
+    className: "list-none my-3 leading-none",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 9
+    }
+  }, __jsx("li", {
+    className: "inline-block w-12 mx-2",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 11
+    }
+  }, __jsx("a", {
+    href: "mailto:kirill@rogovoy.me",
+    title: "Email",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 13
+    }
+  }, __jsx("svg", {
+    version: "1.1",
+    xmlns: "http://www.w3.org/2000/svg",
+    xmlnsXlink: "http://www.w3.org/1999/xlink",
+    x: "0px",
+    y: "0px",
+    viewBox: "0 0 512 512",
+    enableBackground: "new 0 0 512 512",
+    xmlSpace: "preserve",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 15
+    }
+  }, ' ', __jsx("path", {
+    d: "M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M128,128h256 c4.569,0,9.002,0.981,13.072,2.831L256,295.415L114.928,130.83C118.998,128.982,123.431,128,128,128z M96,352V160 c0-0.67,0.028-1.336,0.07-2l93.832,109.471L97.103,360.27C96.381,357.602,96,354.827,96,352z M384,384H128 c-2.827,0-5.601-0.381-8.27-1.104l91.059-91.06L256,344.586l45.212-52.747l91.058,91.06C389.6,383.619,386.827,384,384,384z M416,352c0,2.827-0.381,5.6-1.103,8.27l-92.801-92.799L415.93,158c0.042,0.664,0.07,1.33,0.07,2V352z",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 17
+    }
+  }), ' '))), __jsx("li", {
+    className: "inline-block w-12 mx-2",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 11
+    }
+  }, __jsx("a", {
+    href: "https://telegram.me/kirillrogovoy",
+    title: "Telegram",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 13
+    }
+  }, __jsx("svg", {
+    id: "Bold",
+    enableBackground: "new 0 0 24 24",
+    viewBox: "0 0 24 24",
+    xmlns: "http://www.w3.org/2000/svg",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 15
+    }
+  }, __jsx("path", {
+    d: "m12 24c6.629 0 12-5.371 12-12s-5.371-12-12-12-12 5.371-12 12 5.371 12 12 12zm-6.509-12.26 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59,
+      columnNumber: 17
+    }
+  })))), __jsx("li", {
+    className: "inline-block w-12 mx-2",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 82,
+      columnNumber: 11
+    }
+  }, __jsx("a", {
+    href: "https://twitter.com/krogovoy",
+    title: "Twitter",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 83,
+      columnNumber: 13
+    }
+  }, __jsx("svg", {
+    version: "1.1",
+    xmlns: "http://www.w3.org/2000/svg",
+    xmlnsXlink: "http://www.w3.org/1999/xlink",
+    x: "0px",
+    y: "0px",
+    viewBox: "0 0 49.652 49.652",
+    xmlSpace: "preserve",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 84,
+      columnNumber: 15
+    }
+  }, ' ', __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 94,
+      columnNumber: 17
+    }
+  }, ' ', __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 96,
+      columnNumber: 19
+    }
+  }, ' ', __jsx("path", {
+    d: "M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826 C49.652,11.137,38.516,0,24.826,0z M35.901,19.144c0.011,0.246,0.017,0.494,0.017,0.742c0,7.551-5.746,16.255-16.259,16.255 c-3.227,0-6.231-0.943-8.759-2.565c0.447,0.053,0.902,0.08,1.363,0.08c2.678,0,5.141-0.914,7.097-2.446 c-2.5-0.046-4.611-1.698-5.338-3.969c0.348,0.066,0.707,0.103,1.074,0.103c0.521,0,1.027-0.068,1.506-0.199 c-2.614-0.524-4.583-2.833-4.583-5.603c0-0.024,0-0.049,0.001-0.072c0.77,0.427,1.651,0.685,2.587,0.714 c-1.532-1.023-2.541-2.773-2.541-4.755c0-1.048,0.281-2.03,0.773-2.874c2.817,3.458,7.029,5.732,11.777,5.972 c-0.098-0.419-0.147-0.854-0.147-1.303c0-3.155,2.558-5.714,5.713-5.714c1.644,0,3.127,0.694,4.171,1.804 c1.303-0.256,2.523-0.73,3.63-1.387c-0.43,1.335-1.333,2.454-2.516,3.162c1.157-0.138,2.261-0.444,3.282-0.899 C37.987,17.334,37.018,18.341,35.901,19.144z",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 98,
+      columnNumber: 21
+    }
+  }), ' '), ' '), ' ', __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101,
+      columnNumber: 17
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101,
+      columnNumber: 26
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101,
+      columnNumber: 35
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101,
+      columnNumber: 44
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101,
+      columnNumber: 53
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101,
+      columnNumber: 62
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101,
+      columnNumber: 71
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101,
+      columnNumber: 80
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101,
+      columnNumber: 89
+    }
+  }, " "), ' ', __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102,
+      columnNumber: 17
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102,
+      columnNumber: 26
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102,
+      columnNumber: 35
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102,
+      columnNumber: 44
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102,
+      columnNumber: 53
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102,
+      columnNumber: 62
+    }
+  }, " "), ' '))), __jsx("li", {
+    className: "inline-block w-12 mx-2",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 106,
+      columnNumber: 11
+    }
+  }, __jsx("a", {
+    href: "https://ua.linkedin.com/in/kirillrogovoy",
+    title: "LinkedIn",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 107,
+      columnNumber: 13
+    }
+  }, __jsx("svg", {
+    version: "1.1",
+    xmlns: "http://www.w3.org/2000/svg",
+    xmlnsXlink: "http://www.w3.org/1999/xlink",
+    x: "0px",
+    y: "0px",
+    viewBox: "0 0 486.392 486.392",
+    xmlSpace: "preserve",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 108,
+      columnNumber: 15
+    }
+  }, __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117,
+      columnNumber: 17
+    }
+  }, ' ', __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 119,
+      columnNumber: 19
+    }
+  }, ' ', __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 121,
+      columnNumber: 21
+    }
+  }, ' ', __jsx("path", {
+    d: "M243.196,0C108.891,0,0,108.891,0,243.196s108.891,243.196,243.196,243.196             s243.196-108.891,243.196-243.196C486.392,108.861,377.501,0,243.196,0z M182.397,360.994h-60.799V148.197h60.799V360.994z               M153.882,135.156c-15.747,0-28.484-12.768-28.484-28.515s12.768-28.515,28.484-28.515c15.747,0.03,28.515,12.798,28.515,28.515             C182.397,122.388,169.629,135.156,153.882,135.156z M395.193,360.994h-60.799V229.425c0-15.413-4.408-26.204-23.347-26.204              c-31.403,0-37.452,26.204-37.452,26.204v131.569h-60.799V148.197h60.799v20.337c8.694-6.657,30.399-20.307,60.799-20.307                c19.699,0,60.799,11.795,60.799,83.051V360.994z",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123,
+      columnNumber: 23
+    }
+  }), ' '), ' '), ' ', __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126,
+      columnNumber: 19
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126,
+      columnNumber: 28
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126,
+      columnNumber: 37
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126,
+      columnNumber: 46
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126,
+      columnNumber: 55
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126,
+      columnNumber: 64
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126,
+      columnNumber: 73
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126,
+      columnNumber: 82
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126,
+      columnNumber: 91
+    }
+  }, " "), ' ', __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127,
+      columnNumber: 19
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127,
+      columnNumber: 28
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127,
+      columnNumber: 37
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127,
+      columnNumber: 46
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127,
+      columnNumber: 55
+    }
+  }, " "), " ", __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127,
+      columnNumber: 64
+    }
+  }, " ")), __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 129,
+      columnNumber: 17
+    }
+  }), __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 130,
+      columnNumber: 17
+    }
+  }), __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 131,
+      columnNumber: 17
+    }
+  }), __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 132,
+      columnNumber: 17
+    }
+  }), __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 133,
+      columnNumber: 17
+    }
+  }), __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 134,
+      columnNumber: 17
+    }
+  }), __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 135,
+      columnNumber: 17
+    }
+  }), __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 136,
+      columnNumber: 17
+    }
+  }), __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 137,
+      columnNumber: 17
+    }
+  }), __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 138,
+      columnNumber: 17
+    }
+  }), __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 139,
+      columnNumber: 17
+    }
+  }), __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 140,
+      columnNumber: 17
+    }
+  }), __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 141,
+      columnNumber: 17
+    }
+  }), __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 142,
+      columnNumber: 17
+    }
+  }), __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 143,
+      columnNumber: 17
+    }
+  })))), __jsx("li", {
+    className: "inline-block w-12 mx-2",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 147,
+      columnNumber: 11
+    }
+  }, __jsx("a", {
+    href: "https://github.com/kirillrogovoy",
+    title: "GitHub",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 148,
+      columnNumber: 13
+    }
+  }, __jsx("svg", {
+    version: "1.1",
+    xmlns: "http://www.w3.org/2000/svg",
+    xmlnsXlink: "http://www.w3.org/1999/xlink",
+    x: "0px",
+    y: "0px",
+    viewBox: "0 0 512 512",
+    enableBackground: "new 0 0 512 512",
+    xmlSpace: "preserve",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 149,
+      columnNumber: 15
+    }
+  }, ' ', __jsx("path", {
+    d: "M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M408.028,408.028 c-19.76,19.758-42.756,35.266-68.354,46.093c-6.503,2.75-13.106,5.164-19.8,7.246V423c0-20.167-6.917-35-20.75-44.5 c8.667-0.833,16.625-2,23.875-3.5s14.917-3.667,23-6.5s15.333-6.208,21.75-10.125s12.583-9,18.5-15.25s10.875-13.333,14.875-21.25 s7.167-17.417,9.5-28.5s3.5-23.292,3.5-36.625c0-25.833-8.417-47.833-25.25-66c7.667-20,6.833-41.75-2.5-65.25l-6.25-0.75 c-4.333-0.5-12.125,1.333-23.375,5.5s-23.875,11-37.875,20.5c-19.833-5.5-40.417-8.25-61.75-8.25c-21.5,0-42,2.75-61.5,8.25 c-8.833-6-17.208-10.958-25.125-14.875s-14.25-6.583-19-8s-9.167-2.292-13.25-2.625s-6.708-0.417-7.875-0.25s-2,0.333-2.5,0.5 c-9.333,23.667-10.167,45.417-2.5,65.25c-16.833,18.167-25.25,40.167-25.25,66c0,13.333,1.167,25.542,3.5,36.625 s5.5,20.583,9.5,28.5s8.958,15,14.875,21.25s12.083,11.333,18.5,15.25s13.667,7.292,21.75,10.125s15.75,5,23,6.5 s15.208,2.667,23.875,3.5c-13.667,9.333-20.5,24.167-20.5,44.5v39.115c-7.549-2.247-14.99-4.902-22.3-7.994 c-25.597-10.827-48.594-26.335-68.353-46.093c-19.758-19.759-35.267-42.757-46.093-68.354C46.679,313.195,41,285.043,41,256 s5.679-57.195,16.879-83.675c10.827-25.597,26.335-48.594,46.093-68.353c19.758-19.759,42.756-35.267,68.353-46.093 C198.805,46.679,226.957,41,256,41s57.195,5.679,83.675,16.879c25.599,10.827,48.595,26.335,68.354,46.093 c19.758,19.758,35.266,42.756,46.093,68.353C465.321,198.805,471,226.957,471,256s-5.679,57.195-16.879,83.675 C443.294,365.271,427.786,388.27,408.028,408.028z",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 160,
+      columnNumber: 17
+    }
+  }), ' '))), __jsx("li", {
+    className: "inline-block w-12 mx-2",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 164,
+      columnNumber: 11
+    }
+  }, __jsx("a", {
+    href: "https://stackoverflow.com/users/4429540/kirill-rogovoy",
+    title: "StackOverflow",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 165,
+      columnNumber: 13
+    }
+  }, __jsx("svg", {
+    version: "1.1",
+    viewBox: "0 0 60 60",
+    xmlns: "http://www.w3.org/2000/svg",
+    xmlnsXlink: "http://www.w3.org/1999/xlink",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 166,
+      columnNumber: 15
+    }
   }, __jsx("title", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 11
+      lineNumber: 172,
+      columnNumber: 17
     }
-  }, "Kirill Rogovoy \u2014 Blog")), __jsx(_components_article_list__WEBPACK_IMPORTED_MODULE_3__[/* ArticleList */ "a"], {
-    articles: Object(_article__WEBPACK_IMPORTED_MODULE_4__[/* getAllArticles */ "a"])(),
+  }), __jsx("defs", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 173,
+      columnNumber: 17
+    }
+  }), __jsx("g", {
+    fill: "none",
+    fillRule: "evenodd",
+    id: "black",
+    stroke: "none",
+    strokeWidth: "1",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 174,
+      columnNumber: 17
+    }
+  }, __jsx("g", {
+    id: "stackoverflow",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 175,
+      columnNumber: 19
+    }
+  }, __jsx("path", {
+    d: "M30,60 C46.5685433,60 60,46.5685433 60,30 C60,13.4314567 46.5685433,0 30,0 C13.4314567,0 0,13.4314567 0,30 C0,46.5685433 13.4314567,60 30,60 Z",
+    fill: "#000000",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 176,
+      columnNumber: 21
+    }
+  }), __jsx("path", {
+    d: "M36.9342176,32.0127583 L21.5523817,28.8461538 L20.7692308,32.1298433 L38.4467129,35.7692308 L39.0967455,33.0468431 L39.9639763,33.4615385 L41.5384615,29.9972293 L24.6514083,21.9230769 L23.0769231,25.3864307 L36.9342176,32.0127583 L36.9342176,32.0127583 Z M43.8461538,33.4615385 L43.8461538,43.8461538 L16.1538462,43.8461538 L16.1538462,33.4615385 L19.6153846,33.4615385 L19.6153846,40.3846154 L40.3846154,40.3846154 L40.3846154,33.4615385 L43.8461538,33.4615385 Z M20.7692308,35.7692308 L39.2307692,35.7692308 L39.2307692,39.2307692 L20.7692308,39.2307692 L20.7692308,35.7692308 Z M43.8461538,26.9628409 L41.5426223,30 L26.5384615,18.3489448 L28.2046449,16.1538462 L29.9247286,16.1538462 L43.8461538,26.9628409 Z",
+    fill: "#FFFFFF",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 180,
+      columnNumber: 21
+    }
+  })))))), __jsx("li", {
+    className: "inline-block w-12 mx-2",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 215,
+      columnNumber: 11
+    }
+  }, __jsx("a", {
+    href: "https://medium.com/@kirillrogovoy",
+    title: "Medium",
+    className: "links-medium",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 216,
+      columnNumber: 13
+    }
+  }, __jsx("svg", {
+    enableBackground: "new 0 0 32 32",
+    version: "1.1",
+    viewBox: "0 0 32 32",
+    xmlSpace: "preserve",
+    xmlns: "http://www.w3.org/2000/svg",
+    xmlnsXlink: "http://www.w3.org/1999/xlink",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 217,
+      columnNumber: 15
+    }
+  }, __jsx("g", {
+    id: "Style_2_copy_4",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 225,
+      columnNumber: 17
+    }
+  }, __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 226,
+      columnNumber: 19
+    }
+  }, __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 227,
+      columnNumber: 21
+    }
+  }, __jsx("path", {
+    d: "M16,0C7.163,0,0,7.163,0,16c0,8.836,7.163,16,16,16s16-7.164,16-16C32,7.163,24.837,0,16,0z",
+    fill: "#000000",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 228,
+      columnNumber: 23
+    }
+  }))), __jsx("g", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 234,
+      columnNumber: 19
+    }
+  }, __jsx("path", {
+    d: "M24.959,11.076l-5.76-2.88c-0.026-0.013-0.055-0.019-0.083-0.02c-0.002,0-0.004-0.001-0.006-0.001    c-0.07,0-0.14,0.035-0.177,0.096l-3.55,5.769l3.963,6.44l5.669-9.212C25.056,11.201,25.031,11.112,24.959,11.076z",
+    fill: "#FFFFFF",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 235,
+      columnNumber: 21
+    }
+  }), __jsx("polygon", {
+    fill: "#FFFFFF",
+    points: "13.505,12.013 13.505,18.23 19.031,20.992   ",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 239,
+      columnNumber: 21
+    }
+  }), __jsx("path", {
+    d: "M19.514,21.23l5.074,2.537c0.277,0.138,0.504-0.002,0.504-0.311v-11.29L19.514,21.23z",
+    fill: "#FFFFFF",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 240,
+      columnNumber: 21
+    }
+  }), __jsx("path", {
+    d: "M12.895,11.105L7.58,8.448L7.244,8.28C7.196,8.256,7.15,8.244,7.108,8.244    c-0.059,0-0.109,0.023-0.145,0.066C6.929,8.352,6.908,8.412,6.908,8.487v12.13c0,0.206,0.151,0.451,0.336,0.543l5.222,2.611    c0.073,0.036,0.142,0.053,0.204,0.053c0.176,0,0.299-0.136,0.299-0.365V11.226C12.97,11.175,12.941,11.128,12.895,11.105z",
+    fill: "#FFFFFF",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 244,
+      columnNumber: 21
+    }
+  }))))))), __jsx("p", {
+    className: "text-2xl",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 254,
+      columnNumber: 9
+    }
+  }, "And also", ' ', __jsx(_components_link__WEBPACK_IMPORTED_MODULE_2__[/* Link */ "a"], {
+    href: "/blog",
+    style: 2,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 256,
+      columnNumber: 11
+    }
+  }, "Blog")), __jsx("br", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 260,
+      columnNumber: 9
+    }
+  }), __jsx("br", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 261,
       columnNumber: 9
     }
   })));
@@ -7167,14 +5907,14 @@ function Blog() {
 /***/ }),
 
 /***/ 1:
-/*!**********************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Fkirillrogovoy%2FProjects%2Frogovoy.me%2Fsrc%2Fpages%2Fblog.tsx ***!
-  \**********************************************************************************************************************************************/
+/*!***************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkirillrogovoy%2Fp%2Fold-projects%2Frogovoy.me%2Fsrc%2Fpages%2Findex.tsx ***!
+  \***************************************************************************************************************************************************/
 /*! no static exports found */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Fkirillrogovoy%2FProjects%2Frogovoy.me%2Fsrc%2Fpages%2Fblog.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2FUsers%2Fkirillrogovoy%2FProjects%2Frogovoy.me%2Fsrc%2Fpages%2Fblog.tsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkirillrogovoy%2Fp%2Fold-projects%2Frogovoy.me%2Fsrc%2Fpages%2Findex.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkirillrogovoy%2Fp%2Fold-projects%2Frogovoy.me%2Fsrc%2Fpages%2Findex.tsx!./");
 
 
 /***/ }),
@@ -7192,4 +5932,4 @@ module.exports = dll_2adc2403d89adc16ead0;
 /***/ })
 
 },[[1,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=blog.js.map
+//# sourceMappingURL=index.js.map

@@ -3496,7 +3496,7 @@ module.exports = function (list, options) {
 /* unused harmony export GoogleAnalytics */
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/kirillrogovoy/Projects/rogovoy.me/src/components/google-analytics.tsx";
+var _jsxFileName = "/Users/kirillrogovoy/p/old-projects/rogovoy.me/src/components/google-analytics.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var GA_TRACKING_ID = 'UA-58295126-1';
@@ -3545,7 +3545,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_google_analytics__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/google-analytics */ "./src/components/google-analytics.tsx");
 
 
-var _jsxFileName = "/Users/kirillrogovoy/Projects/rogovoy.me/src/pages/_app.tsx";
+var _jsxFileName = "/Users/kirillrogovoy/p/old-projects/rogovoy.me/src/pages/_app.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
@@ -3642,7 +3642,7 @@ if (true) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! next-client-pages-loader?page=%2F_app&absolutePagePath=private-next-pages%2F_app.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_app&absolutePagePath=private-next-pages%2F_app.tsx!./");
-module.exports = __webpack_require__(/*! /Users/kirillrogovoy/Projects/rogovoy.me/node_modules/next/dist/client/router.js */"./node_modules/next/dist/client/router.js");
+module.exports = __webpack_require__(/*! /Users/kirillrogovoy/p/old-projects/rogovoy.me/node_modules/next/dist/client/router.js */"./node_modules/next/dist/client/router.js");
 
 
 /***/ }),
