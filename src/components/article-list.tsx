@@ -8,7 +8,7 @@ type Props = {
 export const ArticleList = ({ articles }: Props) => (
   <div className="mx-auto">
     <ul>
-      {articles.map(article => (
+      {articles.map((article) => (
         <li key={article.id} className="text-xl mb-8 list-square">
           {article.origin ? (
             <Link style={2} href={article.origin} newTab>{`${article.title}, ${

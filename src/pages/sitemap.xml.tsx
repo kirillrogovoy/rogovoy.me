@@ -1,28 +1,22 @@
-import { GetServerSideProps } from "next";
+import { GetServerSideProps } from 'next'
 import { streamToPromise, SitemapStream } from 'sitemap'
-import { Readable } from "stream";
-import { getAllArticles } from "../article";
+import { Readable } from 'stream'
+import { getAllArticles } from '../article'
 
-
-const Sitemap = () => {};
+const Sitemap = () => {
+  return null
+}
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => {
-  const articleUrls = getAllArticles().filter(article => !article.hidden && !article.origin).map(article => `/blog/${article.id}`);
+  const articleUrls = getAllArticles()
+    .filter((article) => !article.hidden && !article.origin)
+    .map((article) => `/blog/${article.id}`)
 
-  const urls = [
-    '/',
-    '/blog',
-    '/codeduet',
-    '/feed.xml',
-    ...articleUrls,
-  ] as const
+  const urls = ['/', '/blog', '/codeduet', '/feed.xml', ...articleUrls] as const
 
   const sitemapXmlString = (
     await streamToPromise(
-      Readable.from(
-        urls
-         
-      ).pipe(
+      Readable.from(urls).pipe(
         new SitemapStream({
           hostname: `https://rogovoy.me`,
         }),
@@ -38,7 +32,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
 
   return {
     props: {},
-  };
-};
+  }
+}
 
-export default Sitemap;
+export default Sitemap

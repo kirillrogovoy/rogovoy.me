@@ -29,9 +29,9 @@ export function Link(props: LinkProps) {
   const isExternalLink = props.href.toString().startsWith('http')
 
   if (isExternalLink) {
-      <a className={className} {...targetProps} href={props.href.toString()}>
-        {props.children}
-      </a>
+    ;<a className={className} {...targetProps} href={props.href.toString()}>
+      {props.children}
+    </a>
   }
 
   return (

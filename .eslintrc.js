@@ -28,7 +28,7 @@ module.exports =  {
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-use-before-define': ['error', 'nofunc'],
     '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
-    'immutable/no-let': 'error',
+    // 'immutable/no-let': 'error',
     'immutable/no-this': 'error',
     'immutable/no-mutation': 'error',
     'react/react-in-jsx-scope': 'off',

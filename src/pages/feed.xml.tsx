@@ -2,7 +2,9 @@ import { Feed } from 'feed'
 import { GetServerSideProps } from 'next'
 import { getAllArticles } from '../article'
 
-const Sitemap = () => {}
+const FeedComponent = () => {
+  return null
+}
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   const author = {
@@ -10,7 +12,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     email: 'flash.kirill@gmail.com',
     link: 'https://rogovoy.me',
   }
-  
+
   const feed = new Feed({
     title: 'Kirill Rogovoy',
     description: "Kirill Rogovoy's blog",
@@ -53,4 +55,4 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   }
 }
 
-export default Sitemap
+export default FeedComponent

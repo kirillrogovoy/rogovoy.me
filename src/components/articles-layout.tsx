@@ -3,7 +3,7 @@ import { Separator } from './separator'
 import { PropsWithChildren } from 'react'
 import { EmailForm } from './email-form'
 
-export const ArticleLayout = (props: PropsWithChildren<{}>) => (
+export const ArticleLayout = (props: PropsWithChildren<unknown>) => (
   <div className="font-serif mx-auto" style={{ maxWidth: '90%', width: '44rem' }}>
     <header>
       <Link href="/">
