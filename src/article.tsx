@@ -26,6 +26,7 @@ const articles: ArticleMeta[] = [
   },
   {
     id: 'writing-html-sucks',
+    hidden: true,
     date: '2022-04-25',
     title: 'Writing HTML sucks and No-code doesn\'t help',
     description: '???',
