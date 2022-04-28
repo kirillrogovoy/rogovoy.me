@@ -4,7 +4,7 @@ import { PropsWithChildren } from 'react'
 import { EmailForm } from './email-form'
 
 export const ArticleLayout = (props: PropsWithChildren<{}>) => (
-  <div className="fade-in font-serif mx-auto" style={{ maxWidth: '90%', width: '44rem' }}>
+  <div className="font-serif mx-auto" style={{ maxWidth: '90%', width: '44rem' }}>
     <header>
       <Link href="/">
         <h1 className="text-center block mt-12 mb-1 text-5xl">Kirill Rogovoy</h1>

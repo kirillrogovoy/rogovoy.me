@@ -1,0 +1,150 @@
+It's bizarre how much web development has advanced over the last ten years.
+
+A glimpse of 2012:
+- HTML5 is barely adopted; the web is run by `<table>`.
+- Whatever isn't run by `<table>` is run by Flash.
+- "Does it work in IE6 though?"
+- No modules: everything is global. Browserify is getting some traction. "Bundling" is literally concatenating all JS files together.
+- If `foo.bar` doesn't work, try `$(foo).bar`.
+- No ES6 (and no `fetch`!). Typescript is a toddler. CoffeeScript is sexy. No Babel.
+- NPM and Bower start to get traction. Your `package.json` is ten `<script src>` tags.
+- Node.js is 3 years old and everybody wants to rewrite the internet with it.
+- Blast shelter sales are soaring https://en.wikipedia.org/wiki/2012_phenomenon#United_States
+
+I love coding websites in 2022! Despite numerous claims that our tooling became bulky and unwieldy, writing the actual code got much easier and less frustrating.
+
+Take HTML/CSS. Ten years ago, I would've killed for Flexbox alone.
+
+Over the last two years, I wrote 40k+ lines of UI code using React + Tailwind with all the powers of the modern web that I couldn't know would ever exist. I've liked it so much that I couldn't conceive of any big thing I could ask for.
+
+Except one.
+
+Why the hell do I have to write it by hand? It's slow and it's boring.
+
+
+## CSS-X-Fire
+
+Here's another thing that got traction around 2012.
+
+Screenshot: CSS-X-Fire
+
+At that point, Firebug, a Firefox extension, was the go-to in-browser collection of dev tools, such as a DOM inspector, network logger, JS Console, etc. Chrome was rapidly getting ahead of Firefox in terms of the market share, but still wasn't the standard dev tool for web developers.
+
+Firebug had a peculiar extension called CSS-X-Fire. It allowed you to edit styles for some CSS classes in Firebug, switch to WebStorm, click a button, and have all of those changes saved to your source code.
+
+It felt like magic!
+
+Screenshot: have you ever changed a million things in dev tools only to lose them?
+
+Besides the specific practical application, it revealed a crucial underlying concept to me: if there's a connection between the code and the HTML/CSS it produces, magic may happen.
+
+Spoiler: nothing fancy has happened since CSS-X-Fire which itself hasn't been ported anywhere.
+
+
+## Inventing on Principle
+
+(one can't simply talk about code/result dualism without mentioning Bret Viktor)
+
+Same year, 2012, one of the most cited tech talks gets published. (include link, https://vimeo.com/36579366)
+
+Of the the central ideas of the talk is the immediate connection between the program and its code, effectively allowing you to change the code by interacting with the program. Though this description is rather dull, so I encourage anyone to watch it.
+
+The talk has been mentioned over 1300 times on Hacker News, creating a void in the minds of thousands, and inspiring every other no-code UI builder out there.
+
+Screenshot: what have you done, viktor
+
+When I overlaid that idea of immediate connection on top of web development, a question popped up in my mind: Why are we still writing HTML by hand? Could we do that visually instead?
+
+Indeed we could!
+
+
+## Entering No-code™️
+
+Another thing that's been happening over the last decade is the Big Bang of software that enables less techy people to create and run internet businesses. Everything from site builders to databases to automation services. The No-code movement.
+
+No-code is exciting. Removing the need to learn how to code to start a non-trivial website, or to automate a bunch of existing processes, without paying $100/h to a grad student, is a terrific idea.
+
+Also, the No-code products have made it normal, more than normal, to create complex user interfaces visually.
+
+And I don't just mean grandma-friendly drag-and-drop editors for making typical static websites in under an hour. Those existed for ages. I mean tools for actual professionals that are almost as flexible as writing code. Tools like Webflow.
+
+Interestingly, some of those tools, e.g. Plasmic, are even trying to be "code-friendly", kindly acknowledging the gap between designers and developers, while still primarily serving the former.
+
+
+## But it still sucks for developers
+
+I'm leaving the Code vs No-code discussion for another day, but I'd like to express a couple of opinions.
+
+First, the code is here to stay. (Lindy effect) Ten years from now, we will still be using HTML (or the future equivalent of it) and have expensive developers write it.
+
+Second, actual web developers are now the underserved customers.
+
+Composing UIs with some of the modern no-code builders can be very fun and fast. We are visual creatures after all.
+
+Writing custom HTML and CSS is, most of the time, slow and boring.
+
+On one hand, in 99% of cases, I don't need to think much about browser compatibility issues, weird CSS hacks, performance caveats, or even naming things (when I use Tailwind) anymore. With some practice, I can view most UIs as a bunch of Flexbox-like or Grid-like patterns.
+
+On the other hand, the process of actually "producing" the result has hardly changed:
+1. Parse the visual picture into HTML in my mind (plus measure some exact padding values here and there).
+2. Type it out.
+3. Diff what I see with what I expected, then do a few rounds of fixes.
+4. Looks good? Onto the next one!
+
+It gets even worse if I don't know exactly what it should look like and want to experiment. Now it means generating a picture in my mind, converting it to HTML, typing it out, and only then can I see something on my screen.
+
+It's not just annoying. Creativity suffers from long feedback loops, and everything that's not near-instant is long.
+
+
+## Boring HTML is good
+
+One way you know something is boring is when there's little variability.
+
+I'd like to argue that HTML and CSS got a lot less variable, and that it's a good thing.
+
+If you remove naming and some opinions on semantics from the equation, the way 10 different developers of similar experiences within the same set of tools would write HTML/CSS for a typical web page is much more similar now than 10 years ago. Again, fewer hacks, Flexbox dominance, etc.
+
+It also means that this process is becoming much more mechanical than creative.
+
+The good news is that getting rid of mechanical processes is what we, the developers, do for a living!
+
+And a plethora of over-funded subscription-based no-code website builders is great proof. It's just that those are, at best, code-friendly, but not code-first.
+
+
+## Yes-code?
+
+It got me wondering: can we keep the code while also using a visual editor for all the... visual work?
+
+Not just export a UI as code, but actually edit it visually in every instance we would have previously switched to the code editor.
+
+Not just make it produce ugly "machine-generated" code that's impossible to edit by hand, but actually make the same changes to the code we would have otherwise made manually.
+
+Why is manually writing HTML still the standard in web development?
+
+Is that because we are doing everything else in the code? Is that because writing tags is faster than tinkering with a visual UI builder? Is there a technical issue we can't solve? Is there no economical incentive?
+
+I don't believe any of that is true.
+
+I don't think developers are necessarily "code creatures". Code is just a tool, a medium of thought. We are drawn to writing code, but for much of our work, there are just no viable alternatives.
+
+I don't think it's not doable either. Conceptually, whatever tooling we use for compiling/bundling is aware of the source code, it just doesn't maintain the connection between tags in the source code and DOM elements it produced.
+
+Economical incentive? Well, developers are extremely expensive, and hiring the good ones is horribly hard. Also, I've been a developer-turned-indie-hacker for more than two years, and I know in my heart how important it is to churn out UIs quickly.
+
+
+## Code-first visual editor for HTML and CSS
+
+The coding experience has improved so much for web developers since 2012. However, still making UIs by writing text seems bizarre and archaic to me. I've been doing that for more than 8 years, and I've had enough.
+
+We can do better, and I'm going to build a tool to prove it!
+
+To keep the context manageable, I'll make a prototype for React + Tailwind (with official support for Next.js) simply because that's the stack I'm using and it's wildly popular today.
+
+There's not going to be any service behind it. The backend is your code.
+
+I believe that the visual component of web development can be much more fun and at least 5x as fast.
+
+If you want to be the first to know about it, subscribe to my RSS, email newsletter, or follow me on Twitter.
+
+
+Gif: starcraft player

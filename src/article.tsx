@@ -1,5 +1,5 @@
 import { ArticleComponent } from './components/article'
-import {ReactElement, JSXElementConstructor, PropsWithChildren, AnchorHTMLAttributes} from 'react'
+import {JSXElementConstructor, PropsWithChildren, AnchorHTMLAttributes} from 'react'
 import {Link} from './components/link'
 import {MDXProvider, Components} from '@mdx-js/react'
 
@@ -13,6 +13,7 @@ export interface ArticleMeta {
   origin?: string
   hidden?: boolean
   tweetId?: string
+  imageUrl?: string
 }
 const articles: ArticleMeta[] = [
   {
@@ -24,20 +25,20 @@ const articles: ArticleMeta[] = [
     origin: 'https://freecodecamp.org/news/here-are-some-amazing-advantages-of-go-that-you-dont-hear-much-about-1af99de3b23a/',
   },
   {
-    id: 'test',
-    date: '01.02.2018',
-    title: 'Here are some amazing advantages of go that you dont hear much about',
-    description: 'test description',
-    keywords: ['test'],
-    hidden: true,
-    tweetId: '1162459837910978561',
+    id: 'writing-html-sucks',
+    date: '2022-04-25',
+    title: 'Writing HTML sucks and No-code doesn\'t help',
+    description: '???',
+    keywords: ['html', 'nocode'],
+    tweetId: '???',
   },
 ]
 
 export function renderArticle(id: string, Content: JSXElementConstructor<any>) {
   const articleMeta = articles.find(a => a.id === id)!
   const components: Components = {
-    a: (props: PropsWithChildren<AnchorHTMLAttributes<HTMLAnchorElement>>) => <Link href={props.href!} style={2}>{props.children}</Link>
+    a: (props: PropsWithChildren<AnchorHTMLAttributes<HTMLAnchorElement>>) =>
+      <Link href={props.href!} style={2}>{props.children}</Link>
   }
   return <ArticleComponent article={articleMeta}>
     <MDXProvider components={components} >

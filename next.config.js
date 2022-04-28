@@ -4,7 +4,7 @@ const withMdx = require("@next/mdx")();
 
 module.exports = withMdx(withImages(withBundleAnalyzer({
   webpack(config) {
-    config.optimization.usedExports = true
+    // config.optimization.usedExports = true
     return config
   },
   analyzeServer: ["server", "both"].includes(process.env.BUNDLE_ANALYZE),

@@ -1,7 +1,5 @@
-import '../tailwind.css'
-import { AppPropsType } from 'next/dist/next-server/lib/utils'
-import {useEffect} from 'react'
-import {GA_TRACKING_ID} from '../components/google-analytics'
+import { AppPropsType } from 'next/dist/shared/lib/utils'
+import '../../styles/globals.css'
 
 declare global {
   // it's important to have an interface here to append to the global type
@@ -11,13 +9,6 @@ declare global {
   }
 }
 
-export default function App({ Component, pageProps, router }: AppPropsType) {
-  useEffect(() => {
-    router.events.on('routeChangeComplete', () => {
-      window.gtag('config', GA_TRACKING_ID, {
-        ['page_location']: location.href,
-      })
-    })
-  }, [])
+export default function App({ Component, pageProps }: AppPropsType) {
   return <Component {...pageProps} />
 }

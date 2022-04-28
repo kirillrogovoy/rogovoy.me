@@ -1,19 +1,19 @@
-import Document, { Head, Main, NextScript } from 'next/document'
-import { GoogleAnalytics } from '../components/google-analytics'
+import Document, { Head, Html, Main, NextScript } from 'next/document'
+import { PosthogAnalytics } from '../components/posthog'
 
 export default class MyDocument extends Document {
   render() {
     return (
-      <html>
+      <Html>
         <Head>
-          <GoogleAnalytics />
+          <PosthogAnalytics />
           <link rel="icon" type="image/x-icon" href="/favicon.png" />
         </Head>
         <body className="text-primary">
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     )
   }
 }

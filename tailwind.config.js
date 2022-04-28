@@ -1,4 +1,5 @@
 module.exports = {
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {
       serif: ['"Open Sans"', 'sans-serif']
@@ -17,11 +18,11 @@ module.exports = {
         '4/5': '80%',
       },
       width: {
-        88: '22rem'
+        88: '22rem',
       },
       listStyleType: {
-        square: 'square'
-      }
-    }
-  }
+        square: 'square',
+      },
+    },
+  },
 }

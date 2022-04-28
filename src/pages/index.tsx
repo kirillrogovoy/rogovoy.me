@@ -11,8 +11,8 @@ export default function Index() {
           name="keywords"
           content="kirill rogovoy, rogovoy, developer, software engineer, team lead, software architect"
         ></meta>
-        <meta name="og:title" content="Kirill Rogovoy — that software guy"></meta>
-        <meta name="og:image" content="/kirill-rogovoy.jpg"></meta>
+        <meta name="og:title" content="Kirill Rogovoy — website"></meta>
+        <meta name="og:image" content="https://rogovoy.me/kirill-rogovoy.jpg"></meta>
         <meta
           name="og:description"
           content="Kirill Rogovoy — software engineer, team lead, architect, and everything in between"
@@ -23,9 +23,9 @@ export default function Index() {
         ></meta>
         <title>Kirill Rogovoy</title>
       </Head>
-      <div className="fade-in font-serif absolute m-auto inset-0 text-center h-4/5">
+      <div className="font-serif absolute m-auto inset-0 text-center h-4/5">
         <img className="mx-auto h-64 w-64 rounded-full" src="/kirill-rogovoy.jpg" />
-        <h1 className="mt-6 text-6xl leading-tight">Kirill Rogovoy</h1>
+        <h1 className="mt-6 text-7xl leading-tight">Kirill Rogovoy</h1>
         <p className="mb-1 text-2xl">Code · Design · BJJ · Travel · Beer</p>
         <p className="mb-8 text-2xl">
           <Link href="https://foodba.com" newTab style={2}>Foodba</Link> CTO
@@ -103,7 +103,7 @@ export default function Index() {
               </svg>
             </a>
           </li>
-          <li className="inline-block w-12 mx-2">
+          {/* <li className="inline-block w-12 mx-2">
             <a href="https://ua.linkedin.com/in/kirillrogovoy" title="LinkedIn">
               <svg
                 version="1.1"
@@ -143,7 +143,7 @@ export default function Index() {
                 <g></g>
               </svg>
             </a>
-          </li>
+          </li> */}
           <li className="inline-block w-12 mx-2">
             <a href="https://github.com/kirillrogovoy" title="GitHub">
               <svg
@@ -161,7 +161,7 @@ export default function Index() {
               </svg>
             </a>
           </li>
-          <li className="inline-block w-12 mx-2">
+          {/* <li className="inline-block w-12 mx-2">
             <a href="https://stackoverflow.com/users/4429540/kirill-rogovoy" title="StackOverflow">
               <svg
                 version="1.1"
@@ -185,7 +185,7 @@ export default function Index() {
                 </g>
               </svg>
             </a>
-          </li>
+          </li> */}
           {/*
            * <li className="inline-block w-12 mx-2">
            *   <a href="https://www.quora.com/profile/Kirill-Rogovoy" title="Quora">
@@ -212,7 +212,7 @@ export default function Index() {
            *   </a>
            * </li>
            */}
-          <li className="inline-block w-12 mx-2">
+          {/* <li className="inline-block w-12 mx-2">
             <a href="https://medium.com/@kirillrogovoy" title="Medium" className="links-medium">
               <svg
                 enableBackground="new 0 0 32 32"
@@ -249,7 +249,7 @@ export default function Index() {
                 </g>
               </svg>
             </a>
-          </li>
+          </li> */}
         </ul>
         <p className="text-2xl">
           And also{' '}
