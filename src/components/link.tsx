@@ -28,20 +28,17 @@ export function Link(props: LinkProps) {
 
   const isExternalLink = props.href.toString().startsWith('http')
 
-  const Wrapper = ({ children }: PropsWithChildren<{}>) =>
-    isExternalLink ? <>{children}</> : <NextLink {...passProps}>{children}</NextLink>
-
   if (isExternalLink) {
-    delete passProps.href
-    // eslint-disable-next-line immutable/no-mutation
-    targetProps.href = props.href.toString()
+      <a className={className} {...targetProps} href={props.href.toString()}>
+        {props.children}
+      </a>
   }
 
   return (
-    <Wrapper>
+    <NextLink {...passProps}>
       <a className={className} {...targetProps}>
         {props.children}
       </a>
-    </Wrapper>
+    </NextLink>
   )
 }
