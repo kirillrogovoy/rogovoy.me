@@ -45,13 +45,16 @@ Spoiler: nothing fancy has happened since CSS-X-Fire which itself hasn't been po
 
 (one can't simply talk about code/result dualism without mentioning Bret Viktor)
 
-Same year, 2012, one of the most cited tech talks gets published. (include link, https://vimeo.com/36579366)
+Same year, 2012, one of the most cited tech talks gets published.
+
+<iframe style={{margin: '24px 0', width: '100%', aspectRatio: '2.17'}} src="https://www.youtube.com/embed/PUv66718DII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Of the the central ideas of the talk is the immediate connection between the program and its code, effectively allowing you to change the code by interacting with the program. Though this description is rather dull, so I encourage anyone to watch it.
 
 The talk has been mentioned over 1300 times on Hacker News, creating a void in the minds of thousands, and inspiring every other no-code UI builder out there.
 
 Screenshot: what have you done, viktor
+<img src="/articles/writing-html-sucks/inventing-on-principle-demo.png" />
 
 When I overlaid that idea of immediate connection on top of web development, a question popped up in my mind: Why are we still writing HTML by hand? Could we do that visually instead?
 
@@ -95,6 +98,8 @@ It gets even worse if I don't know exactly what it should look like and want to 
 
 It's not just annoying. Creativity suffers from long feedback loops, and everything that's not near-instant is long.
 
+Gif: starcraft player
+
 
 ## Boring HTML is good
 
@@ -112,6 +117,60 @@ And a plethora of over-funded subscription-based no-code website builders is gre
 
 
 ## Yes-code?
+
+Let's talk about tools.
+
+I like to imagine my virtual coding "equipment" placed around me as if I was fixing a motorcycle. There's my editor over here, a terminal over there, and so on. When I need a tool, I reach for it.
+
+Some tools I use every so often, and the others I rarely let go. For example, I might need Chrome's Dev Tools to make sense of something while debugging, and then I stash it away. The code editor, however, is always front and center.
+
+Code is a Swiss army knife. We use it to represent so many types of thoughts, from imperative do-this-then-do-that algorithms to data flows to visual user interfaces.
+
+Coding is an outstandingly robust yet versatile tool. I draw great pleasure from using it.
+
+However, there are cases when I do want to reach for a specialized tool, but there's none. And writing or editing markup is one of those. This is when I feel that, though suitable, code is not the best tool for this job.
+
+Sometimes, it's a 2-minute job. Fix some margin. No big deal. But sometimes I'd spend the whole day working on the UI, and the issue becomes much more apparent.
+
+In that working-on-UI mode, writing HTML feels like trying to draw a picture by shooting arrows at the target. You shoot one, see where it landed, adjust, and shoot again. Code feels like the gap between you and the target.
+
+We aren't blind to this problem. In fact, we got pretty good at shooting those arrows. Emmet saves us raw keystokes, Tailwind (with its VS Code extension) saves us mental effort, Fast Refresh (aka Hot Module Replacement) shrinks the feedback loop, the browser's DOM explorer gives us some optics. We shoot those arrows from a machine gun.
+
+But the distance is still there. The gap is still there. We are just traveling it faster.
+
+
+## Visual programming is generally a bad idea
+
+There are many reasons why our code editors don't look like Scratch. Here are just a few of them.
+
+First, structured text is simply a good medium for a lot of thoughts we are trying to encapsulate with programming.
+
+Second, it's the tooling. Plain text is the most compatible data format ever. Unix utils, terminals, Git, and many other tools we use daily are built to work on top of plain text.
+
+Numerous project attempted to make the whole body of programming become visual. Most of them have failed. The ones that survived are used in very specific domains, for things like learning, graphics, or flow modeling.
+
+So, if one wants to introduce a little bit of visual programming, these are at least two things to consider:
+1. It must be a better medium of thought than plain text.
+2. It must be pragmatically compatible with plain text.
+
+The solution I'm going to suggest scores well for both of them.
+
+
+## (Solution)
+
+1. Immediate connection. That's the whole idea, remember? You work directly with UI.
+2. Full backward compatibility. Nothing is taken away. Whatever feels easier to code directly, you can code. A tool should be there when you need it, and get out of your way when you don't.
+3. No external service or database. The underlying data is simply your code.
+4. Developer-friendly, grandma-unfriendly. Keyboard-centric and with a minimalistic UI.
+5. Maximum value per keystoke. Work should feel fluid and effortless.
+6. The generated code should be the same code you would write manually.
+7. Editor-agnostic: doesn't matter if you use VS Code, Vim, or Windows Notepad.
+8. Architecture-agnostic: doesn't require you to code in a specific way.
+9. Browser-agnostic.
+
+
+OLD STUFF BELOW
+
 
 It got me wondering: can we keep the code while also using a visual editor for all the... visual work?
 
@@ -145,6 +204,3 @@ There's not going to be any service behind it. The backend is your code.
 I believe that the visual component of web development can be much more fun and at least 5x as fast.
 
 If you want to be the first to know about it, subscribe to my RSS, email newsletter, or follow me on Twitter.
-
-
-Gif: starcraft player

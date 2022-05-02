@@ -172,3 +172,22 @@ function TwitterTweetButton(props: TwitterTweetButtonProps) {
     </a>
   )
 }
+
+export type ArticleImageProps = {
+  src: string
+  alt: string
+  caption?: string
+}
+
+export function ArticleImage(props: ArticleImageProps) {
+  return (
+    <div className="flex flex-col items-center justify-center">
+      <img src={props.src} alt={props.alt} className="w-full" />
+      {props.caption && (
+        <div className="text-center text-sm">
+          <p className="text-gray-600">{props.caption}</p>
+        </div>
+      )}
+    </div>
+  )
+}

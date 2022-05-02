@@ -21,7 +21,7 @@ export default function Index() {
           name="description"
           content="Kirill Rogovoy — software engineer, team lead, architect, and everything in between"
         ></meta>
-        <title>Kirill Rogovoy</title>
+        <title>Kirill Rogovoy 🇺🇦</title>
       </Head>
       <div className="font-serif absolute m-auto inset-0 text-center h-4/5">
         <img className="mx-auto h-64 w-64 rounded-full" src="/kirill-rogovoy.jpg" />
