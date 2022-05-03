@@ -94,8 +94,11 @@ export function ArticleComponent({ article, children }: Props) {
         .markdown ol {
           margin-top: 5px;
         }
-        .markdown li {
+        .markdown ul li {
           list-style-type: square;
+        }
+        .markdown ol li {
+          list-style-type: number;
         }
       `}</style>
     </ArticleLayout>

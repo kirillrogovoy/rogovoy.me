@@ -15,7 +15,7 @@ I love coding websites in 2022! Despite numerous claims that our tooling became 
 
 Take HTML/CSS. Ten years ago, I would've killed for Flexbox alone.
 
-Over the last two years, I wrote 40k+ lines of UI code using React + Tailwind with all the powers of the modern web that I couldn't know would ever exist. I've liked it so much that I couldn't conceive of any big thing I could ask for.
+Over the last two years, I wrote 40k+ lines of UI code using React + Tailwind with all the powers of the modern web that I couldn't know would ever exist. I've liked it so much that I couldn't conceive of any specific major thing I could ask for.
 
 Except one.
 
@@ -43,20 +43,20 @@ Spoiler: nothing fancy has happened since CSS-X-Fire which itself hasn't been po
 
 ## Inventing on Principle
 
-(one can't simply talk about code/result dualism without mentioning Bret Viktor)
+(one can't simply talk about code/result duality without mentioning Bret Viktor)
 
 Same year, 2012, one of the most cited tech talks gets published.
 
-<iframe style={{margin: '24px 0', width: '100%', aspectRatio: '2.17'}} src="https://www.youtube.com/embed/PUv66718DII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe className="my-6 w-full" style={{ aspectRatio: '2.17'}} src="https://www.youtube.com/embed/PUv66718DII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Of the the central ideas of the talk is the immediate connection between the program and its code, effectively allowing you to change the code by interacting with the program. Though this description is rather dull, so I encourage anyone to watch it.
+One of the central ideas of the talk is the immediate connection between the program and its code, effectively allowing you to change the code by interacting with the program. Though this description is rather dull, so I encourage anyone to watch it.
 
 The talk has been mentioned over 1300 times on Hacker News, creating a void in the minds of thousands, and inspiring every other no-code UI builder out there.
 
 Screenshot: what have you done, viktor
 <img src="/articles/writing-html-sucks/inventing-on-principle-demo.png" />
 
-When I overlaid that idea of immediate connection on top of web development, a question popped up in my mind: Why are we still writing HTML by hand? Could we do that visually instead?
+When I overlaid that idea of immediate connection on top of web development, a question popped up in my mind: Why are we still writing HTML by hand? Could we do that visually instead, and have that kind of immediate connection with out app?
 
 Indeed we could!
 
@@ -69,12 +69,12 @@ No-code is exciting. Removing the need to learn how to code to start a non-trivi
 
 Also, the No-code products have made it normal, more than normal, to create complex user interfaces visually.
 
-And I don't just mean grandma-friendly drag-and-drop editors for making typical static websites in under an hour. Those existed for ages. I mean tools for actual professionals that are almost as flexible as writing code. Tools like Webflow.
+And I don't just mean grandma-friendly drag-and-drop editors for making typical static websites in under an hour. Those existed for ages. I mean tools for actual professionals that are almost as flexible as writing code. Tools like Webflow or Plasmic.
 
-Interestingly, some of those tools, e.g. Plasmic, are even trying to be "code-friendly", kindly acknowledging the gap between designers and developers, while still primarily serving the former.
+However, those services are, at best, code-friendly, and none of them are code-first. They acknowledge the gap between designers and developers, while still primarily serving the former.
 
 
-## But it still sucks for developers
+## It still sucks for developers
 
 I'm leaving the Code vs No-code discussion for another day, but I'd like to express a couple of opinions.
 
@@ -101,32 +101,17 @@ It's not just annoying. Creativity suffers from long feedback loops, and everyth
 Gif: starcraft player
 
 
-## Boring HTML is good
-
-One way you know something is boring is when there's little variability.
-
-I'd like to argue that HTML and CSS got a lot less variable, and that it's a good thing.
-
-If you remove naming and some opinions on semantics from the equation, the way 10 different developers of similar experiences within the same set of tools would write HTML/CSS for a typical web page is much more similar now than 10 years ago. Again, fewer hacks, Flexbox dominance, etc.
-
-It also means that this process is becoming much more mechanical than creative.
-
-The good news is that getting rid of mechanical processes is what we, the developers, do for a living!
-
-And a plethora of over-funded subscription-based no-code website builders is great proof. It's just that those are, at best, code-friendly, but not code-first.
-
-
 ## Yes-code?
 
 Let's talk about tools.
 
 I like to imagine my virtual coding "equipment" placed around me as if I was fixing a motorcycle. There's my editor over here, a terminal over there, and so on. When I need a tool, I reach for it.
 
+(Picture of that)
+
 Some tools I use every so often, and the others I rarely let go. For example, I might need Chrome's Dev Tools to make sense of something while debugging, and then I stash it away. The code editor, however, is always front and center.
 
-Code is a Swiss army knife. We use it to represent so many types of thoughts, from imperative do-this-then-do-that algorithms to data flows to visual user interfaces.
-
-Coding is an outstandingly robust yet versatile tool. I draw great pleasure from using it.
+Code is a Swiss army knife. We use it to represent so many types of thoughts, from imperative do-this-then-do-that algorithms to data flows to visual user interfaces. It's robust yet versatile.
 
 However, there are cases when I do want to reach for a specialized tool, but there's none. And writing or editing markup is one of those. This is when I feel that, though suitable, code is not the best tool for this job.
 
@@ -139,68 +124,48 @@ We aren't blind to this problem. In fact, we got pretty good at shooting those a
 But the distance is still there. The gap is still there. We are just traveling it faster.
 
 
-## Visual programming is generally a bad idea
+## Making programming "visual" is generally a bad idea
 
-There are many reasons why our code editors don't look like Scratch. Here are just a few of them.
+There are many reasons why our code editors today don't look like Scratch. Here are just a few of them.
 
 First, structured text is simply a good medium for a lot of thoughts we are trying to encapsulate with programming.
 
-Second, it's the tooling. Plain text is the most compatible data format ever. Unix utils, terminals, Git, and many other tools we use daily are built to work on top of plain text.
+Second, it's the tooling. Plain text is the most compatible data format ever. Unix utils, terminals, compilers, Git, and many other tools we use daily are built to work on top of plain text.
 
-Numerous project attempted to make the whole body of programming become visual. Most of them have failed. The ones that survived are used in very specific domains, for things like learning, graphics, or flow modeling.
+Numerous project attempted to make the whole body of programming visual. Most of them have failed. The ones that survived are used in very specific domains: learning, graphics, flow modeling, etc.
 
 So, if one wants to introduce a little bit of visual programming, these are at least two things to consider:
 1. It must be a better medium of thought than plain text.
 2. It must be pragmatically compatible with plain text.
 
-The solution I'm going to suggest scores well for both of them.
-
-
-## (Solution)
-
-1. Immediate connection. That's the whole idea, remember? You work directly with UI.
-2. Full backward compatibility. Nothing is taken away. Whatever feels easier to code directly, you can code. A tool should be there when you need it, and get out of your way when you don't.
-3. No external service or database. The underlying data is simply your code.
-4. Developer-friendly, grandma-unfriendly. Keyboard-centric and with a minimalistic UI.
-5. Maximum value per keystoke. Work should feel fluid and effortless.
-6. The generated code should be the same code you would write manually.
-7. Editor-agnostic: doesn't matter if you use VS Code, Vim, or Windows Notepad.
-8. Architecture-agnostic: doesn't require you to code in a specific way.
-9. Browser-agnostic.
-
-
-OLD STUFF BELOW
-
-
-It got me wondering: can we keep the code while also using a visual editor for all the... visual work?
-
-Not just export a UI as code, but actually edit it visually in every instance we would have previously switched to the code editor.
-
-Not just make it produce ugly "machine-generated" code that's impossible to edit by hand, but actually make the same changes to the code we would have otherwise made manually.
-
-Why is manually writing HTML still the standard in web development?
-
-Is that because we are doing everything else in the code? Is that because writing tags is faster than tinkering with a visual UI builder? Is there a technical issue we can't solve? Is there no economical incentive?
-
-I don't believe any of that is true.
-
-I don't think developers are necessarily "code creatures". Code is just a tool, a medium of thought. We are drawn to writing code, but for much of our work, there are just no viable alternatives.
-
-I don't think it's not doable either. Conceptually, whatever tooling we use for compiling/bundling is aware of the source code, it just doesn't maintain the connection between tags in the source code and DOM elements it produced.
-
-Economical incentive? Well, developers are extremely expensive, and hiring the good ones is horribly hard. Also, I've been a developer-turned-indie-hacker for more than two years, and I know in my heart how important it is to churn out UIs quickly.
+In my view, a tool to edit your HTML and CSS visually right inside your app scores well for both of these.
 
 
 ## Code-first visual editor for HTML and CSS
 
-The coding experience has improved so much for web developers since 2012. However, still making UIs by writing text seems bizarre and archaic to me. I've been doing that for more than 8 years, and I've had enough.
+Let's get more specific. What is this editor of my dreams?
 
-We can do better, and I'm going to build a tool to prove it!
+Here's the way I imagine it:
 
-To keep the context manageable, I'll make a prototype for React + Tailwind (with official support for Next.js) simply because that's the stack I'm using and it's wildly popular today.
+1. Immediate connection. That's the whole idea, remember? You work directly with the UI.
+1. Full backward compatibility. Nothing is taken away. Whatever feels easier to code directly, you can code. A tool should be there when you need it, and get out of your way when you don't.
+1. No external service or database. The underlying data is simply your code.
+1. Developer-friendly, grandma-unfriendly. Keyboard-centric and with a minimalistic UI.
+1. Maximum value per keystoke. Work should feel fluid and scale to the speed of thought.
+1. Fun to learn, fun to use!
+1. The generated code should be the same code you would write manually.
+1. Editor-agnostic: doesn't matter if you use VS Code, Vim, or Windows Notepad.
+1. Architecture-agnostic: doesn't require you to code in a specific way.
+1. Browser-agnostic.
 
-There's not going to be any service behind it. The backend is your code.
+Put shortly, I want a specialized editor I could reach for to work on the UI, but ignore it when I just want to write code. With zero changes to everything else.
 
-I believe that the visual component of web development can be much more fun and at least 5x as fast.
+Can we build it? I fail to see any major obstacles. And I'm making a prototype!
 
-If you want to be the first to know about it, subscribe to my RSS, email newsletter, or follow me on Twitter.
+To keep the context manageable, I'll stick to React + Tailwind (with official support for Next.js) simply because that's the stack I'm using and it's wildly popular today.
+
+I believe that the visual component of web development can be much more fun and at least 5x as fast. And we don't need a SaaS for that.
+
+If you want to stay posted, subscribe to my RSS, email newsletter, or follow me on Twitter.
+
+{/*Discuss it on Twitter, Hacker News, Reddit, or just shoot me an email.*/}
