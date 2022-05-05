@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./src/**/*.{js,ts,jsx,tsx}', 'articles/**/*.{md,mdx}'],
   theme: {
     fontFamily: {
       serif: ['"Open Sans"', 'sans-serif']
@@ -7,6 +7,7 @@ module.exports = {
     colors: {
       back: '#ffffff',
       primary: '#333333',
+      opaque: '#666666',
       faded: '#dddddd',
       link1: '#777777',
       link1hover: '#777777',

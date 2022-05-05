@@ -9,7 +9,7 @@ A glimpse of 2012:
 - No ES6 (and no `fetch`!). Typescript is a toddler. CoffeeScript is sexy. No Babel.
 - NPM and Bower start to get traction. Your `package.json` is ten `<script src>` tags.
 - Node.js is 3 years old and everybody wants to rewrite the internet with it.
-- Blast shelter sales are soaring https://en.wikipedia.org/wiki/2012_phenomenon#United_States
+- The world is [ending](https://en.wikipedia.org/wiki/2012_phenomenon)
 
 I love coding websites in 2022! Despite numerous claims that our tooling became bulky and unwieldy, writing the actual code got much easier and less frustrating.
 
@@ -26,15 +26,15 @@ Why the hell do I have to write it by hand? It's slow and it's boring.
 
 Here's another thing that got traction around 2012.
 
-Screenshot: CSS-X-Fire
+<Img src="@cssxfire.jpg" caption="CSS-X-Fire: inspector on the left, WebStorm on the right" />
 
-At that point, Firebug, a Firefox extension, was the go-to in-browser collection of dev tools, such as a DOM inspector, network logger, JS Console, etc. Chrome was rapidly getting ahead of Firefox in terms of the market share, but still wasn't the standard dev tool for web developers.
+At that point, Firebug, a Firefox extension, was the go-to in-browser collection of dev tools, such as a DOM inspector, network logger, JS console, etc. Chrome was rapidly getting ahead of Firefox in terms of the market share, but still wasn't the standard dev tool for web developers.
 
-Firebug had a peculiar extension called CSS-X-Fire. It allowed you to edit styles for some CSS classes in Firebug, switch to WebStorm, click a button, and have all of those changes saved to your source code.
+Firebug had a peculiar extension called [CSS-X-Fire](https://github.com/zolotov/css-x-fire). It allowed you to edit styles for some CSS classes in Firebug, switch to WebStorm, click a button, and have all of those changes saved to your source code.
 
 It felt like magic!
 
-Screenshot: have you ever changed a million things in dev tools only to lose them?
+<Img className="mt-3" src="@devtools.jpg" caption="Have you ever changed a million things in dev tools ad-hoc only to lose them?" />
 
 Besides the specific practical application, it revealed a crucial underlying concept to me: if there's a connection between the code and the HTML/CSS it produces, magic may happen.
 
@@ -47,16 +47,16 @@ Spoiler: nothing fancy has happened since CSS-X-Fire which itself hasn't been po
 
 Same year, 2012, one of the most cited tech talks gets published.
 
-<iframe className="my-6 w-full" style={{ aspectRatio: '2.17'}} src="https://www.youtube.com/embed/PUv66718DII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe className="my-2 w-full" style={{ aspectRatio: '2.17'}} src="https://www.youtube.com/embed/PUv66718DII" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 One of the central ideas of the talk is the immediate connection between the program and its code, effectively allowing you to change the code by interacting with the program. Though this description is rather dull, so I encourage anyone to watch it.
 
 The talk has been mentioned over 1300 times on Hacker News, creating a void in the minds of thousands, and inspiring every other no-code UI builder out there.
 
-Screenshot: what have you done, viktor
-<img src="/articles/writing-html-sucks/inventing-on-principle-demo.png" />
+<Img src="@inventing-on-principle-demo.png" caption="what have you done, viktor" />
 
-When I overlaid that idea of immediate connection on top of web development, a question popped up in my mind: Why are we still writing HTML by hand? Could we do that visually instead, and have that kind of immediate connection with out app?
+
+When I overlaid that idea of immediate connection on top of web development, a question popped up in my mind: Why are we still writing HTML by hand? Could we do that visually instead, and have that kind of immediate connection with our app?
 
 Indeed we could!
 
@@ -64,6 +64,8 @@ Indeed we could!
 ## Entering No-code™️
 
 Another thing that's been happening over the last decade is the Big Bang of software that enables less techy people to create and run internet businesses. Everything from site builders to databases to automation services. The No-code movement.
+
+<Img className="px-[20%]" src="@nocode.jpeg" />
 
 No-code is exciting. Removing the need to learn how to code to start a non-trivial website, or to automate a bunch of existing processes, without paying $100/h to a grad student, is a terrific idea.
 
@@ -78,7 +80,7 @@ However, those services are, at best, code-friendly, and none of them are code-f
 
 I'm leaving the Code vs No-code discussion for another day, but I'd like to express a couple of opinions.
 
-First, the code is here to stay. (Lindy effect) Ten years from now, we will still be using HTML (or the future equivalent of it) and have expensive developers write it.
+First, the [code is here to stay](https://en.wikipedia.org/wiki/Lindy_effect). Ten years from now, we will still be using HTML (or the future equivalent of it) and have expensive developers write it.
 
 Second, actual web developers are now the underserved customers.
 
@@ -98,7 +100,8 @@ It gets even worse if I don't know exactly what it should look like and want to 
 
 It's not just annoying. Creativity suffers from long feedback loops, and everything that's not near-instant is long.
 
-Gif: starcraft player
+<Video src="@starcraft.mp4" caption="Limitless speed unlocked by instant feedback" />
+
 
 
 ## Yes-code?
@@ -107,39 +110,21 @@ Let's talk about tools.
 
 I like to imagine my virtual coding "equipment" placed around me as if I was fixing a motorcycle. There's my editor over here, a terminal over there, and so on. When I need a tool, I reach for it.
 
-(Picture of that)
+<Img src="@mechanic.jpeg" captionJsx={<Link href="https://unsplash.com/photos/4ORysIjH-mY">Unsplash: Photo by Kat Sazonova</Link>} />
 
-Some tools I use every so often, and the others I rarely let go. For example, I might need Chrome's Dev Tools to make sense of something while debugging, and then I stash it away. The code editor, however, is always front and center.
+Some tools I use every so often, and the others I rarely let go of. For example, I might need Chrome's Dev Tools to make sense of something while debugging, and then I stash it away. The code editor, however, is always front and center.
 
 Code is a Swiss army knife. We use it to represent so many types of thoughts, from imperative do-this-then-do-that algorithms to data flows to visual user interfaces. It's robust yet versatile.
 
-However, there are cases when I do want to reach for a specialized tool, but there's none. And writing or editing markup is one of those. This is when I feel that, though suitable, code is not the best tool for this job.
+However, there are cases when I do want to reach for a specialized tool, but there are none. And writing or editing markup is one of those. This is when I feel that, though suitable, code is not the best tool for this job.
 
 Sometimes, it's a 2-minute job. Fix some margin. No big deal. But sometimes I'd spend the whole day working on the UI, and the issue becomes much more apparent.
 
 In that working-on-UI mode, writing HTML feels like trying to draw a picture by shooting arrows at the target. You shoot one, see where it landed, adjust, and shoot again. Code feels like the gap between you and the target.
 
-We aren't blind to this problem. In fact, we got pretty good at shooting those arrows. Emmet saves us raw keystokes, Tailwind (with its VS Code extension) saves us mental effort, Fast Refresh (aka Hot Module Replacement) shrinks the feedback loop, the browser's DOM explorer gives us some optics. We shoot those arrows from a machine gun.
+We aren't blind to this problem. In fact, we got pretty good at shooting those arrows. [Emmet](https://emmet.io/) saves us raw keystrokes, [Tailwind](https://tailwindcss.com/) (with its [VS Code extension](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)) saves us mental effort, Fast Refresh (aka [Hot Module Replacement](https://webpack.js.org/concepts/hot-module-replacement/)) shrinks the feedback loop, the browser's DOM explorer gives us some optics. We shoot those arrows from a machine gun.
 
 But the distance is still there. The gap is still there. We are just traveling it faster.
-
-
-## Making programming "visual" is generally a bad idea
-
-There are many reasons why our code editors today don't look like Scratch. Here are just a few of them.
-
-First, structured text is simply a good medium for a lot of thoughts we are trying to encapsulate with programming.
-
-Second, it's the tooling. Plain text is the most compatible data format ever. Unix utils, terminals, compilers, Git, and many other tools we use daily are built to work on top of plain text.
-
-Numerous project attempted to make the whole body of programming visual. Most of them have failed. The ones that survived are used in very specific domains: learning, graphics, flow modeling, etc.
-
-So, if one wants to introduce a little bit of visual programming, these are at least two things to consider:
-1. It must be a better medium of thought than plain text.
-2. It must be pragmatically compatible with plain text.
-
-In my view, a tool to edit your HTML and CSS visually right inside your app scores well for both of these.
-
 
 ## Code-first visual editor for HTML and CSS
 
@@ -148,17 +133,17 @@ Let's get more specific. What is this editor of my dreams?
 Here's the way I imagine it:
 
 1. Immediate connection. That's the whole idea, remember? You work directly with the UI.
-1. Full backward compatibility. Nothing is taken away. Whatever feels easier to code directly, you can code. A tool should be there when you need it, and get out of your way when you don't.
+1. Full backward compatibility. Nothing is taken away. Whatever feels easier to code directly, you can code. A tool should be there when you need it and get out of your way when you don't.
 1. No external service or database. The underlying data is simply your code.
 1. Developer-friendly, grandma-unfriendly. Keyboard-centric and with a minimalistic UI.
-1. Maximum value per keystoke. Work should feel fluid and scale to the speed of thought.
+1. Maximum value per keystroke. Work should feel fluid and scale to the speed of thought.
 1. Fun to learn, fun to use!
 1. The generated code should be the same code you would write manually.
 1. Editor-agnostic: doesn't matter if you use VS Code, Vim, or Windows Notepad.
 1. Architecture-agnostic: doesn't require you to code in a specific way.
 1. Browser-agnostic.
 
-Put shortly, I want a specialized editor I could reach for to work on the UI, but ignore it when I just want to write code. With zero changes to everything else.
+Put shortly, I want a specialized editor I could reach for to work on the UI but ignore it when I just want to write code. With zero changes to everything else.
 
 Can we build it? I fail to see any major obstacles. And I'm making a prototype!
 

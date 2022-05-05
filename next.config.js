@@ -1,6 +1,10 @@
 const withBundleAnalyzer = require("@zeit/next-bundle-analyzer");
 const withImages = require('next-images')
-const withMdx = require("@next/mdx")();
+const withMdx = require("@next/mdx")({
+  options: {
+    providerImportSource: "@mdx-js/react",
+  }
+});
 
 module.exports = withMdx(withImages(withBundleAnalyzer({
   webpack(config) {

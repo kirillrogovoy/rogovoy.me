@@ -1,4 +1,10 @@
-import { ArticleComponent } from './components/article'
+import {
+  ArticleComponent,
+  ArticleImageProps,
+  ArticleVideoProps,
+  Img,
+  Video,
+} from './components/article'
 import { JSXElementConstructor, PropsWithChildren, AnchorHTMLAttributes } from 'react'
 import { Link } from './components/link'
 import { MDXProvider, Components } from '@mdx-js/react'
@@ -18,7 +24,7 @@ export type ArticleMeta = {
 const articles: ArticleMeta[] = [
   {
     id: 'here-are-some-amazing-advantages-of-go-that-you-dont-hear-much-about',
-    date: '01.02.2018',
+    date: '2018-02-01',
     title: 'Here are some amazing advantages of Go that you don’t hear much about',
     description: 'I discuss why you should give Go a chance and where to start.',
     keywords: ['golang'],
@@ -30,13 +36,17 @@ const articles: ArticleMeta[] = [
     hidden: true,
     date: '2022-04-25',
     title: "Writing HTML sucks and No-code doesn't help",
-    description: '???',
-    keywords: ['html', 'nocode'],
-    tweetId: '???',
+    description:
+      'We can do better than writing HTML manually, but there are no developer-focused solutions.',
+    keywords: ['html', 'nocode', 'react', 'tailwind'],
+    // tweetId: '???',
   },
 ]
 
-export function renderArticle(id: string, Content: JSXElementConstructor<unknown>) {
+export function renderArticle(
+  id: string,
+  Content: JSXElementConstructor<{ components?: Components }>,
+) {
   const articleMeta = articles.find((a) => a.id === id)!
   const components: Components = {
     a: (props: PropsWithChildren<AnchorHTMLAttributes<HTMLAnchorElement>>) => (
@@ -44,6 +54,19 @@ export function renderArticle(id: string, Content: JSXElementConstructor<unknown
         {props.children}
       </Link>
     ),
+    Img: (props: ArticleImageProps) => {
+      const src = props.src.startsWith('@')
+        ? `/articles/${articleMeta.id}/${props.src.replace('@', '')}`
+        : props.src
+      return <Img {...props} src={src} />
+    },
+    Video: (props: ArticleVideoProps) => {
+      const src = props.src.startsWith('@')
+        ? `/articles/${articleMeta.id}/${props.src.replace('@', '')}`
+        : props.src
+      return <Video {...props} src={src} />
+    },
+    Link,
   }
   return (
     <ArticleComponent article={articleMeta}>

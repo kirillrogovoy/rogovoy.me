@@ -19,12 +19,12 @@ export function ArticleComponent({ article, children }: Props) {
       <Head>
         <title>{article.title + ' — Kirill Rogovoy'}</title>
         <meta name="og:title" content={article.title} />
-        <meta name="og:image" content={`/${article.id}.jpg`} />
+        <meta name="og:image" content={`/articles/${article.id}/meta.jpg`} />
         <meta name="description" content={article.description} />
         <meta name="og:description" content={article.description} />
         <meta name="keywords" content={article.keywords.join(',')} />
       </Head>
-      {article.tweetId && <TwitterTweetButton text={article.title} path={router.asPath} />}
+      {<TwitterTweetButton text={article.title} path={router.asPath} />}
       <Link style={1} href="/blog">
         {'<-'} Back to the list
       </Link>
@@ -56,10 +56,11 @@ export function ArticleComponent({ article, children }: Props) {
               <Link style={2} href="https://twitter.com/krogovoy">
                 Twitter
               </Link>{' '}
-              or check out my{' '}
-              <Link style={2} href="https://github.com/kirillrogovoy">
-                Github
-              </Link>
+              or{' '}
+              <Link style={2} href={makeTwitterUrl(article.title, router.asPath)} newTab={true}>
+                Share
+              </Link>{' '}
+              this post
             </>
           )}
         </div>
@@ -93,12 +94,16 @@ export function ArticleComponent({ article, children }: Props) {
         .markdown ul,
         .markdown ol {
           margin-top: 5px;
+          padding-left: 40px;
         }
         .markdown ul li {
           list-style-type: square;
         }
         .markdown ol li {
-          list-style-type: number;
+          list-style-type: decimal;
+        }
+        .markdown code {
+          font-size: 18px;
         }
       `}</style>
     </ArticleLayout>
@@ -178,19 +183,36 @@ function TwitterTweetButton(props: TwitterTweetButtonProps) {
 
 export type ArticleImageProps = {
   src: string
-  alt: string
+  className?: string
+  alt?: string
+  caption?: string
+  captionJsx?: JSX.Element
+}
+
+export function Img(props: ArticleImageProps) {
+  const caption = props.captionJsx ?? props.caption
+  return (
+    <div className={`${props.className} flex flex-col items-center justify-center`}>
+      <a href={props.src} target="_blank" rel="noreferrer">
+        <img src={props.src} alt={props.alt ?? props.caption} className="w-full" />
+      </a>
+      {caption && <div className="mt-1 text-center text-lg text-opaque">{caption}</div>}
+    </div>
+  )
+}
+
+export type ArticleVideoProps = {
+  src: string
+  className?: string
+  alt?: string
   caption?: string
 }
 
-export function ArticleImage(props: ArticleImageProps) {
+export function Video(props: ArticleVideoProps) {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <img src={props.src} alt={props.alt} className="w-full" />
-      {props.caption && (
-        <div className="text-center text-sm">
-          <p className="text-gray-600">{props.caption}</p>
-        </div>
-      )}
+    <div className={`${props.className} mt-3 flex flex-col items-center justify-center`}>
+      <video autoPlay playsInline loop muted src={props.src}></video>
+      {props.caption && <div className="mt-1 text-center text-lg text-opaque">{props.caption}</div>}
     </div>
   )
 }
