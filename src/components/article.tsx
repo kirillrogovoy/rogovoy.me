@@ -41,11 +41,11 @@ export function ArticleComponent({ article, children }: Props) {
         <div className="text-center mb-2">
           {article.tweetId ? (
             <>
-              <Link style={2} href={`https://twitter.com/krogovoy/status/${article.tweetId}`}>
+              <Link style={2} href={`https://twitter.com/krogovoy/status/${article.tweetId}`} newTab>
                 Discuss
               </Link>{' '}
               or{' '}
-              <Link style={2} href={makeTwitterUrl(article.title, router.asPath)} newTab={true}>
+              <Link style={2} href={makeTwitterUrl(article.title, router.asPath)} newTab>
                 Share
               </Link>{' '}
               on Twitter
@@ -53,11 +53,11 @@ export function ArticleComponent({ article, children }: Props) {
           ) : (
             <>
               Follow me on{' '}
-              <Link style={2} href="https://twitter.com/krogovoy">
+              <Link style={2} href="https://twitter.com/krogovoy" newTab>
                 Twitter
               </Link>{' '}
               or{' '}
-              <Link style={2} href={makeTwitterUrl(article.title, router.asPath)} newTab={true}>
+              <Link style={2} href={makeTwitterUrl(article.title, router.asPath)} newTab>
                 Share
               </Link>{' '}
               this post
