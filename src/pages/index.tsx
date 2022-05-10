@@ -25,7 +25,7 @@ export default function Index() {
       </Head>
       <div className="font-serif absolute m-auto inset-0 text-center h-4/5">
         <img className="mx-auto h-64 w-64 rounded-full" src="/kirill-rogovoy.jpg" />
-        <h1 className="mt-6 text-7xl leading-tight">Kirill Rogovoy</h1>
+        <h1 className="mt-6 text-7xl leading-tight">Kirill Rogovoy 🇺🇦</h1>
         <p className="mb-1 text-2xl">Code · Design · BJJ · Travel · Beer</p>
         <p className="mb-8 text-2xl">
           <Link href="https://foodba.com" newTab style={2}>
