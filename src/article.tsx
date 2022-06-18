@@ -23,6 +23,14 @@ export type ArticleMeta = {
 }
 const articles: ArticleMeta[] = [
   {
+    id: 'writing-html-sucks',
+    date: '2022-04-25',
+    title: "Writing HTML sucks and No-code doesn't help",
+    description:
+      'We can do better than writing HTML manually, but there are no developer-focused solutions.',
+    keywords: ['html', 'nocode', 'react', 'tailwind'],
+  },
+  {
     id: 'here-are-some-amazing-advantages-of-go-that-you-dont-hear-much-about',
     date: '2018-02-01',
     title: 'Here are some amazing advantages of Go that you don’t hear much about',
@@ -30,14 +38,6 @@ const articles: ArticleMeta[] = [
     keywords: ['golang'],
     origin:
       'https://freecodecamp.org/news/here-are-some-amazing-advantages-of-go-that-you-dont-hear-much-about-1af99de3b23a/',
-  },
-  {
-    id: 'writing-html-sucks',
-    date: '2022-04-25',
-    title: "Writing HTML sucks and No-code doesn't help",
-    description:
-      'We can do better than writing HTML manually, but there are no developer-focused solutions.',
-    keywords: ['html', 'nocode', 'react', 'tailwind'],
   },
 ]
 
