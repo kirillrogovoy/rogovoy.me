@@ -1,0 +1,166 @@
+This post is a follow-up to [Writing HTML sucks and No-code doesn't help](https://rogovoy.me/blog/writing-html-sucks) what I've posted two months ago.
+
+A quick recap of opinions I expressed in that article:
+- Writing HTML is slow and boring.
+- No-code tools are great but aren't suitable for a lot of projects. Also developers don't like them.
+- When it comes to creating UIs, developers are the underserved customers.
+- Having a tight feedback loop is crucial. It's not tight enough when you need to develop the UI by writing code in the editor.
+- **We can do better.**
+
+
+I've also suggested a solution.
+I wanted to have a tool that worked directly with my code, allowing me to edit the UI inside the browser.
+
+I wanted a tool, that's made for developers, with zero abstractions on top of HTML/CSS and a keyboard-driven UX.
+
+Ultimately, I wanted a tool to make creating UIs fun and fast, without giving up on any of my code.
+
+I wanted something that looked like this:
+
+<Img className="mt-3" src="@impulse-gif-create-page.gif" caption="Impluse page creation demo" />
+
+Two months and a few gallons of coffee in, as promised, I've made a prototype!
+
+
+## Introducing Impulse
+
+Impulse allows you to edit your UI (think specific JSX code) visually inside your app by editing the DOM element.
+
+Imagine if you could change styles of any DOM element on the page using the Devtools, and it would be automatically saved to your code exactly the way you would do it yourself.
+
+Impulse is that, and much more, but with a much better UX.
+
+It's completelly local and open-source.
+No SaaS.
+No servers.
+No accounts.
+
+It's built for React and works best if you use Tailwind.
+More on this below.
+
+Most importantly, Impulse isn't a replacement for anything.
+It's an add-on.
+Just like Devtools, you use it when you need it and then stash it away.
+
+Website: [impulse.dev](https://impulse.dev)<br />
+Github: [impulse-oss/impulse](https://github.com/impulse-oss/impulse)<br />
+Full 40-minute demo: [https://youtu.be/QaTSsaGXCco](https://youtu.be/QaTSsaGXCco)
+
+
+## Why writing code isn't fast enough
+
+I feel like it's important to re-iterate on the problem Impulse is solving.
+
+Citing my previous post:
+
+> Sometimes, it's a 2-minute job. Fix some margin. No big deal. But sometimes I'd spend the whole day working on the UI, and the issue becomes much more apparent.
+
+> In that working-on-UI mode, writing HTML feels like trying to draw a picture by shooting arrows at the target. You shoot one, see where it landed, adjust, and shoot again. Code feels like the gap between you and the target.
+
+> We aren't blind to this problem. In fact, we got pretty good at shooting those arrows. Emmet saves us raw keystrokes, Tailwind (with its VS Code extension) saves us mental effort, Fast Refresh (aka Hot Module Replacement) shrinks the feedback loop, the browser's DOM explorer gives us some optics. We shoot those arrows from a machine gun.
+
+> But the distance is still there. The gap is still there. We are just traveling it faster.
+
+Creating UI code is pretty damn fast in 2022.
+However, the constant context switching between the browser and the code editor hasn't gone away.
+And to me, it just feels wrong.
+
+The feedback loop is tight but not tight enough.
+
+It's not just speed.
+It's about fun too.
+For a long time, I hated coding the UIs.
+I loved the design phase, but writing the HTML down felt so boring.
+
+Now I honestly look forward to it.
+
+
+## Why React
+
+For one, it's just what I've been using for the last few years, and it also happens to be the most popular front-end framework at the time of creating Impulse.
+
+Another important reason is the little-known internal feature of React, that allows you to know which DOM element was created by which piece of code with high precision.
+
+I don't know if Vue or Svelte or Angular do anything similar, but without that information there's no Impulse.
+
+I'm tempted to elaborate more on how it works exactly, but there's so much more to it, that it deserves a separate post.
+Please, let me know if you're curious!
+
+
+## Why Tailwind
+
+In the demo above, I add the styles of the elements by adding Tailwind classes.
+
+Tailwind has already been my go-to choice for more than two years,
+but the fact that it uses utility classes for styling made it a great fit.
+
+It also allows you to _not_ come up with semantic names for styles which helps to tighten the feedback loop, which has been my goal in the first place.
+
+Since using Tailwind is as easy as adding or removing classes, it naturally made a very easy CSS framework to intergrate with.
+
+If you've haven't used Tailwind, this project might be a great reason try it out. A full-pledged support with auto-completion and other goodies is on its way. 
+
+
+## What Impulse can do
+
+Since Impulse knows the exact source code that created any given DOM element on the page, it unlocks some powerful features.
+
+
+### 1. Edit classes
+
+<Img className="mt-3" src="@impulse-gif-edit-page.gif" caption="Edit styles by adding classes" />
+
+Use Impulse to add or remove classes from any DOM element and it would also edit your code.
+
+With Tailwind, it means that you can style any element without leaving the browser while seeing your changes apply instantly.
+
+
+### 2. Add, move, and remove elements
+
+<Img className="mt-3" src="@impulse-gif-create-page.gif" caption="Create a full page with Impulse" />
+
+With the ability to add styles, this allows you to create whole new UIs without leaving the browser.
+Again, all of the changes are applied to the source code.
+
+Oftentimes I'd catch myself spending 30 minutes streight creating new UI in the browser without looking at the code even once.
+Then, when I do open the code, it's exactly the same code I'd write manually.
+
+
+### 3. Jump to code
+
+<Img className="mt-3" src="@impulse-gif-jump-to-code.gif" caption="Jump to code that created the element" />
+
+The most versatile feature I use on both new and existing projects.
+
+There are a lot of things Impulse can't do, either conceptually, or just yet.
+
+Impulse isn't a no-code tool in the sense that it'd discourage you from using your editor.
+In fact, most things are easier to do with code.
+Impulse is just trying to remove the boring parts.
+
+So, every time you do need to switch to your code editor, save yourself some brain cycles by using this feature to instantly jump to the place you are likely looking for.
+
+No more mental mapping between which exact code created that `<div>` you are staring at.
+
+No more looking up the classes in Dev Tools to search for them in your code to find that node.
+
+Just press C.
+
+
+## Feedback needed!
+
+So far I've been trying to create what's been missing from _my_ world.
+
+That's not the end goal but a necessary step.
+
+I want to build what people need.
+
+The best way one can contribute to Impulse is to give it a try and share honest feedback. :)
+
+Please, reach out to me directly or join the [Impulse Discord server](https://discord.gg/nDDCyyedbs).
+
+If you need help or some onboarding session, I'm happy to jump on the call!
+
+Website: [impulse.dev](https://impulse.dev)<br />
+Github: [impulse-oss/impulse](https://github.com/impulse-oss/impulse)<br />
+Full 40-minute demo: [https://youtu.be/QaTSsaGXCco](https://youtu.be/QaTSsaGXCco)

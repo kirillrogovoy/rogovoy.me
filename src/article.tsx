@@ -23,6 +23,15 @@ export type ArticleMeta = {
 }
 const articles: ArticleMeta[] = [
   {
+    id: 'writing-html-sucks-less',
+    date: '2022-07-05',
+    title: "Writing HTML sucks less with Impulse",
+    description:
+      'Introducing Impulse - yes-code UI editor',
+    keywords: ['html', 'nocode', 'react', 'tailwind'],
+  },
+  {
+    hidden: true,
     id: 'writing-html-sucks',
     date: '2022-04-25',
     title: "Writing HTML sucks and No-code doesn't help",

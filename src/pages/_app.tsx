@@ -9,6 +9,10 @@ declare global {
   }
 }
 
+if (process.env.NODE_ENV === 'development') {
+  import('@impulse.dev/runtime').then((impulse) => impulse.run())
+}
+
 export default function App({ Component, pageProps }: AppPropsType) {
   return <Component {...pageProps} />
 }

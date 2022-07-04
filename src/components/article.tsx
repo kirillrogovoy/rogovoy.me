@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import { ArticleLayout } from '../components/articles-layout'
 import { ArticleList } from '../components/article-list'
 import { Separator } from './separator'
-import { getRandomArticles, ArticleMeta } from '../article'
+import { ArticleMeta, getAllArticles } from '../article'
 import { EmailForm } from './email-form'
 import { Link } from './link'
 import { PropsWithChildren } from 'react'
@@ -20,6 +20,7 @@ export function ArticleComponent({ article, children }: Props) {
         <title>{article.title + ' — Kirill Rogovoy'}</title>
         <meta name="og:title" content={article.title} />
         <meta name="og:image" content={`https://rogovoy.me/articles/${article.id}/meta.jpg`} />
+
         <meta name="description" content={article.description} />
         <meta name="og:description" content={article.description} />
         <meta name="keywords" content={article.keywords.join(',')} />
@@ -92,6 +93,10 @@ export function ArticleComponent({ article, children }: Props) {
         .markdown h2 + p {
           margin-top: 13px;
         }
+        .markdown h3 {
+          font-size: 28px;
+          margin: 28px 0 0 0;
+        }
         .markdown p {
           margin: 29px 0 0 0;
         }
@@ -109,19 +114,29 @@ export function ArticleComponent({ article, children }: Props) {
         .markdown code {
           font-size: 18px;
         }
+        .markdown blockquote {
+          padding: 0 1em;
+          color: #57606a;
+          border-left: 0.25em solid #d0d7de;
+        }
       `}</style>
     </ArticleLayout>
   )
 }
 
 function OtherArticles({ currentArticleId }: { currentArticleId: string }) {
-  const articles = getRandomArticles(3, currentArticleId)
+  // const articles = getRandomArticles(3, currentArticleId)
+  const articles = getAllArticles()
+    .filter((a) => a.id !== currentArticleId)
+    .slice(0, 3)
+
   if (articles.length === 0) {
     return null
   }
+
   return (
     <div>
-      <h3 className="text-xl">Other articles:</h3>
+      <h3 className="text-xl mb-4">Other articles:</h3>
       <ArticleList articles={articles} />
     </div>
   )
@@ -144,6 +159,7 @@ type TwitterTweetButtonProps = {
   text: string
   path: string
 }
+
 function TwitterTweetButton(props: TwitterTweetButtonProps) {
   const twitterUrl = makeTwitterUrl(props.text, props.path)
 
