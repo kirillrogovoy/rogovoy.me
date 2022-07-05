@@ -31,7 +31,6 @@ const articles: ArticleMeta[] = [
     keywords: ['html', 'nocode', 'react', 'tailwind'],
   },
   {
-    hidden: true,
     id: 'writing-html-sucks',
     date: '2022-04-25',
     title: "Writing HTML sucks and No-code doesn't help",
