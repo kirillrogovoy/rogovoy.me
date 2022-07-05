@@ -25,6 +25,7 @@ export function ArticleComponent({ article, children }: Props) {
         <meta name="og:description" content={article.description} />
         <meta name="keywords" content={article.keywords.join(',')} />
 
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={`https://rogovoy.me/articles/${article.id}/meta.jpg`} />
         <meta name="twitter:title" content={article.title} />
         <meta name="twitter:description" content={article.description} />
