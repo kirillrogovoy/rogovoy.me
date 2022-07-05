@@ -24,6 +24,10 @@ export function ArticleComponent({ article, children }: Props) {
         <meta name="description" content={article.description} />
         <meta name="og:description" content={article.description} />
         <meta name="keywords" content={article.keywords.join(',')} />
+
+        <meta name="twitter:image" content={`https://rogovoy.me/articles/${article.id}/meta.jpg`} />
+        <meta name="twitter:title" content={article.title} />
+        <meta name="twitter:description" content={article.description} />
       </Head>
       {<TwitterTweetButton text={article.title} path={router.asPath} />}
       <Link style={1} href="/blog">
