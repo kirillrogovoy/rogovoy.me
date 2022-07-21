@@ -102,6 +102,9 @@ export function ArticleComponent({ article, children }: Props) {
           font-size: 28px;
           margin: 28px 0 0 0;
         }
+        .markdown h3 + p {
+          margin-top: 13px;
+        }
         .markdown p {
           margin: 29px 0 0 0;
         }

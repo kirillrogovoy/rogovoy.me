@@ -23,11 +23,18 @@ export type ArticleMeta = {
 }
 const articles: ArticleMeta[] = [
   {
+    id: 'i-quit-my-business-to-start-dev-tool',
+    date: '2022-07-21',
+    title: 'I quit my business to start an open-source dev tool',
+    description: 'This is a story of me quitting my job as a web dev, starting my first SaaS, burning through all of my savings, and finding what I really wanted to do.',
+    keywords: ['impulse.dev', 'building in public', 'open source'],
+    // hidden: true,
+  },
+  {
     id: 'writing-html-sucks-less',
     date: '2022-07-05',
-    title: "Writing HTML sucks less with Impulse",
-    description:
-      'Introducing Impulse - yes-code UI editor',
+    title: 'Writing HTML sucks less with Impulse',
+    description: 'Introducing Impulse - yes-code UI editor',
     keywords: ['html', 'nocode', 'react', 'tailwind'],
   },
   {
@@ -50,10 +57,10 @@ const articles: ArticleMeta[] = [
 ]
 
 export function renderArticle(
-  id: string,
+  articleId: string,
   Content: JSXElementConstructor<{ components?: Components }>,
 ) {
-  const articleMeta = articles.find((a) => a.id === id)!
+  const articleMeta = articles.find((a) => a.id === articleId)!
   const components: Components = {
     a: (props: PropsWithChildren<AnchorHTMLAttributes<HTMLAnchorElement>>) => (
       <Link href={props.href!} style={2}>
