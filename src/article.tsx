@@ -28,7 +28,7 @@ const articles: ArticleMeta[] = [
     title: 'I quit my business to start an open-source dev tool',
     description: 'This is a story of me quitting my job as a web dev, starting my first SaaS, burning through all of my savings, and finding what I really wanted to do.',
     keywords: ['impulse.dev', 'building in public', 'open source'],
-    // hidden: true,
+    hidden: true,
   },
   {
     id: 'writing-html-sucks-less',
