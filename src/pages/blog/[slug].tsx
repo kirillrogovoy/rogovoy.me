@@ -5,7 +5,6 @@ import fs from 'fs/promises'
 import { serialize } from 'next-mdx-remote/serialize'
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 
-
 type PostProps = {
   article: ArticleMeta
   mdxBody: MDXRemoteSerializeResult
