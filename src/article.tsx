@@ -91,11 +91,15 @@ export function renderArticle(
 }
 
 export function getAllArticles() {
+  return articles
+}
+
+export function getPublicArticles() {
   return articles.filter((post) => !post.hidden)
 }
 
 export function getRandomArticles(number: number, exceptArticleId: string) {
-  return shuffle(getAllArticles().filter((a) => a.id !== exceptArticleId)).slice(0, number)
+  return shuffle(getPublicArticles().filter((a) => a.id !== exceptArticleId)).slice(0, number)
 }
 
 function shuffle<T>(b: T[]): T[] {

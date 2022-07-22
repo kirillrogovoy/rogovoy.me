@@ -1,14 +1,14 @@
 import { GetServerSideProps } from 'next'
 import { streamToPromise, SitemapStream } from 'sitemap'
 import { Readable } from 'stream'
-import { getAllArticles } from '../article'
+import { getPublicArticles } from '../article'
 
 const Sitemap = () => {
   return null
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => {
-  const articleUrls = getAllArticles()
+  const articleUrls = getPublicArticles()
     .filter((article) => !article.hidden && !article.origin)
     .map((article) => `/blog/${article.id}`)
 

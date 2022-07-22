@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import { ArticleLayout } from '../components/articles-layout'
 import { ArticleList } from '../components/article-list'
 import { Separator } from './separator'
-import { ArticleMeta, getAllArticles } from '../article'
+import { ArticleMeta, getPublicArticles } from '../article'
 import { EmailForm } from './email-form'
 import { Link } from './link'
 import { PropsWithChildren } from 'react'
@@ -134,7 +134,7 @@ export function ArticleComponent({ article, children }: Props) {
 
 function OtherArticles({ currentArticleId }: { currentArticleId: string }) {
   // const articles = getRandomArticles(3, currentArticleId)
-  const articles = getAllArticles()
+  const articles = getPublicArticles()
     .filter((a) => a.id !== currentArticleId)
     .slice(0, 3)
 

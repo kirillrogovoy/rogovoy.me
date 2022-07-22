@@ -1,6 +1,6 @@
 import { Feed } from 'feed'
 import { GetServerSideProps } from 'next'
-import { getAllArticles } from '../article'
+import { getPublicArticles } from '../article'
 
 const FeedComponent = () => {
   return null
@@ -30,7 +30,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     author,
   })
 
-  const articles = getAllArticles().filter((article) => !article.hidden && !article.origin)
+  const articles = getPublicArticles().filter((article) => !article.hidden && !article.origin)
 
   for (const article of articles) {
     feed.addItem({

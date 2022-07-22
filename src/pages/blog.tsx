@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { ArticleLayout } from '../components/articles-layout'
 import { ArticleList } from '../components/article-list'
-import { getAllArticles } from '../article'
+import { getPublicArticles } from '../article'
 
 export default function Blog() {
   return (
@@ -10,7 +10,7 @@ export default function Blog() {
         <Head>
           <title>Kirill Rogovoy — Blog</title>
         </Head>
-        <ArticleList articles={getAllArticles()} />
+        <ArticleList articles={getPublicArticles()} />
       </ArticleLayout>
     </div>
   )
