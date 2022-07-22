@@ -34,11 +34,13 @@ export async function getStaticPaths() {
   const articles = getAllArticles()
 
   return {
-    paths: articles.map((article) => ({
-      params: {
-        slug: article.id,
-      },
-    })),
+    paths: articles
+      .filter((article) => !article.origin)
+      .map((article) => ({
+        params: {
+          slug: article.id,
+        },
+      })),
     fallback: false,
   }
 }
