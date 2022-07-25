@@ -26,9 +26,9 @@ const articles: ArticleMeta[] = [
     id: 'i-quit-my-business-to-start-dev-tool',
     date: '2022-07-21',
     title: 'I quit my business to start an open-source dev tool',
-    description: 'This is a story of me quitting my job as a web dev, starting my first SaaS, burning through all of my savings, and finding what I really wanted to do.',
+    description:
+      'This is a story of me quitting my job as a web dev, starting my first SaaS, burning through all of my savings, and finding what I really wanted to do.',
     keywords: ['impulse.dev', 'building in public', 'open source'],
-    hidden: true,
   },
   {
     id: 'writing-html-sucks-less',
