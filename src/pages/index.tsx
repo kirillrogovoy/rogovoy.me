@@ -2,6 +2,8 @@ import Head from 'next/head'
 import { Link } from '../components/link'
 
 export default function Index() {
+  const metaDescription = "Kirill Rogovoy — software engineer turned indie hacker. Building impulse.dev"
+
   return (
     <div>
       <Head>
@@ -15,11 +17,11 @@ export default function Index() {
         <meta name="og:image" content="https://rogovoy.me/kirill-rogovoy.jpg"></meta>
         <meta
           name="og:description"
-          content="Kirill Rogovoy — software engineer, team lead, architect, and everything in between"
+          content={metaDescription}
         ></meta>
         <meta
           name="description"
-          content="Kirill Rogovoy — software engineer, team lead, architect, and everything in between"
+          content={metaDescription}
         ></meta>
         <title>Kirill Rogovoy 🇺🇦</title>
       </Head>

@@ -23,7 +23,7 @@ export const ArticleList = ({ articles }: Props) => (
             <span> — </span>
             {article.date}
           </span>
-          <span className="block text-sm">{article.description}</span>
+          <span className="block text-sm whitespace-pre-line">{article.description}</span>
         </li>
       ))}
     </ul>
