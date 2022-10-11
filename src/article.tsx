@@ -8,6 +8,7 @@ import {
 import { JSXElementConstructor, PropsWithChildren, AnchorHTMLAttributes } from 'react'
 import { Link } from './components/link'
 import { MDXProvider, Components } from '@mdx-js/react'
+import { TweetEmbedded } from './components/tweet-embedded'
 
 export type ArticleMeta = {
   id: string
@@ -26,13 +27,11 @@ const articles: ArticleMeta[] = [
     id: 'impulse-launch',
     date: '2022-10-11',
     title: 'How I launched Impulse.dev',
-    description:
-      `I've been working on Impulse for six months and a few weeks ago—Sep 28—I decided to finally make an official launch.
+    description: `I've been working on Impulse for six months and a few weeks ago—Sep 28—I decided to finally make an official launch.
 
 In this post, I want to refelect on what happened before, during, and after that launch.
 What I've learned and what I could have done differently.`,
     keywords: ['impulse.dev', 'launch', 'open source'],
-    hidden: true,
   },
   {
     id: 'i-quit-my-business-to-start-dev-tool',
@@ -92,6 +91,7 @@ export function renderArticle(
       return <Video {...props} src={src} />
     },
     Link,
+    TweetEmbedded,
   }
   return (
     <ArticleComponent article={articleMeta}>
