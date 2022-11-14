@@ -32,7 +32,6 @@ const articles: ArticleMeta[] = [
 
 It took even more to learn to write stupid code again.`,
     keywords: ['code', 'architecture'],
-    hidden: true,
   },
   {
     id: 'impulse-launch',
