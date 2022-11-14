@@ -9,6 +9,7 @@ import { JSXElementConstructor, PropsWithChildren, AnchorHTMLAttributes } from '
 import { Link } from './components/link'
 import { MDXProvider, Components } from '@mdx-js/react'
 import { TweetEmbedded } from './components/tweet-embedded'
+import { Separator } from './components/separator'
 
 export type ArticleMeta = {
   id: string
@@ -23,6 +24,16 @@ export type ArticleMeta = {
   imageUrl?: string
 }
 const articles: ArticleMeta[] = [
+  {
+    id: 'no-architecture',
+    date: '2022-11-14',
+    title: 'No architecture is better than bad architecture',
+    description: `It took me several years to learn how to write code that scales to 10s of team members and a million lines of code.
+
+It took even more to learn to write stupid code again.`,
+    keywords: ['code', 'architecture'],
+    hidden: true,
+  },
   {
     id: 'impulse-launch',
     date: '2022-10-11',
@@ -92,6 +103,7 @@ export function renderArticle(
     },
     Link,
     TweetEmbedded,
+    Separator,
   }
   return (
     <ArticleComponent article={articleMeta}>
