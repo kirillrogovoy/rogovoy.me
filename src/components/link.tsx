@@ -22,7 +22,7 @@ export function Link(props: LinkProps) {
     ? { target: '_blank', rel: 'noreferrer noopener' }
     : {}
 
-  const passProps = { ...props }
+  const passProps = { ...props, style: undefined }
   delete passProps.newTab
   delete passProps.style
 
@@ -35,7 +35,7 @@ export function Link(props: LinkProps) {
   }
 
   return (
-    <NextLink {...passProps}>
+    <NextLink {...passProps} legacyBehavior>
       <a className={className} {...targetProps}>
         {props.children}
       </a>

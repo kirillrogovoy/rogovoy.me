@@ -4,12 +4,7 @@ export function TweetEmbedded(props: { tweetUrl: string }) {
   return (
     <>
       <Head>
-        <script
-          key="twitter-widgets"
-          async
-          src="https://platform.twitter.com/widgets.js"
-          charSet="utf-8"
-        ></script>
+        <script key="twitter-widgets" async src="https://platform.twitter.com/widgets.js"></script>
       </Head>
       <blockquote className="twitter-tweet">
         <p lang="en" dir="ltr">

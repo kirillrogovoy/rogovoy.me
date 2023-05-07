@@ -1,16 +1,3 @@
-import {
-  ArticleComponent,
-  ArticleImageProps,
-  ArticleVideoProps,
-  Img,
-  Video,
-} from './components/article'
-import { JSXElementConstructor, PropsWithChildren, AnchorHTMLAttributes } from 'react'
-import { Link } from './components/link'
-import { MDXProvider, Components } from '@mdx-js/react'
-import { TweetEmbedded } from './components/tweet-embedded'
-import { Separator } from './components/separator'
-
 export type ArticleMeta = {
   id: string
   date: string
@@ -23,7 +10,14 @@ export type ArticleMeta = {
   tweetId?: string
   imageUrl?: string
 }
-const articles: ArticleMeta[] = [
+export const articles: ArticleMeta[] = [
+  {
+    id: 'get-good',
+    date: '2023-05-07',
+    title: 'How to get good at any skill: day-by-day guide',
+    description: `The only piece of wisdom you need to finally start learning`,
+    keywords: [],
+  },
   {
     id: 'no-architecture',
     date: '2022-11-14',
@@ -76,42 +70,6 @@ What I've learned and what I could have done differently.`,
       'https://freecodecamp.org/news/here-are-some-amazing-advantages-of-go-that-you-dont-hear-much-about-1af99de3b23a/',
   },
 ]
-
-export function renderArticle(
-  articleId: string,
-  Content: JSXElementConstructor<{ components?: Components }>,
-) {
-  const articleMeta = articles.find((a) => a.id === articleId)!
-  const components: Components = {
-    a: (props: PropsWithChildren<AnchorHTMLAttributes<HTMLAnchorElement>>) => (
-      <Link href={props.href!} style={2}>
-        {props.children}
-      </Link>
-    ),
-    Img: (props: ArticleImageProps) => {
-      const src = props.src.startsWith('@')
-        ? `/articles/${articleMeta.id}/${props.src.replace('@', '')}`
-        : props.src
-      return <Img {...props} src={src} />
-    },
-    Video: (props: ArticleVideoProps) => {
-      const src = props.src.startsWith('@')
-        ? `/articles/${articleMeta.id}/${props.src.replace('@', '')}`
-        : props.src
-      return <Video {...props} src={src} />
-    },
-    Link,
-    TweetEmbedded,
-    Separator,
-  }
-  return (
-    <ArticleComponent article={articleMeta}>
-      <MDXProvider components={components}>
-        <Content />
-      </MDXProvider>
-    </ArticleComponent>
-  )
-}
 
 export function getAllArticles() {
   return articles

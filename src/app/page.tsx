@@ -1,25 +1,26 @@
-import Head from 'next/head'
+import { getAllArticles } from '../article'
 import { Link } from '../components/link'
+import { Metadata } from 'next'
+
+const metaDescription =
+  'Kirill Rogovoy — software engineer turned indie hacker. Building impulse.dev'
+
+export const metadata: Metadata = {
+  title: 'Kirill Rogovoy 🇺🇦',
+  description: metaDescription,
+  keywords: 'kirill rogovoy, rogovoy, developer, software engineer, team lead, software architect',
+  openGraph: {
+    title: 'Kirill Rogovoy 🇺🇦',
+    description: metaDescription,
+    url: 'https://rogovoy.me',
+    images: 'https://rogovoy.me/kirill-rogovoy.jpg',
+  },
+}
 
 export default function Index() {
-  const metaDescription =
-    'Kirill Rogovoy — software engineer turned indie hacker. Building impulse.dev'
-
+  const latestArticle = getAllArticles()[0]
   return (
     <div>
-      <Head>
-        <meta charSet="utf-8"></meta>
-        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-        <meta
-          name="keywords"
-          content="kirill rogovoy, rogovoy, developer, software engineer, team lead, software architect"
-        ></meta>
-        <meta name="og:title" content="Kirill Rogovoy — website"></meta>
-        <meta name="og:image" content="https://rogovoy.me/kirill-rogovoy.jpg"></meta>
-        <meta name="og:description" content={metaDescription}></meta>
-        <meta name="description" content={metaDescription}></meta>
-        <title>Kirill Rogovoy 🇺🇦</title>
-      </Head>
       <div className="font-serif absolute m-auto inset-0 text-center h-4/5">
         <img className="mx-auto h-64 w-64 rounded-full" src="/kirill-rogovoy.jpg" />
         <h1 className="mt-6 text-7xl leading-tight">Kirill Rogovoy 🇺🇦</h1>
@@ -255,6 +256,12 @@ export default function Index() {
           And also{' '}
           <Link href="/blog" style={2}>
             Blog
+          </Link>
+        </p>
+        <p className="text-2xl mt-2">
+          Latest article:{' '}
+          <Link href={`/blog/${latestArticle.id}`} style={2}>
+            {latestArticle.title}
           </Link>
         </p>
         <br />

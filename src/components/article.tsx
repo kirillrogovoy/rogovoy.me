@@ -1,6 +1,3 @@
-import Head from 'next/head'
-import { useRouter } from 'next/router'
-import { ArticleLayout } from '../components/articles-layout'
 import { ArticleList } from '../components/article-list'
 import { Separator } from './separator'
 import { ArticleMeta, getPublicArticles } from '../article'
@@ -13,24 +10,10 @@ type Props = PropsWithChildren<{
 }>
 
 export function ArticleComponent({ article, children }: Props) {
-  const router = useRouter()
+  const articlePath = `blog/${article.id}`
   return (
-    <ArticleLayout>
-      <Head>
-        <title>{article.title + ' — Kirill Rogovoy'}</title>
-        <meta name="og:title" content={article.title} />
-        <meta name="og:image" content={`https://rogovoy.me/articles/${article.id}/meta.jpg`} />
-
-        <meta name="description" content={article.description} />
-        <meta name="og:description" content={article.description} />
-        <meta name="keywords" content={article.keywords.join(',')} />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content={`https://rogovoy.me/articles/${article.id}/meta.jpg`} />
-        <meta name="twitter:title" content={article.title} />
-        <meta name="twitter:description" content={article.description} />
-      </Head>
-      {<TwitterTweetButton text={article.title} path={router.asPath} />}
+    <div>
+      <TwitterTweetButton text={article.title} path={articlePath} />
       <Link style={1} href="/blog">
         {'<-'} Back to the list
       </Link>
@@ -55,7 +38,7 @@ export function ArticleComponent({ article, children }: Props) {
                 Discuss
               </Link>{' '}
               or{' '}
-              <Link style={2} href={makeTwitterUrl(article.title, router.asPath)} newTab>
+              <Link style={2} href={makeTwitterUrl(article.title, articlePath)} newTab>
                 Share
               </Link>{' '}
               on Twitter
@@ -67,7 +50,7 @@ export function ArticleComponent({ article, children }: Props) {
                 Twitter
               </Link>{' '}
               or{' '}
-              <Link style={2} href={makeTwitterUrl(article.title, router.asPath)} newTab>
+              <Link style={2} href={makeTwitterUrl(article.title, articlePath)} newTab>
                 Share
               </Link>{' '}
               this post
@@ -79,7 +62,7 @@ export function ArticleComponent({ article, children }: Props) {
 
       <OtherArticles currentArticleId={article.id} />
 
-      <style jsx global>{`
+      <style>{`
         .markdown {
           font-size: 21px;
           letter-spacing: 0px;
@@ -128,7 +111,7 @@ export function ArticleComponent({ article, children }: Props) {
           border-left: 0.25em solid #d0d7de;
         }
       `}</style>
-    </ArticleLayout>
+    </div>
   )
 }
 
