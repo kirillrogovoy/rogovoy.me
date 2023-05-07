@@ -11,9 +11,9 @@ export function GetGood() {
       </p>
       <p>
         {daysArray.map((day) => (
-          <div key={day} className="flex">
+          <span key={day} className="flex">
             Day {day + 1}: {practicePerDay} hours of practice
-          </div>
+          </span>
         ))}
       </p>
 
