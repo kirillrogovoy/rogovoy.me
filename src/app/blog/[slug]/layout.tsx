@@ -3,7 +3,7 @@ import { EmailForm } from '../../../components/email-form'
 import { Separator } from '../../../components/separator'
 import { Link } from '../../../components/link'
 
-export default function (props: PropsWithChildren<unknown>) {
+export default function AppLayout(props: PropsWithChildren<unknown>) {
   return (
     <div className="font-serif mx-auto" style={{ maxWidth: '90%', width: '44rem' }}>
       <header>
