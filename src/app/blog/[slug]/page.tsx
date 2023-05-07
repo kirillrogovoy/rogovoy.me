@@ -85,7 +85,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-  return getAllArticles().map((article) => ({
-    slug: article.id,
-  }))
+  return getAllArticles()
+    .filter((article) => !article.origin)
+    .map((article) => ({
+      slug: article.id,
+    }))
 }
