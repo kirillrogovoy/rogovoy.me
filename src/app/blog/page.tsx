@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import { ArticleLayout } from '../components/articles-layout'
-import { ArticleList } from '../components/article-list'
-import { getPublicArticles } from '../article'
+import { ArticleLayout } from '../../components/articles-layout'
+import { ArticleList } from '../../components/article-list'
+import { getPublicArticles } from '../../article'
 
 export default function Blog() {
   return (
