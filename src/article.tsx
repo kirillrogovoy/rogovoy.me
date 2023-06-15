@@ -12,6 +12,14 @@ export type ArticleMeta = {
 }
 export const articles: ArticleMeta[] = [
   {
+    id: 'start-with-one',
+    date: '2023-07-15',
+    title: 'When in doubt, start with one',
+    description: `An essay on getting stuck with organizing data and how I deal with it`,
+    keywords: [],
+    hidden: true,
+  },
+  {
     id: 'get-good',
     date: '2023-05-07',
     title: 'How to get good at any skill: day-by-day guide',
